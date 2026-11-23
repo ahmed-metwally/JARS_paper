@@ -1,0 +1,279 @@
+2026-11-05 10:51:45,564 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=3 | Seed: 42
+2026-11-05 10:51:45,575 - INFO - Seed set to 42
+2026-11-05 10:53:16,213 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=3 | Seed: 42
+2026-11-05 10:53:16,227 - INFO - Seed set to 42
+2026-11-05 10:59:14,599 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=3 | Seed: 42
+2026-11-05 10:59:14,609 - INFO - Seed set to 42
+2026-11-05 10:59:14,643 - INFO - Loading dataset paths...
+2026-11-05 10:59:14,705 - INFO - Pairs verified: 360 samples
+2026-11-05 10:59:14,714 - INFO - Pairs verified: 120 samples
+2026-11-05 10:59:14,722 - INFO - Pairs verified: 120 samples
+2026-11-05 10:59:15,945 - INFO - pos_weight = 11.91
+2026-11-05 10:59:15,977 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-11-05 10:59:16,244 - INFO - HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-11-05 10:59:16,398 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-05 10:59:16,414 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-11-05 10:59:23,447 - INFO - shared non-encoder init: 171 tensors loaded, sha256=aa6c11f2316a5dc57d6e39dffdf6ea93f49cea108a7ea595d06ac6319abe3406
+2026-11-05 10:59:23,906 - INFO - GPU [Epoch 1] Alloc:0.70GB Res:0.77GB
+2026-11-05 11:08:53,531 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_000\plots\Train_cm.png
+2026-11-05 11:17:16,236 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_000\plots\Train_roc_pr.png
+2026-11-05 11:17:17,982 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_000\plots\Val_cm.png
+2026-11-05 11:19:50,750 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_000\plots\Val_roc_pr.png
+2026-11-05 11:19:50,774 - INFO - New best F1:0.1894 @ thr=0.5 | IoU:0.1046
+2026-11-05 11:19:57,587 - INFO - Best model saved — F1:0.1894 | Thr:0.50 (fixed)
+2026-11-05 11:19:58,525 - INFO - GPU [Epoch 2] Alloc:1.36GB Res:2.06GB
+2026-11-05 11:30:04,350 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_001\plots\Train_cm.png
+2026-11-05 11:38:26,697 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_001\plots\Train_roc_pr.png
+2026-11-05 11:38:28,411 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_001\plots\Val_cm.png
+2026-11-05 11:41:16,181 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_001\plots\Val_roc_pr.png
+2026-11-05 11:41:16,206 - INFO - New best F1:0.2750 @ thr=0.5 | IoU:0.1594
+2026-11-05 11:41:24,597 - INFO - Best model saved — F1:0.2750 | Thr:0.50 (fixed)
+2026-11-05 11:41:25,534 - INFO - GPU [Epoch 3] Alloc:1.36GB Res:2.06GB
+2026-11-05 11:45:36,461 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_002\plots\Train_cm.png
+2026-11-05 11:47:31,175 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_002\plots\Train_roc_pr.png
+2026-11-05 11:47:31,721 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_002\plots\Val_cm.png
+2026-11-05 11:48:08,456 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_002\plots\Val_roc_pr.png
+2026-11-05 11:48:08,461 - INFO - New best F1:0.4272 @ thr=0.5 | IoU:0.2716
+2026-11-05 11:48:11,131 - INFO - Best model saved — F1:0.4272 | Thr:0.50 (fixed)
+2026-11-05 11:48:11,371 - INFO - GPU [Epoch 4] Alloc:1.36GB Res:2.06GB
+2026-11-05 11:51:07,432 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_003\plots\Train_cm.png
+2026-11-05 11:53:03,305 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_003\plots\Train_roc_pr.png
+2026-11-05 11:53:03,717 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_003\plots\Val_cm.png
+2026-11-05 11:53:41,927 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_003\plots\Val_roc_pr.png
+2026-11-05 11:53:43,577 - INFO - GPU [Epoch 5] Alloc:1.36GB Res:2.06GB
+2026-11-05 11:57:01,888 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_004\plots\Train_cm.png
+2026-11-05 11:59:01,923 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_004\plots\Train_roc_pr.png
+2026-11-05 11:59:02,348 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_004\plots\Val_cm.png
+2026-11-05 11:59:44,731 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_004\plots\Val_roc_pr.png
+2026-11-05 11:59:46,346 - INFO - GPU [Epoch 6] Alloc:1.36GB Res:2.06GB
+2026-11-05 12:03:15,021 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_005\plots\Train_cm.png
+2026-11-05 12:05:08,921 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_005\plots\Train_roc_pr.png
+2026-11-05 12:05:09,317 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_005\plots\Val_cm.png
+2026-11-05 12:05:46,561 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_005\plots\Val_roc_pr.png
+2026-11-05 12:05:46,561 - INFO - New best F1:0.4397 @ thr=0.5 | IoU:0.2818
+2026-11-05 12:05:49,208 - INFO - Best model saved — F1:0.4397 | Thr:0.50 (fixed)
+2026-11-05 12:05:49,409 - INFO - GPU [Epoch 7] Alloc:1.36GB Res:2.06GB
+2026-11-05 12:09:11,346 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_006\plots\Train_cm.png
+2026-11-05 12:11:06,624 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_006\plots\Train_roc_pr.png
+2026-11-05 12:11:07,086 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_006\plots\Val_cm.png
+2026-11-05 12:11:50,512 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_006\plots\Val_roc_pr.png
+2026-11-05 12:11:52,134 - INFO - GPU [Epoch 8] Alloc:1.36GB Res:2.06GB
+2026-11-05 12:15:11,046 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_007\plots\Train_cm.png
+2026-11-05 12:17:06,919 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_007\plots\Train_roc_pr.png
+2026-11-05 12:17:07,411 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_007\plots\Val_cm.png
+2026-11-05 12:17:50,035 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_007\plots\Val_roc_pr.png
+2026-11-05 12:17:51,697 - INFO - GPU [Epoch 9] Alloc:1.36GB Res:2.06GB
+2026-11-05 12:21:17,108 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_008\plots\Train_cm.png
+2026-11-05 12:23:22,591 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_008\plots\Train_roc_pr.png
+2026-11-05 12:23:23,019 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_008\plots\Val_cm.png
+2026-11-05 12:24:05,246 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_008\plots\Val_roc_pr.png
+2026-11-05 12:24:06,842 - INFO - GPU [Epoch 10] Alloc:1.36GB Res:2.06GB
+2026-11-05 12:27:36,984 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_009\plots\Train_cm.png
+2026-11-05 12:29:49,263 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_009\plots\Train_roc_pr.png
+2026-11-05 12:29:49,829 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_009\plots\Val_cm.png
+2026-11-05 12:30:41,035 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_009\plots\Val_roc_pr.png
+2026-11-05 12:30:43,076 - INFO - GPU [Epoch 11] Alloc:1.36GB Res:2.06GB
+2026-11-05 12:34:09,611 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_010\plots\Train_cm.png
+2026-11-05 12:36:04,036 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_010\plots\Train_roc_pr.png
+2026-11-05 12:36:04,489 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_010\plots\Val_cm.png
+2026-11-05 12:36:45,538 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_010\plots\Val_roc_pr.png
+2026-11-05 12:36:47,246 - INFO - GPU [Epoch 12] Alloc:1.36GB Res:2.06GB
+2026-11-05 12:40:07,680 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_011\plots\Train_cm.png
+2026-11-05 12:41:57,045 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_011\plots\Train_roc_pr.png
+2026-11-05 12:41:57,543 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_011\plots\Val_cm.png
+2026-11-05 12:42:42,189 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_011\plots\Val_roc_pr.png
+2026-11-05 12:42:43,780 - INFO - GPU [Epoch 13] Alloc:1.36GB Res:2.06GB
+2026-11-05 12:46:12,082 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_012\plots\Train_cm.png
+2026-11-05 12:48:05,889 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_012\plots\Train_roc_pr.png
+2026-11-05 12:48:06,320 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_012\plots\Val_cm.png
+2026-11-05 12:48:50,334 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_012\plots\Val_roc_pr.png
+2026-11-05 12:48:51,863 - INFO - GPU [Epoch 14] Alloc:1.36GB Res:2.06GB
+2026-11-05 12:52:21,224 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_013\plots\Train_cm.png
+2026-11-05 12:54:20,068 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_013\plots\Train_roc_pr.png
+2026-11-05 12:54:20,665 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_013\plots\Val_cm.png
+2026-11-05 12:55:06,178 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_013\plots\Val_roc_pr.png
+2026-11-05 12:55:07,790 - INFO - GPU [Epoch 15] Alloc:1.36GB Res:2.06GB
+2026-11-05 12:58:25,607 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_014\plots\Train_cm.png
+2026-11-05 13:00:16,035 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_014\plots\Train_roc_pr.png
+2026-11-05 13:00:16,448 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_014\plots\Val_cm.png
+2026-11-05 13:00:59,142 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_014\plots\Val_roc_pr.png
+2026-11-05 13:01:00,886 - INFO - GPU [Epoch 16] Alloc:1.36GB Res:2.06GB
+2026-11-05 13:04:23,301 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_015\plots\Train_cm.png
+2026-11-05 13:06:16,904 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_015\plots\Train_roc_pr.png
+2026-11-05 13:06:17,289 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_015\plots\Val_cm.png
+2026-11-05 13:06:57,240 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_015\plots\Val_roc_pr.png
+2026-11-05 13:06:58,859 - INFO - GPU [Epoch 17] Alloc:1.36GB Res:2.06GB
+2026-11-05 13:10:33,597 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_016\plots\Train_cm.png
+2026-11-05 13:12:28,178 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_016\plots\Train_roc_pr.png
+2026-11-05 13:12:28,678 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_016\plots\Val_cm.png
+2026-11-05 13:13:09,456 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_016\plots\Val_roc_pr.png
+2026-11-05 13:13:11,127 - INFO - GPU [Epoch 18] Alloc:1.36GB Res:2.06GB
+2026-11-05 13:16:39,352 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_017\plots\Train_cm.png
+2026-11-05 13:18:28,234 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_017\plots\Train_roc_pr.png
+2026-11-05 13:18:28,641 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_017\plots\Val_cm.png
+2026-11-05 13:19:09,477 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_017\plots\Val_roc_pr.png
+2026-11-05 13:19:09,479 - INFO - New best F1:0.4402 @ thr=0.5 | IoU:0.2822
+2026-11-05 13:19:12,119 - INFO - Best model saved — F1:0.4402 | Thr:0.50 (fixed)
+2026-11-05 13:19:12,357 - INFO - GPU [Epoch 19] Alloc:1.36GB Res:2.06GB
+2026-11-05 13:22:43,315 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_018\plots\Train_cm.png
+2026-11-05 13:24:36,450 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_018\plots\Train_roc_pr.png
+2026-11-05 13:24:36,902 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_018\plots\Val_cm.png
+2026-11-05 13:25:19,362 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_018\plots\Val_roc_pr.png
+2026-11-05 13:25:20,991 - INFO - GPU [Epoch 20] Alloc:1.36GB Res:2.06GB
+2026-11-05 13:28:54,368 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_019\plots\Train_cm.png
+2026-11-05 13:30:46,999 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_019\plots\Train_roc_pr.png
+2026-11-05 13:30:47,431 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_019\plots\Val_cm.png
+2026-11-05 13:31:31,817 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_019\plots\Val_roc_pr.png
+2026-11-05 13:31:33,524 - INFO - GPU [Epoch 21] Alloc:1.36GB Res:2.06GB
+2026-11-05 13:35:02,914 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_020\plots\Train_cm.png
+2026-11-05 13:36:56,060 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_020\plots\Train_roc_pr.png
+2026-11-05 13:36:56,498 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_020\plots\Val_cm.png
+2026-11-05 13:37:39,707 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_020\plots\Val_roc_pr.png
+2026-11-05 13:37:41,310 - INFO - GPU [Epoch 22] Alloc:1.36GB Res:2.06GB
+2026-11-05 13:40:55,449 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_021\plots\Train_cm.png
+2026-11-05 13:42:42,138 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_021\plots\Train_roc_pr.png
+2026-11-05 13:42:42,558 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_021\plots\Val_cm.png
+2026-11-05 13:43:18,532 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_021\plots\Val_roc_pr.png
+2026-11-05 13:43:18,536 - INFO - New best F1:0.4619 @ thr=0.5 | IoU:0.3003
+2026-11-05 13:43:21,328 - INFO - Best model saved — F1:0.4619 | Thr:0.50 (fixed)
+2026-11-05 13:43:21,587 - INFO - GPU [Epoch 23] Alloc:1.36GB Res:2.06GB
+2026-11-05 13:46:48,780 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_022\plots\Train_cm.png
+2026-11-05 13:48:43,144 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_022\plots\Train_roc_pr.png
+2026-11-05 13:48:43,531 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_022\plots\Val_cm.png
+2026-11-05 13:49:30,228 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_022\plots\Val_roc_pr.png
+2026-11-05 13:49:31,782 - INFO - GPU [Epoch 24] Alloc:1.36GB Res:2.06GB
+2026-11-05 13:52:54,334 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_023\plots\Train_cm.png
+2026-11-05 13:54:48,230 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_023\plots\Train_roc_pr.png
+2026-11-05 13:54:48,675 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_023\plots\Val_cm.png
+2026-11-05 13:55:27,215 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_023\plots\Val_roc_pr.png
+2026-11-05 13:55:28,833 - INFO - GPU [Epoch 25] Alloc:1.36GB Res:2.06GB
+2026-11-05 13:58:49,552 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_024\plots\Train_cm.png
+2026-11-05 14:00:48,274 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_024\plots\Train_roc_pr.png
+2026-11-05 14:00:48,740 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_024\plots\Val_cm.png
+2026-11-05 14:01:31,079 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_024\plots\Val_roc_pr.png
+2026-11-05 14:01:32,832 - INFO - GPU [Epoch 26] Alloc:1.36GB Res:2.06GB
+2026-11-05 14:04:54,348 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_025\plots\Train_cm.png
+2026-11-05 14:06:39,912 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_025\plots\Train_roc_pr.png
+2026-11-05 14:06:40,372 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_025\plots\Val_cm.png
+2026-11-05 14:07:24,965 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_025\plots\Val_roc_pr.png
+2026-11-05 14:07:26,618 - INFO - GPU [Epoch 27] Alloc:1.36GB Res:2.06GB
+2026-11-05 14:10:47,448 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_026\plots\Train_cm.png
+2026-11-05 14:12:44,396 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_026\plots\Train_roc_pr.png
+2026-11-05 14:12:44,844 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_026\plots\Val_cm.png
+2026-11-05 14:13:28,309 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_026\plots\Val_roc_pr.png
+2026-11-05 14:13:30,001 - INFO - GPU [Epoch 28] Alloc:1.36GB Res:2.06GB
+2026-11-05 14:17:04,677 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_027\plots\Train_cm.png
+2026-11-05 14:19:04,382 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_027\plots\Train_roc_pr.png
+2026-11-05 14:19:04,774 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_027\plots\Val_cm.png
+2026-11-05 14:19:48,893 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_027\plots\Val_roc_pr.png
+2026-11-05 14:19:50,588 - INFO - GPU [Epoch 29] Alloc:1.36GB Res:2.06GB
+2026-11-05 14:23:13,254 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_028\plots\Train_cm.png
+2026-11-05 14:25:05,953 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_028\plots\Train_roc_pr.png
+2026-11-05 14:25:06,427 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_028\plots\Val_cm.png
+2026-11-05 14:25:49,264 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_028\plots\Val_roc_pr.png
+2026-11-05 14:25:50,869 - INFO - GPU [Epoch 30] Alloc:1.36GB Res:2.06GB
+2026-11-05 14:29:20,516 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_029\plots\Train_cm.png
+2026-11-05 14:31:14,260 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_029\plots\Train_roc_pr.png
+2026-11-05 14:31:14,656 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_029\plots\Val_cm.png
+2026-11-05 14:31:59,856 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_029\plots\Val_roc_pr.png
+2026-11-05 14:32:01,586 - INFO - GPU [Epoch 31] Alloc:1.36GB Res:2.06GB
+2026-11-05 14:35:35,040 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_030\plots\Train_cm.png
+2026-11-05 14:37:30,760 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_030\plots\Train_roc_pr.png
+2026-11-05 14:37:31,167 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_030\plots\Val_cm.png
+2026-11-05 14:38:14,473 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_030\plots\Val_roc_pr.png
+2026-11-05 14:38:16,141 - INFO - GPU [Epoch 32] Alloc:1.36GB Res:2.06GB
+2026-11-05 14:41:45,710 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_031\plots\Train_cm.png
+2026-11-05 14:43:34,582 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_031\plots\Train_roc_pr.png
+2026-11-05 14:43:35,039 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_031\plots\Val_cm.png
+2026-11-05 14:44:16,559 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_031\plots\Val_roc_pr.png
+2026-11-05 14:44:18,244 - INFO - GPU [Epoch 33] Alloc:1.36GB Res:2.06GB
+2026-11-05 14:47:47,292 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_032\plots\Train_cm.png
+2026-11-05 14:49:41,607 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_032\plots\Train_roc_pr.png
+2026-11-05 14:49:42,048 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_032\plots\Val_cm.png
+2026-11-05 14:50:28,691 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_032\plots\Val_roc_pr.png
+2026-11-05 14:50:30,352 - INFO - GPU [Epoch 34] Alloc:1.36GB Res:2.06GB
+2026-11-05 14:54:02,299 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_033\plots\Train_cm.png
+2026-11-05 14:55:54,945 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_033\plots\Train_roc_pr.png
+2026-11-05 14:55:55,368 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_033\plots\Val_cm.png
+2026-11-05 14:56:38,705 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_033\plots\Val_roc_pr.png
+2026-11-05 14:56:40,369 - INFO - GPU [Epoch 35] Alloc:1.36GB Res:2.06GB
+2026-11-05 15:00:03,822 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_034\plots\Train_cm.png
+2026-11-05 15:01:55,322 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_034\plots\Train_roc_pr.png
+2026-11-05 15:01:55,797 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_034\plots\Val_cm.png
+2026-11-05 15:02:40,439 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_034\plots\Val_roc_pr.png
+2026-11-05 15:02:42,048 - INFO - GPU [Epoch 36] Alloc:1.36GB Res:2.06GB
+2026-11-05 15:06:05,634 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_035\plots\Train_cm.png
+2026-11-05 15:07:50,476 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_035\plots\Train_roc_pr.png
+2026-11-05 15:07:50,896 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_035\plots\Val_cm.png
+2026-11-05 15:08:35,188 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_035\plots\Val_roc_pr.png
+2026-11-05 15:08:36,890 - INFO - GPU [Epoch 37] Alloc:1.36GB Res:2.06GB
+2026-11-05 15:12:03,494 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_036\plots\Train_cm.png
+2026-11-05 15:13:54,432 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_036\plots\Train_roc_pr.png
+2026-11-05 15:13:54,893 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_036\plots\Val_cm.png
+2026-11-05 15:14:39,674 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_036\plots\Val_roc_pr.png
+2026-11-05 15:14:41,318 - INFO - GPU [Epoch 38] Alloc:1.36GB Res:2.06GB
+2026-11-05 15:18:09,752 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_037\plots\Train_cm.png
+2026-11-05 15:20:00,843 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_037\plots\Train_roc_pr.png
+2026-11-05 15:20:01,321 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_037\plots\Val_cm.png
+2026-11-05 15:20:46,862 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_037\plots\Val_roc_pr.png
+2026-11-05 15:20:48,561 - INFO - GPU [Epoch 39] Alloc:1.36GB Res:2.06GB
+2026-11-05 15:24:23,123 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_038\plots\Train_cm.png
+2026-11-05 15:26:15,900 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_038\plots\Train_roc_pr.png
+2026-11-05 15:26:16,377 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_038\plots\Val_cm.png
+2026-11-05 15:27:01,678 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_038\plots\Val_roc_pr.png
+2026-11-05 15:27:03,327 - INFO - GPU [Epoch 40] Alloc:1.36GB Res:2.06GB
+2026-11-05 15:30:33,757 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_039\plots\Train_cm.png
+2026-11-05 15:32:25,713 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_039\plots\Train_roc_pr.png
+2026-11-05 15:32:26,177 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_039\plots\Val_cm.png
+2026-11-05 15:33:13,084 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_039\plots\Val_roc_pr.png
+2026-11-05 15:33:14,737 - INFO - GPU [Epoch 41] Alloc:1.36GB Res:2.06GB
+2026-11-05 15:36:42,267 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_040\plots\Train_cm.png
+2026-11-05 15:38:35,069 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_040\plots\Train_roc_pr.png
+2026-11-05 15:38:35,449 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_040\plots\Val_cm.png
+2026-11-05 15:39:21,152 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_040\plots\Val_roc_pr.png
+2026-11-05 15:39:22,738 - INFO - GPU [Epoch 42] Alloc:1.36GB Res:2.06GB
+2026-11-05 15:42:50,508 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_041\plots\Train_cm.png
+2026-11-05 15:44:41,639 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_041\plots\Train_roc_pr.png
+2026-11-05 15:44:42,117 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_041\plots\Val_cm.png
+2026-11-05 15:45:27,155 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_041\plots\Val_roc_pr.png
+2026-11-05 15:45:28,787 - INFO - GPU [Epoch 43] Alloc:1.36GB Res:2.06GB
+2026-11-05 15:49:05,478 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_042\plots\Train_cm.png
+2026-11-05 15:51:01,125 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_042\plots\Train_roc_pr.png
+2026-11-05 15:51:01,539 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_042\plots\Val_cm.png
+2026-11-05 15:51:45,885 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_042\plots\Val_roc_pr.png
+2026-11-05 15:51:47,514 - INFO - GPU [Epoch 44] Alloc:1.36GB Res:2.06GB
+2026-11-05 15:55:13,889 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_043\plots\Train_cm.png
+2026-11-05 15:57:07,435 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_043\plots\Train_roc_pr.png
+2026-11-05 15:57:07,919 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_043\plots\Val_cm.png
+2026-11-05 15:57:52,661 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_043\plots\Val_roc_pr.png
+2026-11-05 15:57:54,330 - INFO - GPU [Epoch 45] Alloc:1.36GB Res:2.06GB
+2026-11-05 16:01:20,589 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_044\plots\Train_cm.png
+2026-11-05 16:03:10,317 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_044\plots\Train_roc_pr.png
+2026-11-05 16:03:10,819 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_044\plots\Val_cm.png
+2026-11-05 16:03:54,157 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_044\plots\Val_roc_pr.png
+2026-11-05 16:03:55,770 - INFO - GPU [Epoch 46] Alloc:1.36GB Res:2.06GB
+2026-11-05 16:07:18,145 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_045\plots\Train_cm.png
+2026-11-05 16:09:08,030 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_045\plots\Train_roc_pr.png
+2026-11-05 16:09:08,509 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_045\plots\Val_cm.png
+2026-11-05 16:09:50,584 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_045\plots\Val_roc_pr.png
+2026-11-05 16:09:52,119 - INFO - GPU [Epoch 47] Alloc:1.36GB Res:2.06GB
+2026-11-05 16:13:12,576 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_046\plots\Train_cm.png
+2026-11-05 16:15:07,314 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_046\plots\Train_roc_pr.png
+2026-11-05 16:15:07,721 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_046\plots\Val_cm.png
+2026-11-05 16:15:53,616 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_046\plots\Val_roc_pr.png
+2026-11-05 16:15:55,233 - INFO - GPU [Epoch 48] Alloc:1.36GB Res:2.06GB
+2026-11-05 16:19:11,213 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_047\plots\Train_cm.png
+2026-11-05 16:20:57,664 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_047\plots\Train_roc_pr.png
+2026-11-05 16:20:58,100 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_047\plots\Val_cm.png
+2026-11-05 16:21:40,192 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_047\plots\Val_roc_pr.png
+2026-11-05 16:21:41,801 - INFO - GPU [Epoch 49] Alloc:1.36GB Res:2.06GB
+2026-11-05 16:25:03,827 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_048\plots\Train_cm.png
+2026-11-05 16:26:47,232 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_048\plots\Train_roc_pr.png
+2026-11-05 16:26:47,660 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_048\plots\Val_cm.png
+2026-11-05 16:27:30,735 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_048\plots\Val_roc_pr.png
+2026-11-05 16:27:32,303 - INFO - GPU [Epoch 50] Alloc:1.36GB Res:2.06GB
+2026-11-05 16:30:40,987 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_049\plots\Train_cm.png
+2026-11-05 16:32:27,144 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_049\plots\Train_roc_pr.png
+2026-11-05 16:32:27,521 - INFO - CM saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_049\plots\Val_cm.png
+2026-11-05 16:33:11,306 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\PRETRAIN_VS_RANDOM_CLCD\runs_out\CLCD_B_random_frozen_seed_42\final\epoch_049\plots\Val_roc_pr.png
+2026-11-05 16:34:04,394 - INFO - Training complete | test F1:0.4748 @ thr=0.500 (tuned=False)

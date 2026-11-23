@@ -1,0 +1,324 @@
+2026-10-31 20:19:07,007 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=3 | Seed: 42
+2026-10-31 20:19:07,021 - INFO - Seed set to 42
+2026-10-31 20:19:24,120 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-31 20:19:24,214 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-10-31 20:19:24,431 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-10-31 20:19:37,607 - INFO - Loading dataset paths...
+2026-10-31 20:21:49,042 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=3 | Seed: 42
+2026-10-31 20:21:49,042 - INFO - Seed set to 42
+2026-10-31 20:21:51,099 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-31 20:21:51,133 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-10-31 20:21:51,344 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-10-31 20:21:58,811 - INFO - Loading dataset paths...
+2026-10-31 20:21:58,853 - INFO - Pairs verified: 360 samples
+2026-10-31 20:21:58,861 - INFO - Pairs verified: 120 samples
+2026-10-31 20:21:58,863 - INFO - Pairs verified: 120 samples
+2026-10-31 20:22:00,834 - INFO - pos_weight = 11.91
+2026-10-31 20:22:00,843 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-10-31 20:22:01,162 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-31 20:22:01,214 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-10-31 20:22:01,413 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-10-31 20:22:02,439 - INFO - GPU [Epoch 1] Alloc:0.70GB Res:0.77GB
+2026-10-31 20:22:42,101 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=3 | Seed: 42
+2026-10-31 20:22:42,115 - INFO - Seed set to 42
+2026-10-31 20:22:42,567 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-31 20:22:42,622 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-10-31 20:22:42,824 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-10-31 20:22:47,419 - INFO - Loading dataset paths...
+2026-10-31 20:22:47,443 - INFO - Pairs verified: 360 samples
+2026-10-31 20:22:47,459 - INFO - Pairs verified: 120 samples
+2026-10-31 20:22:47,461 - INFO - Pairs verified: 120 samples
+2026-10-31 20:22:47,793 - INFO - pos_weight = 11.91
+2026-10-31 20:22:47,805 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-10-31 20:22:47,994 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-31 20:22:48,053 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-10-31 20:22:48,265 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-10-31 20:22:49,055 - INFO - GPU [Epoch 1] Alloc:0.70GB Res:0.77GB
+2026-10-31 20:26:41,406 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_000\plots\Train_cm.png
+2026-10-31 20:28:31,615 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_000\plots\Train_roc_pr.png
+2026-10-31 20:28:32,073 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_000\plots\Val_cm.png
+2026-10-31 20:29:11,723 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_000\plots\Val_roc_pr.png
+2026-10-31 20:29:11,723 - INFO - New best F1:0.1882 @ thr=0.5 | IoU:0.1039
+2026-10-31 20:29:15,061 - INFO - Best model saved — F1:0.1882 | Thr:0.50 (fixed)
+2026-10-31 20:29:15,386 - INFO - GPU [Epoch 2] Alloc:1.73GB Res:2.58GB
+2026-10-31 20:32:58,801 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_001\plots\Train_cm.png
+2026-10-31 20:34:51,838 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_001\plots\Train_roc_pr.png
+2026-10-31 20:34:52,291 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_001\plots\Val_cm.png
+2026-10-31 20:35:46,141 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_001\plots\Val_roc_pr.png
+2026-10-31 20:35:46,143 - INFO - New best F1:0.3626 @ thr=0.5 | IoU:0.2215
+2026-10-31 20:35:49,586 - INFO - Best model saved — F1:0.3626 | Thr:0.50 (fixed)
+2026-10-31 20:35:49,808 - INFO - GPU [Epoch 3] Alloc:1.73GB Res:2.58GB
+2026-10-31 20:39:39,787 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_002\plots\Train_cm.png
+2026-10-31 20:41:45,069 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_002\plots\Train_roc_pr.png
+2026-10-31 20:41:45,502 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_002\plots\Val_cm.png
+2026-10-31 20:42:25,894 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_002\plots\Val_roc_pr.png
+2026-10-31 20:42:25,897 - INFO - New best F1:0.5123 @ thr=0.5 | IoU:0.3444
+2026-10-31 20:42:29,237 - INFO - Best model saved — F1:0.5123 | Thr:0.50 (fixed)
+2026-10-31 20:42:29,523 - INFO - GPU [Epoch 4] Alloc:1.73GB Res:2.58GB
+2026-10-31 20:46:39,220 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_003\plots\Train_cm.png
+2026-10-31 20:48:34,353 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_003\plots\Train_roc_pr.png
+2026-10-31 20:48:34,772 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_003\plots\Val_cm.png
+2026-10-31 20:49:15,870 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_003\plots\Val_roc_pr.png
+2026-10-31 20:49:15,870 - INFO - New best F1:0.5365 @ thr=0.5 | IoU:0.3666
+2026-10-31 20:49:19,905 - INFO - Best model saved — F1:0.5365 | Thr:0.50 (fixed)
+2026-10-31 20:49:20,430 - INFO - GPU [Epoch 5] Alloc:1.73GB Res:2.58GB
+2026-10-31 20:53:12,000 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_004\plots\Train_cm.png
+2026-10-31 20:55:05,894 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_004\plots\Train_roc_pr.png
+2026-10-31 20:55:06,326 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_004\plots\Val_cm.png
+2026-10-31 20:55:47,005 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_004\plots\Val_roc_pr.png
+2026-10-31 20:55:47,005 - INFO - New best F1:0.6081 @ thr=0.5 | IoU:0.4369
+2026-10-31 20:55:50,376 - INFO - Best model saved — F1:0.6081 | Thr:0.50 (fixed)
+2026-10-31 20:55:50,645 - INFO - GPU [Epoch 6] Alloc:1.73GB Res:2.58GB
+2026-10-31 21:00:04,936 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_005\plots\Train_cm.png
+2026-10-31 21:01:53,674 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_005\plots\Train_roc_pr.png
+2026-10-31 21:01:54,132 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_005\plots\Val_cm.png
+2026-10-31 21:02:29,711 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_005\plots\Val_roc_pr.png
+2026-10-31 21:02:29,721 - INFO - New best F1:0.7144 @ thr=0.5 | IoU:0.5557
+2026-10-31 21:02:33,390 - INFO - Best model saved — F1:0.7144 | Thr:0.50 (fixed)
+2026-10-31 21:02:33,671 - INFO - GPU [Epoch 7] Alloc:1.73GB Res:2.58GB
+2026-10-31 21:06:55,568 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_006\plots\Train_cm.png
+2026-10-31 21:08:37,848 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_006\plots\Train_roc_pr.png
+2026-10-31 21:08:38,355 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_006\plots\Val_cm.png
+2026-10-31 21:09:13,064 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_006\plots\Val_roc_pr.png
+2026-10-31 21:09:15,074 - INFO - GPU [Epoch 8] Alloc:1.73GB Res:2.58GB
+2026-10-31 21:56:01,753 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_007\plots\Train_cm.png
+2026-10-31 21:57:48,455 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_007\plots\Train_roc_pr.png
+2026-10-31 21:57:48,844 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_007\plots\Val_cm.png
+2026-10-31 21:58:21,239 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_007\plots\Val_roc_pr.png
+2026-10-31 21:58:21,255 - INFO - New best F1:0.7225 @ thr=0.5 | IoU:0.5656
+2026-10-31 21:58:24,597 - INFO - Best model saved — F1:0.7225 | Thr:0.50 (fixed)
+2026-10-31 21:58:25,204 - INFO - GPU [Epoch 9] Alloc:1.73GB Res:2.58GB
+2026-10-31 22:03:07,166 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_008\plots\Train_cm.png
+2026-10-31 22:04:45,695 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_008\plots\Train_roc_pr.png
+2026-10-31 22:04:46,119 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_008\plots\Val_cm.png
+2026-10-31 22:05:16,211 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_008\plots\Val_roc_pr.png
+2026-10-31 22:05:16,211 - INFO - New best F1:0.7705 @ thr=0.5 | IoU:0.6266
+2026-10-31 22:05:19,645 - INFO - Best model saved — F1:0.7705 | Thr:0.50 (fixed)
+2026-10-31 22:05:19,922 - INFO - GPU [Epoch 10] Alloc:1.73GB Res:2.58GB
+2026-10-31 22:09:57,363 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_009\plots\Train_cm.png
+2026-10-31 22:11:34,141 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_009\plots\Train_roc_pr.png
+2026-10-31 22:11:34,573 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_009\plots\Val_cm.png
+2026-10-31 22:12:08,326 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_009\plots\Val_roc_pr.png
+2026-10-31 22:12:10,262 - INFO - GPU [Epoch 11] Alloc:1.73GB Res:2.58GB
+2026-10-31 22:16:01,335 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_010\plots\Train_cm.png
+2026-10-31 22:17:37,268 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_010\plots\Train_roc_pr.png
+2026-10-31 22:17:37,683 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_010\plots\Val_cm.png
+2026-10-31 22:18:07,041 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_010\plots\Val_roc_pr.png
+2026-10-31 22:18:08,713 - INFO - Epoch 11: Unfreezing ViT encoder...
+2026-10-31 22:18:08,713 - INFO - New CosineAnnealingLR: T_max=39, eta_min=1e-6
+2026-10-31 22:18:08,937 - INFO - GPU [Epoch 12] Alloc:1.73GB Res:2.58GB
+2026-10-31 22:32:05,754 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_011\plots\Train_cm.png
+2026-10-31 22:33:48,689 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_011\plots\Train_roc_pr.png
+2026-10-31 22:33:49,083 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_011\plots\Val_cm.png
+2026-10-31 22:34:22,483 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_011\plots\Val_roc_pr.png
+2026-10-31 22:34:24,902 - INFO - GPU [Epoch 13] Alloc:2.07GB Res:3.18GB
+2026-10-31 22:40:12,352 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_012\plots\Train_cm.png
+2026-10-31 22:41:50,070 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_012\plots\Train_roc_pr.png
+2026-10-31 22:41:50,501 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_012\plots\Val_cm.png
+2026-10-31 22:42:22,470 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_012\plots\Val_roc_pr.png
+2026-10-31 22:42:24,833 - INFO - GPU [Epoch 14] Alloc:2.07GB Res:3.18GB
+2026-10-31 22:48:00,230 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_013\plots\Train_cm.png
+2026-10-31 22:49:40,445 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_013\plots\Train_roc_pr.png
+2026-10-31 22:49:40,919 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_013\plots\Val_cm.png
+2026-10-31 22:50:14,980 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_013\plots\Val_roc_pr.png
+2026-10-31 22:50:14,984 - INFO - New best F1:0.7748 @ thr=0.5 | IoU:0.6324
+2026-10-31 22:50:19,424 - INFO - Best model saved — F1:0.7748 | Thr:0.50 (fixed)
+2026-10-31 22:50:19,724 - INFO - GPU [Epoch 15] Alloc:2.07GB Res:3.18GB
+2026-10-31 22:55:56,955 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_014\plots\Train_cm.png
+2026-10-31 22:57:36,490 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_014\plots\Train_roc_pr.png
+2026-10-31 22:57:36,937 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_014\plots\Val_cm.png
+2026-10-31 22:58:07,505 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_014\plots\Val_roc_pr.png
+2026-10-31 22:58:09,887 - INFO - GPU [Epoch 16] Alloc:2.07GB Res:3.18GB
+2026-10-31 23:03:58,764 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_015\plots\Train_cm.png
+2026-10-31 23:05:39,318 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_015\plots\Train_roc_pr.png
+2026-10-31 23:05:39,748 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_015\plots\Val_cm.png
+2026-10-31 23:06:08,265 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_015\plots\Val_roc_pr.png
+2026-10-31 23:06:08,269 - INFO - New best F1:0.7782 @ thr=0.5 | IoU:0.6369
+2026-10-31 23:06:12,312 - INFO - Best model saved — F1:0.7782 | Thr:0.50 (fixed)
+2026-10-31 23:06:12,550 - INFO - GPU [Epoch 17] Alloc:2.07GB Res:3.18GB
+2026-10-31 23:11:54,315 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_016\plots\Train_cm.png
+2026-10-31 23:13:31,239 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_016\plots\Train_roc_pr.png
+2026-10-31 23:13:31,684 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_016\plots\Val_cm.png
+2026-10-31 23:14:03,358 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_016\plots\Val_roc_pr.png
+2026-10-31 23:14:05,717 - INFO - GPU [Epoch 18] Alloc:2.07GB Res:3.18GB
+2026-10-31 23:19:47,248 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_017\plots\Train_cm.png
+2026-10-31 23:21:26,566 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_017\plots\Train_roc_pr.png
+2026-10-31 23:21:27,071 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_017\plots\Val_cm.png
+2026-10-31 23:21:56,640 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_017\plots\Val_roc_pr.png
+2026-10-31 23:21:56,641 - INFO - New best F1:0.7786 @ thr=0.5 | IoU:0.6375
+2026-10-31 23:22:00,876 - INFO - Best model saved — F1:0.7786 | Thr:0.50 (fixed)
+2026-10-31 23:22:01,151 - INFO - GPU [Epoch 19] Alloc:2.07GB Res:3.18GB
+2026-10-31 23:27:37,976 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_018\plots\Train_cm.png
+2026-10-31 23:29:13,865 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_018\plots\Train_roc_pr.png
+2026-10-31 23:29:14,301 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_018\plots\Val_cm.png
+2026-10-31 23:29:47,276 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_018\plots\Val_roc_pr.png
+2026-10-31 23:29:49,559 - INFO - GPU [Epoch 20] Alloc:2.07GB Res:3.18GB
+2026-10-31 23:35:14,267 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_019\plots\Train_cm.png
+2026-10-31 23:36:49,031 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_019\plots\Train_roc_pr.png
+2026-10-31 23:36:49,473 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_019\plots\Val_cm.png
+2026-10-31 23:37:19,130 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_019\plots\Val_roc_pr.png
+2026-10-31 23:37:21,584 - INFO - GPU [Epoch 21] Alloc:2.07GB Res:3.18GB
+2026-10-31 23:43:04,323 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_020\plots\Train_cm.png
+2026-10-31 23:44:43,198 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_020\plots\Train_roc_pr.png
+2026-10-31 23:44:43,668 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_020\plots\Val_cm.png
+2026-10-31 23:45:13,424 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_020\plots\Val_roc_pr.png
+2026-10-31 23:45:15,805 - INFO - GPU [Epoch 22] Alloc:2.07GB Res:3.18GB
+2026-10-31 23:50:59,035 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_021\plots\Train_cm.png
+2026-10-31 23:52:32,422 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_021\plots\Train_roc_pr.png
+2026-10-31 23:52:32,876 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_021\plots\Val_cm.png
+2026-10-31 23:53:02,515 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_021\plots\Val_roc_pr.png
+2026-10-31 23:53:02,515 - INFO - New best F1:0.8002 @ thr=0.5 | IoU:0.6669
+2026-10-31 23:53:06,539 - INFO - Best model saved — F1:0.8002 | Thr:0.50 (fixed)
+2026-10-31 23:53:06,862 - INFO - GPU [Epoch 23] Alloc:2.07GB Res:3.18GB
+2026-10-31 23:56:55,590 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_022\plots\Train_cm.png
+2026-10-31 23:58:25,620 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_022\plots\Train_roc_pr.png
+2026-10-31 23:58:26,013 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_022\plots\Val_cm.png
+2026-10-31 23:58:55,463 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_022\plots\Val_roc_pr.png
+2026-10-31 23:58:57,678 - INFO - GPU [Epoch 24] Alloc:2.07GB Res:3.18GB
+2026-11-01 00:02:43,851 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_023\plots\Train_cm.png
+2026-11-01 00:04:17,792 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_023\plots\Train_roc_pr.png
+2026-11-01 00:04:18,257 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_023\plots\Val_cm.png
+2026-11-01 00:04:47,387 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_023\plots\Val_roc_pr.png
+2026-11-01 00:04:49,671 - INFO - GPU [Epoch 25] Alloc:2.07GB Res:3.18GB
+2026-11-01 00:08:38,454 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_024\plots\Train_cm.png
+2026-11-01 00:10:04,532 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_024\plots\Train_roc_pr.png
+2026-11-01 00:10:04,929 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_024\plots\Val_cm.png
+2026-11-01 00:10:32,649 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_024\plots\Val_roc_pr.png
+2026-11-01 00:10:34,865 - INFO - GPU [Epoch 26] Alloc:2.07GB Res:3.18GB
+2026-11-01 00:14:22,111 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_025\plots\Train_cm.png
+2026-11-01 00:15:48,087 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_025\plots\Train_roc_pr.png
+2026-11-01 00:15:48,528 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_025\plots\Val_cm.png
+2026-11-01 00:16:16,327 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_025\plots\Val_roc_pr.png
+2026-11-01 00:16:18,572 - INFO - GPU [Epoch 27] Alloc:2.07GB Res:3.18GB
+2026-11-01 00:20:02,016 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_026\plots\Train_cm.png
+2026-11-01 00:21:32,627 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_026\plots\Train_roc_pr.png
+2026-11-01 00:21:33,076 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_026\plots\Val_cm.png
+2026-11-01 00:22:03,100 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_026\plots\Val_roc_pr.png
+2026-11-01 00:22:05,368 - INFO - GPU [Epoch 28] Alloc:2.07GB Res:3.18GB
+2026-11-01 00:25:57,239 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_027\plots\Train_cm.png
+2026-11-01 00:27:28,186 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_027\plots\Train_roc_pr.png
+2026-11-01 00:27:28,658 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_027\plots\Val_cm.png
+2026-11-01 00:27:59,045 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_027\plots\Val_roc_pr.png
+2026-11-01 00:28:01,479 - INFO - GPU [Epoch 29] Alloc:2.07GB Res:3.18GB
+2026-11-01 00:31:34,650 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_028\plots\Train_cm.png
+2026-11-01 00:33:01,179 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_028\plots\Train_roc_pr.png
+2026-11-01 00:33:01,574 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_028\plots\Val_cm.png
+2026-11-01 00:33:31,008 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_028\plots\Val_roc_pr.png
+2026-11-01 00:33:33,320 - INFO - GPU [Epoch 30] Alloc:2.07GB Res:3.18GB
+2026-11-01 00:37:28,999 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_029\plots\Train_cm.png
+2026-11-01 00:38:56,623 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_029\plots\Train_roc_pr.png
+2026-11-01 00:38:57,097 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_029\plots\Val_cm.png
+2026-11-01 00:39:26,302 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_029\plots\Val_roc_pr.png
+2026-11-01 00:39:28,594 - INFO - GPU [Epoch 31] Alloc:2.07GB Res:3.18GB
+2026-11-01 00:43:21,998 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_030\plots\Train_cm.png
+2026-11-01 00:44:50,419 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_030\plots\Train_roc_pr.png
+2026-11-01 00:44:50,936 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_030\plots\Val_cm.png
+2026-11-01 00:45:20,960 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_030\plots\Val_roc_pr.png
+2026-11-01 00:45:23,292 - INFO - GPU [Epoch 32] Alloc:2.07GB Res:3.18GB
+2026-11-01 00:49:12,429 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_031\plots\Train_cm.png
+2026-11-01 00:50:44,456 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_031\plots\Train_roc_pr.png
+2026-11-01 00:50:44,915 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_031\plots\Val_cm.png
+2026-11-01 00:51:09,337 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_031\plots\Val_roc_pr.png
+2026-11-01 00:51:09,337 - INFO - New best F1:0.8033 @ thr=0.5 | IoU:0.6713
+2026-11-01 00:51:13,444 - INFO - Best model saved — F1:0.8033 | Thr:0.50 (fixed)
+2026-11-01 00:51:13,690 - INFO - GPU [Epoch 33] Alloc:2.07GB Res:3.18GB
+2026-11-01 00:54:52,938 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_032\plots\Train_cm.png
+2026-11-01 00:56:15,936 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_032\plots\Train_roc_pr.png
+2026-11-01 00:56:16,390 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_032\plots\Val_cm.png
+2026-11-01 00:56:42,545 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_032\plots\Val_roc_pr.png
+2026-11-01 00:56:42,553 - INFO - New best F1:0.8072 @ thr=0.5 | IoU:0.6768
+2026-11-01 00:56:46,865 - INFO - Best model saved — F1:0.8072 | Thr:0.50 (fixed)
+2026-11-01 00:56:47,082 - INFO - GPU [Epoch 34] Alloc:2.07GB Res:3.18GB
+2026-11-01 01:00:34,269 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_033\plots\Train_cm.png
+2026-11-01 01:01:58,146 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_033\plots\Train_roc_pr.png
+2026-11-01 01:01:58,617 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_033\plots\Val_cm.png
+2026-11-01 01:02:26,759 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_033\plots\Val_roc_pr.png
+2026-11-01 01:02:29,080 - INFO - GPU [Epoch 35] Alloc:2.07GB Res:3.18GB
+2026-11-01 01:06:20,461 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_034\plots\Train_cm.png
+2026-11-01 01:07:51,156 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_034\plots\Train_roc_pr.png
+2026-11-01 01:07:51,604 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_034\plots\Val_cm.png
+2026-11-01 01:08:21,445 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_034\plots\Val_roc_pr.png
+2026-11-01 01:08:23,771 - INFO - GPU [Epoch 36] Alloc:2.07GB Res:3.18GB
+2026-11-01 01:12:10,215 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_035\plots\Train_cm.png
+2026-11-01 01:13:31,643 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_035\plots\Train_roc_pr.png
+2026-11-01 01:13:32,058 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_035\plots\Val_cm.png
+2026-11-01 01:14:00,616 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_035\plots\Val_roc_pr.png
+2026-11-01 01:14:00,627 - INFO - New best F1:0.8156 @ thr=0.5 | IoU:0.6886
+2026-11-01 01:14:04,763 - INFO - Best model saved — F1:0.8156 | Thr:0.50 (fixed)
+2026-11-01 01:14:04,980 - INFO - GPU [Epoch 37] Alloc:2.07GB Res:3.18GB
+2026-11-01 01:17:54,460 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_036\plots\Train_cm.png
+2026-11-01 01:19:20,032 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_036\plots\Train_roc_pr.png
+2026-11-01 01:19:20,460 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_036\plots\Val_cm.png
+2026-11-01 01:19:47,917 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_036\plots\Val_roc_pr.png
+2026-11-01 01:19:50,150 - INFO - GPU [Epoch 38] Alloc:2.07GB Res:3.18GB
+2026-11-01 01:23:35,974 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_037\plots\Train_cm.png
+2026-11-01 01:25:03,032 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_037\plots\Train_roc_pr.png
+2026-11-01 01:25:03,529 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_037\plots\Val_cm.png
+2026-11-01 01:25:33,255 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_037\plots\Val_roc_pr.png
+2026-11-01 01:25:35,625 - INFO - GPU [Epoch 39] Alloc:2.07GB Res:3.18GB
+2026-11-01 01:29:22,057 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_038\plots\Train_cm.png
+2026-11-01 01:30:47,597 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_038\plots\Train_roc_pr.png
+2026-11-01 01:30:48,051 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_038\plots\Val_cm.png
+2026-11-01 01:31:16,532 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_038\plots\Val_roc_pr.png
+2026-11-01 01:31:18,856 - INFO - GPU [Epoch 40] Alloc:2.07GB Res:3.18GB
+2026-11-01 01:35:04,730 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_039\plots\Train_cm.png
+2026-11-01 01:36:28,639 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_039\plots\Train_roc_pr.png
+2026-11-01 01:36:29,149 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_039\plots\Val_cm.png
+2026-11-01 01:36:57,620 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_039\plots\Val_roc_pr.png
+2026-11-01 01:36:59,926 - INFO - GPU [Epoch 41] Alloc:2.07GB Res:3.18GB
+2026-11-01 01:40:48,432 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_040\plots\Train_cm.png
+2026-11-01 01:42:14,126 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_040\plots\Train_roc_pr.png
+2026-11-01 01:42:14,575 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_040\plots\Val_cm.png
+2026-11-01 01:42:44,232 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_040\plots\Val_roc_pr.png
+2026-11-01 01:42:44,237 - INFO - New best F1:0.8181 @ thr=0.5 | IoU:0.6921
+2026-11-01 01:42:48,451 - INFO - Best model saved — F1:0.8181 | Thr:0.50 (fixed)
+2026-11-01 01:42:48,681 - INFO - GPU [Epoch 42] Alloc:2.07GB Res:3.18GB
+2026-11-01 01:46:31,404 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_041\plots\Train_cm.png
+2026-11-01 01:47:52,286 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_041\plots\Train_roc_pr.png
+2026-11-01 01:47:52,705 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_041\plots\Val_cm.png
+2026-11-01 01:48:19,545 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_041\plots\Val_roc_pr.png
+2026-11-01 01:48:21,957 - INFO - GPU [Epoch 43] Alloc:2.07GB Res:3.18GB
+2026-11-01 01:52:12,109 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_042\plots\Train_cm.png
+2026-11-01 01:53:40,377 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_042\plots\Train_roc_pr.png
+2026-11-01 01:53:40,815 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_042\plots\Val_cm.png
+2026-11-01 01:54:07,059 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_042\plots\Val_roc_pr.png
+2026-11-01 01:54:07,059 - INFO - New best F1:0.8188 @ thr=0.5 | IoU:0.6932
+2026-11-01 01:54:11,115 - INFO - Best model saved — F1:0.8188 | Thr:0.50 (fixed)
+2026-11-01 01:54:11,316 - INFO - GPU [Epoch 44] Alloc:2.07GB Res:3.18GB
+2026-11-01 01:57:55,570 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_043\plots\Train_cm.png
+2026-11-01 01:59:25,300 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_043\plots\Train_roc_pr.png
+2026-11-01 01:59:25,746 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_043\plots\Val_cm.png
+2026-11-01 01:59:52,630 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_043\plots\Val_roc_pr.png
+2026-11-01 01:59:54,742 - INFO - GPU [Epoch 45] Alloc:2.07GB Res:3.18GB
+2026-11-01 02:03:37,109 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_044\plots\Train_cm.png
+2026-11-01 02:05:09,552 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_044\plots\Train_roc_pr.png
+2026-11-01 02:05:10,010 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_044\plots\Val_cm.png
+2026-11-01 02:05:39,348 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_044\plots\Val_roc_pr.png
+2026-11-01 02:05:41,725 - INFO - GPU [Epoch 46] Alloc:2.07GB Res:3.18GB
+2026-11-01 02:09:23,327 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_045\plots\Train_cm.png
+2026-11-01 02:10:50,531 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_045\plots\Train_roc_pr.png
+2026-11-01 02:10:50,912 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_045\plots\Val_cm.png
+2026-11-01 02:11:17,364 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_045\plots\Val_roc_pr.png
+2026-11-01 02:11:19,639 - INFO - GPU [Epoch 47] Alloc:2.07GB Res:3.18GB
+2026-11-01 02:15:12,327 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_046\plots\Train_cm.png
+2026-11-01 02:16:36,032 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_046\plots\Train_roc_pr.png
+2026-11-01 02:16:36,455 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_046\plots\Val_cm.png
+2026-11-01 02:17:02,470 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_046\plots\Val_roc_pr.png
+2026-11-01 02:17:02,485 - INFO - New best F1:0.8216 @ thr=0.5 | IoU:0.6972
+2026-11-01 02:17:06,440 - INFO - Best model saved — F1:0.8216 | Thr:0.50 (fixed)
+2026-11-01 02:17:06,657 - INFO - GPU [Epoch 48] Alloc:2.07GB Res:3.18GB
+2026-11-01 02:20:43,440 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_047\plots\Train_cm.png
+2026-11-01 02:22:14,896 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_047\plots\Train_roc_pr.png
+2026-11-01 02:22:15,327 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_047\plots\Val_cm.png
+2026-11-01 02:22:42,396 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_047\plots\Val_roc_pr.png
+2026-11-01 02:22:44,600 - INFO - GPU [Epoch 49] Alloc:2.07GB Res:3.18GB
+2026-11-01 02:25:56,409 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_048\plots\Train_cm.png
+2026-11-01 02:27:28,623 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_048\plots\Train_roc_pr.png
+2026-11-01 02:27:29,152 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_048\plots\Val_cm.png
+2026-11-01 02:27:56,918 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_048\plots\Val_roc_pr.png
+2026-11-01 02:27:59,309 - INFO - GPU [Epoch 50] Alloc:2.07GB Res:3.18GB
+2026-11-01 02:31:10,667 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_049\plots\Train_cm.png
+2026-11-01 02:32:40,460 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_049\plots\Train_roc_pr.png
+2026-11-01 02:32:40,898 - INFO - CM saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_049\plots\Val_cm.png
+2026-11-01 02:33:09,431 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\SELFATTN_control\ABL_CLCD_self_seed_42\final\epoch_049\plots\Val_roc_pr.png
+2026-11-01 02:33:53,848 - INFO - Training complete | test F1:0.8136 @ thr=0.500 (tuned=False)

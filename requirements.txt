@@ -1,0 +1,18 @@
+# Versions stated in the paper are pinned; the rest were not pinned in the original runs.
+# Python 3.10.19; PyTorch 2.6.0 built for CUDA 12.4 (see https://pytorch.org for the matching install command)
+torch==2.6.0
+transformers==5.12.1
+numpy==2.2.6
+albumentations==2.0.8
+rasterio
+opencv-python
+scikit-learn
+scipy
+pandas
+matplotlib
+seaborn
+pillow
+tqdm
+optuna
+# only needed by the search notebook's optional visualization code:
+# pydensecrf

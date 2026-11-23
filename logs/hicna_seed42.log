@@ -1,0 +1,369 @@
+2026-08-07 05:43:32,035 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-07 05:43:32,041 - INFO - Seed set to 42
+2026-08-07 05:43:32,046 - INFO - Loading dataset paths...
+2026-08-07 05:43:32,172 - INFO - Pairs verified: 4080 samples
+2026-08-07 05:43:32,185 - INFO - Pairs verified: 1358 samples
+2026-08-07 05:43:32,185 - INFO - Pairs verified: 1358 samples
+2026-08-07 05:43:33,701 - INFO - pos_weight = 4.84
+2026-08-07 05:43:33,706 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 8} | Threshold: 0.50 (fixed)
+2026-08-07 05:43:35,325 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-07 05:43:35,399 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-07 05:43:35,634 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-07 05:43:36,717 - INFO - GPU [Epoch 1] Alloc:0.70GB Res:0.77GB
+2026-08-07 05:43:51,696 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-07 05:43:51,711 - INFO - Seed set to 42
+2026-08-07 05:43:51,727 - INFO - Loading dataset paths...
+2026-08-07 05:43:51,866 - INFO - Pairs verified: 4080 samples
+2026-08-07 05:43:51,880 - INFO - Pairs verified: 1358 samples
+2026-08-07 05:43:51,900 - INFO - Pairs verified: 1358 samples
+2026-08-07 05:43:52,217 - INFO - pos_weight = 4.84
+2026-08-07 05:43:52,226 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 8} | Threshold: 0.50 (fixed)
+2026-08-07 05:43:52,518 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-07 05:43:52,586 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-07 05:43:52,787 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-07 05:43:53,788 - INFO - GPU [Epoch 1] Alloc:1.41GB Res:1.53GB
+2026-08-07 05:46:02,704 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-07 05:46:02,713 - INFO - Seed set to 42
+2026-08-07 05:46:02,722 - INFO - Loading dataset paths...
+2026-08-07 05:46:02,822 - INFO - Pairs verified: 4080 samples
+2026-08-07 05:46:02,843 - INFO - Pairs verified: 1358 samples
+2026-08-07 05:46:02,859 - INFO - Pairs verified: 1358 samples
+2026-08-07 05:46:03,178 - INFO - pos_weight = 4.84
+2026-08-07 05:46:03,190 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-08-07 05:46:03,495 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-07 05:46:03,547 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-07 05:46:03,774 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-07 05:46:04,748 - INFO - GPU [Epoch 1] Alloc:0.70GB Res:0.77GB
+2026-08-07 06:38:10,970 - ERROR - Fatal error: Unable to allocate 1.36 GiB for an array with shape (1358, 268324) and data type float32
+Traceback (most recent call last):
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_25816\2783017292.py", line 1155, in <module>
+    main()
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_25816\2783017292.py", line 979, in main
+    v_loss, v_m, v_lbl, v_pred, v_prob = evaluate(model, v_ldr, criterion, DEVICE, epoch, "Val", final_dir)
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_25816\2783017292.py", line 772, in evaluate
+    all_logits = np.concatenate(logits_list, axis=0).flatten()
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 1.36 GiB for an array with shape (1358, 268324) and data type float32
+2026-08-07 06:56:15,626 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-07 06:56:15,632 - INFO - Seed set to 42
+2026-08-07 06:56:15,638 - INFO - Loading dataset paths...
+2026-08-07 06:56:15,743 - INFO - Pairs verified: 4080 samples
+2026-08-07 06:56:15,757 - INFO - Pairs verified: 1358 samples
+2026-08-07 06:56:15,771 - INFO - Pairs verified: 1358 samples
+2026-08-07 06:56:16,681 - INFO - pos_weight = 4.84
+2026-08-07 06:56:16,687 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-08-07 06:56:18,292 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-07 06:56:18,340 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-07 06:56:18,526 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-07 06:56:19,841 - INFO - GPU [Epoch 1] Alloc:2.45GB Res:2.80GB
+2026-08-07 06:57:03,761 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-07 06:57:03,776 - INFO - Seed set to 42
+2026-08-07 06:57:03,784 - INFO - Loading dataset paths...
+2026-08-07 06:57:03,864 - INFO - Pairs verified: 4080 samples
+2026-08-07 06:57:03,889 - INFO - Pairs verified: 1358 samples
+2026-08-07 06:57:03,903 - INFO - Pairs verified: 1358 samples
+2026-08-07 06:57:04,200 - INFO - pos_weight = 4.84
+2026-08-07 06:57:04,205 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-08-07 06:57:04,514 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-07 06:57:04,578 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-07 06:57:04,803 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-07 06:57:05,693 - INFO - GPU [Epoch 1] Alloc:0.70GB Res:0.77GB
+2026-08-07 07:01:07,322 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-07 07:01:07,324 - INFO - Seed set to 42
+2026-08-07 07:01:07,324 - INFO - Loading dataset paths...
+2026-08-07 07:01:07,417 - INFO - Pairs verified: 4080 samples
+2026-08-07 07:01:07,430 - INFO - Pairs verified: 1358 samples
+2026-08-07 07:01:07,443 - INFO - Pairs verified: 1358 samples
+2026-08-07 07:01:07,721 - INFO - pos_weight = 4.84
+2026-08-07 07:01:07,721 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-08-07 07:01:09,305 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-07 07:01:09,359 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-07 07:01:09,555 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-07 07:01:10,397 - INFO - GPU [Epoch 1] Alloc:0.70GB Res:0.77GB
+2026-08-07 07:01:17,554 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-07 07:01:17,557 - INFO - Seed set to 42
+2026-08-07 07:01:24,212 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-07 07:01:24,212 - INFO - Seed set to 42
+2026-08-07 07:01:31,081 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-07 07:01:31,081 - INFO - Seed set to 42
+2026-08-07 07:01:38,093 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-07 07:01:38,093 - INFO - Seed set to 42
+2026-08-07 10:21:19,516 - INFO - Device: cpu | AMP: torch.float16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-07 10:21:19,521 - INFO - Seed set to 42
+2026-08-07 10:21:19,527 - INFO - Loading dataset paths...
+2026-08-07 10:21:19,635 - INFO - Pairs verified: 4080 samples
+2026-08-07 10:21:19,658 - INFO - Pairs verified: 1358 samples
+2026-08-07 10:21:19,674 - INFO - Pairs verified: 1358 samples
+2026-08-07 10:21:20,357 - INFO - pos_weight = 4.84
+2026-08-07 10:21:20,364 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-08-07 10:21:21,855 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-07 10:21:21,905 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-07 10:21:22,108 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-07 10:29:33,533 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-07 10:29:33,541 - INFO - Seed set to 42
+2026-08-07 10:29:33,545 - INFO - Loading dataset paths...
+2026-08-07 10:29:33,698 - INFO - Pairs verified: 4080 samples
+2026-08-07 10:29:33,715 - INFO - Pairs verified: 1358 samples
+2026-08-07 10:29:33,724 - INFO - Pairs verified: 1358 samples
+2026-08-07 10:29:35,028 - INFO - pos_weight = 4.84
+2026-08-07 10:29:35,032 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-08-07 10:29:36,961 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-07 10:29:37,015 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-07 10:29:37,248 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-07 10:29:38,274 - INFO - GPU [Epoch 1] Alloc:0.70GB Res:0.77GB
+2026-08-07 11:15:59,703 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_000\plots\Train_cm.png
+2026-08-07 11:19:48,760 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_000\plots\Train_roc_pr.png
+2026-08-07 11:19:52,999 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_000\plots\Val_cm.png
+2026-08-07 11:25:21,316 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_000\plots\Val_roc_pr.png
+2026-08-07 11:25:21,334 - INFO - New best F1:0.3783 @ thr=0.5 | IoU:0.2333
+2026-08-07 11:25:24,689 - INFO - Best model saved — F1:0.3783 | Thr:0.50 (fixed)
+2026-08-07 11:25:25,429 - INFO - GPU [Epoch 2] Alloc:1.73GB Res:2.24GB
+2026-08-07 12:10:03,593 - INFO - New best F1:0.7221 @ thr=0.5 | IoU:0.5650
+2026-08-07 12:10:06,913 - INFO - Best model saved — F1:0.7221 | Thr:0.50 (fixed)
+2026-08-07 12:10:07,072 - INFO - GPU [Epoch 3] Alloc:1.73GB Res:2.24GB
+2026-08-07 12:55:41,681 - INFO - New best F1:0.7403 @ thr=0.5 | IoU:0.5877
+2026-08-07 12:55:45,151 - INFO - Best model saved — F1:0.7403 | Thr:0.50 (fixed)
+2026-08-07 12:55:45,320 - INFO - GPU [Epoch 4] Alloc:1.73GB Res:2.24GB
+2026-08-07 13:41:36,756 - INFO - New best F1:0.7640 @ thr=0.5 | IoU:0.6181
+2026-08-07 13:41:40,070 - INFO - Best model saved — F1:0.7640 | Thr:0.50 (fixed)
+2026-08-07 13:41:40,236 - INFO - GPU [Epoch 5] Alloc:1.73GB Res:2.24GB
+2026-08-07 14:27:53,675 - INFO - GPU [Epoch 6] Alloc:1.73GB Res:2.24GB
+2026-08-07 15:14:54,271 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_005\plots\Train_cm.png
+2026-08-07 15:18:34,873 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_005\plots\Train_roc_pr.png
+2026-08-07 15:18:38,349 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_005\plots\Val_cm.png
+2026-08-07 15:23:10,991 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_005\plots\Val_roc_pr.png
+2026-08-07 15:23:13,323 - INFO - GPU [Epoch 7] Alloc:1.73GB Res:2.24GB
+2026-08-07 16:14:31,121 - INFO - New best F1:0.7663 @ thr=0.5 | IoU:0.6211
+2026-08-07 16:14:34,637 - INFO - Best model saved — F1:0.7663 | Thr:0.50 (fixed)
+2026-08-07 16:14:34,817 - INFO - GPU [Epoch 8] Alloc:1.73GB Res:2.24GB
+2026-08-07 17:08:55,730 - INFO - New best F1:0.8156 @ thr=0.5 | IoU:0.6886
+2026-08-07 17:08:59,116 - INFO - Best model saved — F1:0.8156 | Thr:0.50 (fixed)
+2026-08-07 17:08:59,294 - INFO - GPU [Epoch 9] Alloc:1.73GB Res:2.24GB
+2026-08-07 18:01:20,496 - INFO - GPU [Epoch 10] Alloc:1.73GB Res:2.24GB
+2026-08-07 18:54:44,480 - INFO - GPU [Epoch 11] Alloc:1.73GB Res:2.24GB
+2026-08-07 19:49:12,538 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_010\plots\Train_cm.png
+2026-08-07 19:52:45,625 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_010\plots\Train_roc_pr.png
+2026-08-07 19:52:49,272 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_010\plots\Val_cm.png
+2026-08-07 19:57:25,378 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_010\plots\Val_roc_pr.png
+2026-08-07 19:57:27,122 - INFO - Epoch 11: Unfreezing ViT encoder...
+2026-08-07 19:57:27,130 - INFO - New CosineAnnealingLR: T_max=39, eta_min=1e-6
+2026-08-07 19:57:27,639 - INFO - GPU [Epoch 12] Alloc:1.73GB Res:2.24GB
+2026-08-07 20:48:00,245 - INFO - GPU [Epoch 13] Alloc:2.07GB Res:2.97GB
+2026-08-07 21:41:29,223 - INFO - GPU [Epoch 14] Alloc:2.07GB Res:2.97GB
+2026-08-07 22:37:52,927 - INFO - GPU [Epoch 15] Alloc:2.07GB Res:2.97GB
+2026-08-07 23:31:52,932 - INFO - GPU [Epoch 16] Alloc:2.07GB Res:2.97GB
+2026-08-08 00:27:18,403 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_015\plots\Train_cm.png
+2026-08-08 00:30:47,050 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_015\plots\Train_roc_pr.png
+2026-08-08 00:30:50,523 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_015\plots\Val_cm.png
+2026-08-08 00:35:16,096 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_015\plots\Val_roc_pr.png
+2026-08-08 00:35:18,634 - INFO - GPU [Epoch 17] Alloc:2.07GB Res:2.97GB
+2026-08-08 01:26:21,005 - INFO - GPU [Epoch 18] Alloc:2.07GB Res:2.97GB
+2026-08-08 02:17:40,554 - INFO - New best F1:0.8201 @ thr=0.5 | IoU:0.6951
+2026-08-08 02:17:44,746 - INFO - Best model saved — F1:0.8201 | Thr:0.50 (fixed)
+2026-08-08 02:17:44,921 - INFO - GPU [Epoch 19] Alloc:2.07GB Res:2.97GB
+2026-08-08 03:08:31,122 - INFO - GPU [Epoch 20] Alloc:2.07GB Res:2.97GB
+2026-08-08 03:59:08,883 - INFO - GPU [Epoch 21] Alloc:2.07GB Res:2.97GB
+2026-08-08 04:50:21,981 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_020\plots\Train_cm.png
+2026-08-08 04:53:47,785 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_020\plots\Train_roc_pr.png
+2026-08-08 04:53:51,307 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_020\plots\Val_cm.png
+2026-08-08 04:58:25,041 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_020\plots\Val_roc_pr.png
+2026-08-08 04:58:25,068 - INFO - New best F1:0.8206 @ thr=0.5 | IoU:0.6957
+2026-08-08 04:58:29,173 - INFO - Best model saved — F1:0.8206 | Thr:0.50 (fixed)
+2026-08-08 04:58:29,652 - INFO - GPU [Epoch 22] Alloc:2.07GB Res:2.97GB
+2026-08-08 05:46:35,752 - INFO - New best F1:0.8273 @ thr=0.5 | IoU:0.7055
+2026-08-08 05:46:39,956 - INFO - Best model saved — F1:0.8273 | Thr:0.50 (fixed)
+2026-08-08 05:46:40,126 - INFO - GPU [Epoch 23] Alloc:2.07GB Res:2.97GB
+2026-08-08 06:35:53,300 - INFO - GPU [Epoch 24] Alloc:2.07GB Res:2.97GB
+2026-08-08 07:24:20,078 - INFO - New best F1:0.8295 @ thr=0.5 | IoU:0.7087
+2026-08-08 07:24:24,233 - INFO - Best model saved — F1:0.8295 | Thr:0.50 (fixed)
+2026-08-08 07:24:24,424 - INFO - GPU [Epoch 25] Alloc:2.07GB Res:2.97GB
+2026-08-08 08:15:04,832 - INFO - GPU [Epoch 26] Alloc:2.07GB Res:2.97GB
+2026-08-08 09:04:09,298 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_025\plots\Train_cm.png
+2026-08-08 09:07:37,210 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_025\plots\Train_roc_pr.png
+2026-08-08 09:07:40,688 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_025\plots\Val_cm.png
+2026-08-08 09:12:06,459 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_025\plots\Val_roc_pr.png
+2026-08-08 09:12:06,475 - INFO - New best F1:0.8321 @ thr=0.5 | IoU:0.7125
+2026-08-08 09:12:10,481 - INFO - Best model saved — F1:0.8321 | Thr:0.50 (fixed)
+2026-08-08 09:12:11,111 - INFO - GPU [Epoch 27] Alloc:2.07GB Res:2.97GB
+2026-08-08 10:00:28,310 - INFO - GPU [Epoch 28] Alloc:2.07GB Res:2.97GB
+2026-08-08 10:51:45,396 - INFO - GPU [Epoch 29] Alloc:2.07GB Res:2.97GB
+2026-08-08 11:42:54,851 - INFO - New best F1:0.8378 @ thr=0.5 | IoU:0.7209
+2026-08-08 11:42:58,974 - INFO - Best model saved — F1:0.8378 | Thr:0.50 (fixed)
+2026-08-08 11:42:59,210 - INFO - GPU [Epoch 30] Alloc:2.07GB Res:2.97GB
+2026-08-08 12:32:40,877 - INFO - GPU [Epoch 31] Alloc:2.07GB Res:2.97GB
+2026-08-08 13:23:52,530 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_030\plots\Train_cm.png
+2026-08-08 13:27:22,810 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_030\plots\Train_roc_pr.png
+2026-08-08 13:27:26,406 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_030\plots\Val_cm.png
+2026-08-08 13:32:11,307 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_030\plots\Val_roc_pr.png
+2026-08-08 13:32:13,911 - INFO - GPU [Epoch 32] Alloc:2.07GB Res:2.97GB
+2026-08-08 14:35:07,750 - INFO - GPU [Epoch 33] Alloc:2.07GB Res:2.97GB
+2026-08-08 15:50:54,727 - INFO - New best F1:0.8389 @ thr=0.5 | IoU:0.7225
+2026-08-08 15:50:58,784 - INFO - Best model saved — F1:0.8389 | Thr:0.50 (fixed)
+2026-08-08 15:50:58,968 - INFO - GPU [Epoch 34] Alloc:2.07GB Res:2.97GB
+2026-08-08 17:16:48,359 - INFO - GPU [Epoch 35] Alloc:2.07GB Res:2.97GB
+2026-08-08 18:43:25,986 - INFO - GPU [Epoch 36] Alloc:2.07GB Res:2.97GB
+2026-08-08 20:05:22,302 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_035\plots\Train_cm.png
+2026-08-08 20:09:02,032 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_035\plots\Train_roc_pr.png
+2026-08-08 20:09:05,965 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_035\plots\Val_cm.png
+2026-08-08 20:13:19,728 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_035\plots\Val_roc_pr.png
+2026-08-08 20:13:19,745 - WARNING - Overfitting E36 | loss_gap=0.158 f1_gap=0.090
+2026-08-08 20:13:22,249 - INFO - GPU [Epoch 37] Alloc:2.07GB Res:2.97GB
+2026-08-08 21:29:02,106 - INFO - GPU [Epoch 38] Alloc:2.07GB Res:2.97GB
+2026-08-08 22:45:06,840 - INFO - GPU [Epoch 39] Alloc:2.07GB Res:2.97GB
+2026-08-09 00:01:09,665 - WARNING - Overfitting E39 | loss_gap=0.156 f1_gap=0.087
+2026-08-09 00:01:09,665 - INFO - New best F1:0.8395 @ thr=0.5 | IoU:0.7234
+2026-08-09 00:01:13,810 - INFO - Best model saved — F1:0.8395 | Thr:0.50 (fixed)
+2026-08-09 00:01:13,994 - INFO - GPU [Epoch 40] Alloc:2.07GB Res:2.97GB
+2026-08-09 01:17:30,776 - WARNING - Overfitting E40 | loss_gap=0.162 f1_gap=0.100
+2026-08-09 01:17:32,938 - INFO - GPU [Epoch 41] Alloc:2.07GB Res:2.97GB
+2026-08-09 02:33:49,878 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_040\plots\Train_cm.png
+2026-08-09 02:37:17,801 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_040\plots\Train_roc_pr.png
+2026-08-09 02:37:21,466 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_040\plots\Val_cm.png
+2026-08-09 02:41:57,356 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_040\plots\Val_roc_pr.png
+2026-08-09 02:41:57,379 - WARNING - Overfitting E41 | loss_gap=0.154 f1_gap=0.102
+2026-08-09 02:41:59,977 - INFO - GPU [Epoch 42] Alloc:2.07GB Res:2.97GB
+2026-08-09 04:00:13,499 - WARNING - Overfitting E42 | loss_gap=0.160 f1_gap=0.096
+2026-08-09 04:00:15,693 - INFO - GPU [Epoch 43] Alloc:2.07GB Res:2.97GB
+2026-08-09 05:12:47,260 - WARNING - Overfitting E43 | loss_gap=0.156 f1_gap=0.098
+2026-08-09 05:12:49,546 - INFO - GPU [Epoch 44] Alloc:2.07GB Res:2.97GB
+2026-08-09 06:12:06,808 - WARNING - Overfitting E44 | loss_gap=0.162 f1_gap=0.099
+2026-08-09 06:12:09,014 - INFO - GPU [Epoch 45] Alloc:2.07GB Res:2.97GB
+2026-08-09 07:19:17,908 - WARNING - Overfitting E45 | loss_gap=0.168 f1_gap=0.101
+2026-08-09 07:19:20,158 - INFO - GPU [Epoch 46] Alloc:2.07GB Res:2.97GB
+2026-08-09 08:26:35,885 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_045\plots\Train_cm.png
+2026-08-09 08:29:54,751 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_045\plots\Train_roc_pr.png
+2026-08-09 08:29:58,399 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_045\plots\Val_cm.png
+2026-08-09 08:34:00,878 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_045\plots\Val_roc_pr.png
+2026-08-09 08:34:00,905 - WARNING - Overfitting E46 | loss_gap=0.167 f1_gap=0.100
+2026-08-09 08:34:03,487 - INFO - GPU [Epoch 47] Alloc:2.07GB Res:2.97GB
+2026-08-09 09:36:08,302 - WARNING - Overfitting E47 | loss_gap=0.159 f1_gap=0.102
+2026-08-09 09:36:10,570 - INFO - GPU [Epoch 48] Alloc:2.07GB Res:2.97GB
+2026-08-09 10:42:18,591 - WARNING - Overfitting E48 | loss_gap=0.162 f1_gap=0.107
+2026-08-09 10:42:20,793 - INFO - GPU [Epoch 49] Alloc:2.07GB Res:2.97GB
+2026-08-09 11:49:23,549 - WARNING - Overfitting E49 | loss_gap=0.165 f1_gap=0.102
+2026-08-09 11:49:25,753 - INFO - GPU [Epoch 50] Alloc:2.07GB Res:2.97GB
+2026-08-09 12:58:31,946 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_049\plots\Train_cm.png
+2026-08-09 13:01:54,402 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_049\plots\Train_roc_pr.png
+2026-08-09 13:01:57,966 - INFO - CM saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_049\plots\Val_cm.png
+2026-08-09 13:06:11,391 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\epoch_049\plots\Val_roc_pr.png
+2026-08-09 13:06:11,404 - WARNING - Overfitting E50 | loss_gap=0.165 f1_gap=0.106
+2026-08-09 13:14:48,336 - ERROR - Fatal error: Unable to allocate 348. MiB for an array with shape (364383992,) and data type bool
+Traceback (most recent call last):
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_7524\1834033819.py", line 1155, in <module>
+    main()
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_7524\1834033819.py", line 1027, in main
+    metrics = evaluate_with_threshold([model], ts_ldr, thr, use_tta=False)
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_7524\1834033819.py", line 1106, in evaluate_with_threshold
+    return compute_metrics(labels, preds, probs, per_image, use_all_data=True)
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_7524\1834033819.py", line 556, in compute_metrics
+    'mcc': matthews_corrcoef(labels, preds),
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\sklearn\metrics\_classification.py", line 1184, in matthews_corrcoef
+    C = confusion_matrix(y_true, y_pred, sample_weight=sample_weight)
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\sklearn\utils\_param_validation.py", line 191, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\sklearn\metrics\_classification.py", line 505, in confusion_matrix
+    ind = np.logical_and(y_pred < n_labels, y_true < n_labels)
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 348. MiB for an array with shape (364383992,) and data type bool
+2026-08-10 09:19:14,366 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-10 09:19:14,373 - INFO - Seed set to 42
+2026-08-10 09:19:15,431 - INFO - Resuming from: D:\Master Thesis Codes\attention\BALANCEDCA_seed_42_FIXED\final\ckpt_epoch_049.pth
+2026-08-10 09:19:16,963 - INFO - pos_weight = 4.84
+2026-08-10 09:19:18,549 - INFO - HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-08-10 09:19:18,728 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-10 09:19:18,772 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-10 09:19:19,000 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-10 09:19:20,010 - INFO - Last completed epoch index=49 -> resuming at epoch 51/50
+2026-08-10 09:19:20,031 - ERROR - Fatal error: RNG state must be a torch.ByteTensor
+Traceback (most recent call last):
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_5688\3260862817.py", line 1290, in <module>
+    resume_training()          # auto-detects the latest checkpoint and continues to epoch 50
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_5688\3260862817.py", line 1234, in resume_training
+    torch.set_rng_state(rs['torch'])
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\random.py", line 19, in set_rng_state
+    default_generator.set_state(new_state)
+TypeError: RNG state must be a torch.ByteTensor
+2026-08-10 09:20:47,467 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-10 09:20:47,522 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-10 09:20:47,717 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-16 07:04:46,931 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-16 07:04:46,937 - INFO - Seed set to 42
+2026-08-16 07:04:47,296 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-16 07:04:47,378 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-16 07:04:47,613 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-16 07:04:48,946 - ERROR - Fatal error: shape '[1, 768, 37, 37]' is invalid for input of size 248832
+Traceback (most recent call last):
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_2864\2948928348.py", line 1208, in <module>
+    measure_efficiency()
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_2864\2948928348.py", line 1190, in measure_efficiency
+    _ = model(x1, x2)
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_2864\2948928348.py", line 454, in forward
+    x1, feat1 = self.encoder(img1)
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_2864\2948928348.py", line 409, in forward
+    skips = [to_s(hs[i]) for i in [0, 4, 8, 12]]
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_2864\2948928348.py", line 409, in <listcomp>
+    skips = [to_s(hs[i]) for i in [0, 4, 8, 12]]
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_2864\2948928348.py", line 408, in <lambda>
+    to_s = lambda h: h[:, 1:].transpose(1, 2).reshape(x.size(0), self.embed_dim, H, W)
+RuntimeError: shape '[1, 768, 37, 37]' is invalid for input of size 248832
+2026-08-16 07:05:03,419 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-16 07:05:03,419 - INFO - Seed set to 42
+2026-08-16 07:05:03,849 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-16 07:05:03,931 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-16 07:05:04,169 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-16 07:05:05,027 - ERROR - Fatal error: shape '[1, 768, 37, 37]' is invalid for input of size 248832
+Traceback (most recent call last):
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_2864\2948928348.py", line 1208, in <module>
+    measure_efficiency()
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_2864\2948928348.py", line 1190, in measure_efficiency
+    _ = model(x1, x2)
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_2864\2948928348.py", line 454, in forward
+    x1, feat1 = self.encoder(img1)
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_2864\2948928348.py", line 409, in forward
+    skips = [to_s(hs[i]) for i in [0, 4, 8, 12]]
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_2864\2948928348.py", line 409, in <listcomp>
+    skips = [to_s(hs[i]) for i in [0, 4, 8, 12]]
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_2864\2948928348.py", line 408, in <lambda>
+    to_s = lambda h: h[:, 1:].transpose(1, 2).reshape(x.size(0), self.embed_dim, H, W)
+RuntimeError: shape '[1, 768, 37, 37]' is invalid for input of size 248832
+2026-08-16 07:07:20,480 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-16 07:07:20,494 - INFO - Seed set to 42
+2026-08-16 07:07:22,172 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-16 07:07:22,252 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-16 07:07:22,485 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-16 07:09:20,095 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-08-16 07:09:20,108 - INFO - Seed set to 42
+2026-08-16 07:09:21,770 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-16 07:09:21,848 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-16 07:09:22,091 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-16 07:11:28,594 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=256 | Channels=4 | Seed: 42
+2026-08-16 07:11:28,599 - INFO - Seed set to 42
+2026-08-16 07:11:30,244 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-16 07:11:30,325 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-16 07:11:30,529 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-11-01 11:01:04,303 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-11-01 11:01:04,309 - INFO - Seed set to 42
+2026-11-01 11:01:22,285 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-01 11:01:23,656 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-11-01 11:01:24,434 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-11-02 12:36:49,470 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=4 | Seed: 42
+2026-11-02 12:36:49,477 - INFO - Seed set to 42
+2026-11-02 12:36:49,959 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-02 12:36:50,005 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-11-02 12:36:50,229 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"

@@ -1,0 +1,1656 @@
+2026-08-24 17:17:51,983 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=3 | Seed: 123 | LOSS ABLATION: bce
+2026-08-24 17:17:51,994 - INFO - Seed set to 123
+2026-08-24 17:17:51,994 - INFO - Loading dataset paths... [LOSS_MODE=bce, SEED=123]
+2026-08-24 17:17:52,010 - INFO - Pairs verified: 360 samples
+2026-08-24 17:17:52,011 - INFO - Pairs verified: 120 samples
+2026-08-24 17:17:52,011 - INFO - Pairs verified: 120 samples
+2026-08-24 17:17:52,312 - INFO - pos_weight = 12.06
+2026-08-24 17:17:52,312 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-08-24 17:17:54,030 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-24 17:17:54,109 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-24 17:17:54,349 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-24 17:17:55,345 - INFO - Objective: bce  (SingleLoss)
+2026-08-24 17:17:55,347 - INFO - No ckpt_epoch_*.pth found - starting from scratch
+2026-08-24 17:17:55,536 - INFO - GPU [Epoch 1] Alloc:2.45GB Res:3.04GB
+
+===========================================================================
+ Epoch 1/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:1.3291 | Acc:0.1809 | F1:0.1337 | Prec:0.0723 | Rec:0.8849 | IoU:0.0716 | AUC:0.5166 | AP:0.0751
+Val  - Loss:1.2917 | Acc:0.1524 | F1:0.1486 | Prec:0.0806 | Rec:0.9602 | IoU:0.0803 | AUC:0.6393 | AP:0.1392 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.0019 | MCC:0.0090 | BalAcc:0.5058
+ Val  → Kappa:0.0075 | MCC:0.0440 | BalAcc:0.5226 | MeanImgAUC:0.6115
+===========================================================================
+2026-08-24 17:21:16,758 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_000\plots\Train_cm.png
+2026-08-24 17:22:53,098 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_000\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 1
+---------------------------------------------
+              Pred NO Pred YES
+ True NO       2547238 27182444 (Spec:0.0857)
+ True YES        95036  2374162 (Rec: 0.9615)
+ TP=2,374,162 FP=27,182,444 FN=95,036 TN=2,547,238
+---------------------------------------------
+
+2026-08-24 17:22:53,487 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_000\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 1
+---------------------------------------------
+ AUC:0.6401 | AP:0.1397
+ Best Thr:0.642 → TPR=0.5404 FPR=0.3332
+---------------------------------------------
+
+2026-08-24 17:23:28,177 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_000\plots\Val_roc_pr.png
+2026-08-24 17:23:28,183 - INFO - New best F1:0.1486 @ thr=0.5 | IoU:0.0803
+2026-08-24 17:23:31,496 - INFO - Best model saved — F1:0.1486 | Thr:0.50 (fixed)
+2026-08-24 17:23:31,770 - INFO - GPU [Epoch 2] Alloc:3.41GB Res:4.52GB
+
+===========================================================================
+ Epoch 2/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:1.1521 | Acc:0.2697 | F1:0.1583 | Prec:0.0862 | Rec:0.9635 | IoU:0.0859 | AUC:0.7825 | AP:0.3293
+Val  - Loss:0.9905 | Acc:0.4166 | F1:0.2058 | Prec:0.1148 | Rec:0.9923 | IoU:0.1147 | AUC:0.9427 | AP:0.6877 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.0316 | MCC:0.1150 | BalAcc:0.5900
+ Val  → Kappa:0.0802 | MCC:0.2022 | BalAcc:0.6807 | MeanImgAUC:0.9330
+===========================================================================
+2026-08-24 17:26:56,713 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_001\plots\Train_cm.png
+2026-08-24 17:28:40,725 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_001\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 2
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      10988223 18741459 (Spec:0.3696)
+ True YES        18948  2450250 (Rec: 0.9923)
+ TP=2,450,250 FP=18,741,459 FN=18,948 TN=10,988,223
+---------------------------------------------
+
+2026-08-24 17:28:41,187 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_001\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 2
+---------------------------------------------
+ AUC:0.9427 | AP:0.6877
+ Best Thr:0.783 → TPR=0.8581 FPR=0.1191
+---------------------------------------------
+
+2026-08-24 17:29:32,061 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_001\plots\Val_roc_pr.png
+2026-08-24 17:29:32,081 - WARNING - Overfitting E2 | loss_gap=0.162 f1_gap=0.048
+2026-08-24 17:29:32,082 - INFO - New best F1:0.2058 @ thr=0.5 | IoU:0.1147
+2026-08-24 17:29:35,535 - INFO - Best model saved — F1:0.2058 | Thr:0.50 (fixed)
+2026-08-24 17:29:35,872 - INFO - GPU [Epoch 3] Alloc:3.41GB Res:4.52GB
+
+===========================================================================
+ Epoch 3/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.9533 | Acc:0.5464 | F1:0.2371 | Prec:0.1351 | Rec:0.9708 | IoU:0.1345 | AUC:0.9201 | AP:0.5319
+Val  - Loss:0.7019 | Acc:0.8233 | F1:0.4550 | Prec:0.2973 | Rec:0.9691 | IoU:0.2945 | AUC:0.9691 | AP:0.7851 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.1256 | MCC:0.2514 | BalAcc:0.7420
+ Val  → Kappa:0.3832 | MCC:0.4791 | BalAcc:0.8902 | MeanImgAUC:0.9633
+===========================================================================
+2026-08-24 17:32:49,922 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_002\plots\Train_cm.png
+2026-08-24 17:34:48,407 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_002\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 3
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      24127223  5602459 (Spec:0.8116)
+ True YES        78912  2390286 (Rec: 0.9680)
+ TP=2,390,286 FP=5,602,459 FN=78,912 TN=24,127,223
+---------------------------------------------
+
+2026-08-24 17:34:48,833 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_002\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 3
+---------------------------------------------
+ AUC:0.9691 | AP:0.7883
+ Best Thr:0.669 → TPR=0.9238 FPR=0.0858
+---------------------------------------------
+
+2026-08-24 17:35:35,046 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_002\plots\Val_roc_pr.png
+2026-08-24 17:35:35,062 - WARNING - Overfitting E3 | loss_gap=0.251 f1_gap=0.218
+2026-08-24 17:35:35,062 - INFO - New best F1:0.4550 @ thr=0.5 | IoU:0.2945
+2026-08-24 17:35:38,602 - INFO - Best model saved — F1:0.4550 | Thr:0.50 (fixed)
+2026-08-24 17:35:38,936 - INFO - GPU [Epoch 4] Alloc:3.41GB Res:4.52GB
+
+===========================================================================
+ Epoch 4/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.8349 | Acc:0.7030 | F1:0.3211 | Prec:0.1926 | Rec:0.9653 | IoU:0.1912 | AUC:0.9472 | AP:0.6315
+Val  - Loss:0.7093 | Acc:0.8545 | F1:0.5049 | Prec:0.3419 | Rec:0.9648 | IoU:0.3377 | AUC:0.9740 | AP:0.8357 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.2273 | MCC:0.3495 | BalAcc:0.8238
+ Val  → Kappa:0.4414 | MCC:0.5236 | BalAcc:0.9050 | MeanImgAUC:0.9681
+===========================================================================
+2026-08-24 17:38:46,889 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_003\plots\Train_cm.png
+2026-08-24 17:40:41,337 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_003\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 4
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      25135622  4594060 (Spec:0.8455)
+ True YES        86975  2382223 (Rec: 0.9648)
+ TP=2,382,223 FP=4,594,060 FN=86,975 TN=25,135,622
+---------------------------------------------
+
+2026-08-24 17:40:41,756 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_003\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 4
+---------------------------------------------
+ AUC:0.9740 | AP:0.8352
+ Best Thr:0.713 → TPR=0.9282 FPR=0.0756
+---------------------------------------------
+
+2026-08-24 17:41:23,671 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_003\plots\Val_roc_pr.png
+2026-08-24 17:41:23,688 - INFO - New best F1:0.5049 @ thr=0.5 | IoU:0.3377
+2026-08-24 17:41:27,045 - INFO - Best model saved — F1:0.5049 | Thr:0.50 (fixed)
+2026-08-24 17:41:27,421 - INFO - GPU [Epoch 5] Alloc:3.41GB Res:4.52GB
+
+===========================================================================
+ Epoch 5/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.7443 | Acc:0.8197 | F1:0.4277 | Prec:0.2760 | Rec:0.9495 | IoU:0.2720 | AUC:0.9547 | AP:0.6792
+Val  - Loss:0.6704 | Acc:0.9085 | F1:0.6045 | Prec:0.4528 | Rec:0.9094 | IoU:0.4332 | AUC:0.9615 | AP:0.8082 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.3570 | MCC:0.4538 | BalAcc:0.8796
+ Val  → Kappa:0.5593 | MCC:0.6029 | BalAcc:0.9089 | MeanImgAUC:0.9607
+===========================================================================
+2026-08-24 17:44:40,141 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_004\plots\Train_cm.png
+2026-08-24 17:46:26,196 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_004\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 5
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      26988369  2741313 (Spec:0.9078)
+ True YES       230189  2239009 (Rec: 0.9068)
+ TP=2,239,009 FP=2,741,313 FN=230,189 TN=26,988,369
+---------------------------------------------
+
+2026-08-24 17:46:26,688 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_004\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 5
+---------------------------------------------
+ AUC:0.9607 | AP:0.8036
+ Best Thr:0.569 → TPR=0.8864 FPR=0.0671
+---------------------------------------------
+
+2026-08-24 17:47:03,734 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_004\plots\Val_roc_pr.png
+2026-08-24 17:47:03,741 - INFO - New best F1:0.6045 @ thr=0.5 | IoU:0.4332
+2026-08-24 17:47:07,172 - INFO - Best model saved — F1:0.6045 | Thr:0.50 (fixed)
+2026-08-24 17:47:07,510 - INFO - GPU [Epoch 6] Alloc:3.41GB Res:4.52GB
+
+===========================================================================
+ Epoch 6/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.6514 | Acc:0.8810 | F1:0.5309 | Prec:0.3697 | Rec:0.9410 | IoU:0.3614 | AUC:0.9656 | AP:0.7490
+Val  - Loss:0.5271 | Acc:0.9303 | F1:0.6736 | Prec:0.5272 | Rec:0.9327 | IoU:0.5079 | AUC:0.9813 | AP:0.8834 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.4772 | MCC:0.5459 | BalAcc:0.9087
+ Val  → Kappa:0.6379 | MCC:0.6706 | BalAcc:0.9314 | MeanImgAUC:0.9757
+===========================================================================
+2026-08-24 17:50:20,852 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_005\plots\Train_cm.png
+2026-08-24 17:52:05,186 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_005\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 6
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      27633922  2095760 (Spec:0.9295)
+ True YES       171054  2298144 (Rec: 0.9307)
+ TP=2,298,144 FP=2,095,760 FN=171,054 TN=27,633,922
+---------------------------------------------
+
+2026-08-24 17:52:05,578 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_005\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 6
+---------------------------------------------
+ AUC:0.9809 | AP:0.8810
+ Best Thr:0.524 → TPR=0.9231 FPR=0.0620
+---------------------------------------------
+
+2026-08-24 17:52:42,648 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_005\plots\Val_roc_pr.png
+2026-08-24 17:52:42,652 - INFO - New best F1:0.6736 @ thr=0.5 | IoU:0.5079
+2026-08-24 17:52:46,186 - INFO - Best model saved — F1:0.6736 | Thr:0.50 (fixed)
+2026-08-24 17:52:46,576 - INFO - GPU [Epoch 7] Alloc:3.41GB Res:4.52GB
+
+===========================================================================
+ Epoch 7/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.6586 | Acc:0.8923 | F1:0.5503 | Prec:0.3933 | Rec:0.9157 | IoU:0.3796 | AUC:0.9612 | AP:0.7295
+Val  - Loss:0.5409 | Acc:0.9136 | F1:0.6300 | Prec:0.4696 | Rec:0.9569 | IoU:0.4599 | AUC:0.9824 | AP:0.8768 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.5000 | MCC:0.5579 | BalAcc:0.9031
+ Val  → Kappa:0.5875 | MCC:0.6354 | BalAcc:0.9335 | MeanImgAUC:0.9756
+===========================================================================
+2026-08-24 17:55:56,268 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_006\plots\Train_cm.png
+2026-08-24 17:57:43,389 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_006\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 7
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      27057209  2672473 (Spec:0.9101)
+ True YES       106514  2362684 (Rec: 0.9569)
+ TP=2,362,684 FP=2,672,473 FN=106,514 TN=27,057,209
+---------------------------------------------
+
+2026-08-24 17:57:43,833 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_006\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 7
+---------------------------------------------
+ AUC:0.9825 | AP:0.8778
+ Best Thr:0.566 → TPR=0.9399 FPR=0.0655
+---------------------------------------------
+
+2026-08-24 17:58:19,866 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_006\plots\Val_roc_pr.png
+2026-08-24 17:58:21,827 - INFO - GPU [Epoch 8] Alloc:3.41GB Res:4.52GB
+
+===========================================================================
+ Epoch 8/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.5963 | Acc:0.9056 | F1:0.5916 | Prec:0.4311 | Rec:0.9426 | IoU:0.4201 | AUC:0.9710 | AP:0.7713
+Val  - Loss:0.5793 | Acc:0.9093 | F1:0.6098 | Prec:0.4537 | Rec:0.9298 | IoU:0.4387 | AUC:0.9741 | AP:0.8435 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.5465 | MCC:0.6002 | BalAcc:0.9227
+ Val  → Kappa:0.5653 | MCC:0.6121 | BalAcc:0.9187 | MeanImgAUC:0.9750
+===========================================================================
+2026-08-24 18:01:35,421 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_007\plots\Train_cm.png
+2026-08-24 18:03:16,811 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_007\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 8
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      26975230  2754452 (Spec:0.9074)
+ True YES       175252  2293946 (Rec: 0.9290)
+ TP=2,293,946 FP=2,754,452 FN=175,252 TN=26,975,230
+---------------------------------------------
+
+2026-08-24 18:03:17,218 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_007\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 8
+---------------------------------------------
+ AUC:0.9739 | AP:0.8448
+ Best Thr:0.630 → TPR=0.9013 FPR=0.0595
+---------------------------------------------
+
+2026-08-24 18:03:53,451 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_007\plots\Val_roc_pr.png
+2026-08-24 18:03:55,405 - INFO - GPU [Epoch 9] Alloc:3.41GB Res:4.52GB
+
+===========================================================================
+ Epoch 9/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.5817 | Acc:0.9050 | F1:0.5923 | Prec:0.4291 | Rec:0.9555 | IoU:0.4207 | AUC:0.9739 | AP:0.7728
+Val  - Loss:0.5197 | Acc:0.9621 | F1:0.7804 | Prec:0.7009 | Rec:0.8803 | IoU:0.6399 | AUC:0.9791 | AP:0.8856 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.5471 | MCC:0.6036 | BalAcc:0.9283
+ Val  → Kappa:0.7600 | MCC:0.7659 | BalAcc:0.9246 | MeanImgAUC:0.9735
+===========================================================================
+2026-08-24 18:07:04,608 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_008\plots\Train_cm.png
+2026-08-24 18:08:47,311 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_008\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 9
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28783458   946224 (Spec:0.9682)
+ True YES       293032  2176166 (Rec: 0.8813)
+ TP=2,176,166 FP=946,224 FN=293,032 TN=28,783,458
+---------------------------------------------
+
+2026-08-24 18:08:47,686 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_008\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 9
+---------------------------------------------
+ AUC:0.9791 | AP:0.8849
+ Best Thr:0.410 → TPR=0.9239 FPR=0.0610
+---------------------------------------------
+
+2026-08-24 18:09:19,499 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_008\plots\Val_roc_pr.png
+2026-08-24 18:09:19,499 - INFO - New best F1:0.7804 @ thr=0.5 | IoU:0.6399
+2026-08-24 18:09:22,987 - INFO - Best model saved — F1:0.7804 | Thr:0.50 (fixed)
+2026-08-24 18:09:23,298 - INFO - GPU [Epoch 10] Alloc:3.41GB Res:4.52GB
+
+===========================================================================
+ Epoch 10/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.5635 | Acc:0.9121 | F1:0.6069 | Prec:0.4469 | Rec:0.9454 | IoU:0.4357 | AUC:0.9724 | AP:0.7931
+Val  - Loss:0.4553 | Acc:0.9438 | F1:0.7231 | Prec:0.5835 | Rec:0.9507 | IoU:0.5663 | AUC:0.9859 | AP:0.8989 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.5645 | MCC:0.6150 | BalAcc:0.9275
+ Val  → Kappa:0.6938 | MCC:0.7195 | BalAcc:0.9470 | MeanImgAUC:0.9796
+===========================================================================
+2026-08-24 18:12:38,780 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_009\plots\Train_cm.png
+2026-08-24 18:14:19,795 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_009\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 10
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28038254  1691428 (Spec:0.9431)
+ True YES       123220  2345978 (Rec: 0.9501)
+ TP=2,345,978 FP=1,691,428 FN=123,220 TN=28,038,254
+---------------------------------------------
+
+2026-08-24 18:14:20,250 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_009\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 10
+---------------------------------------------
+ AUC:0.9858 | AP:0.8957
+ Best Thr:0.489 → TPR=0.9525 FPR=0.0592
+---------------------------------------------
+
+2026-08-24 18:14:52,827 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_009\plots\Val_roc_pr.png
+2026-08-24 18:14:54,671 - INFO - GPU [Epoch 11] Alloc:3.41GB Res:4.52GB
+
+===========================================================================
+ Epoch 11/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.5331 | Acc:0.9212 | F1:0.6357 | Prec:0.4778 | Rec:0.9491 | IoU:0.4659 | AUC:0.9762 | AP:0.8120
+Val  - Loss:0.4883 | Acc:0.9368 | F1:0.6953 | Prec:0.5513 | Rec:0.9410 | IoU:0.5329 | AUC:0.9840 | AP:0.8900 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.5968 | MCC:0.6412 | BalAcc:0.9341
+ Val  → Kappa:0.6627 | MCC:0.6923 | BalAcc:0.9387 | MeanImgAUC:0.9803
+===========================================================================
+2026-08-24 18:18:03,887 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_010\plots\Train_cm.png
+2026-08-24 18:19:43,291 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_010\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 11
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      27842311  1887371 (Spec:0.9365)
+ True YES       146592  2322606 (Rec: 0.9406)
+ TP=2,322,606 FP=1,887,371 FN=146,592 TN=27,842,311
+---------------------------------------------
+
+2026-08-24 18:19:43,730 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_010\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 11
+---------------------------------------------
+ AUC:0.9837 | AP:0.8875
+ Best Thr:0.506 → TPR=0.9395 FPR=0.0623
+---------------------------------------------
+
+2026-08-24 18:20:18,221 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_010\plots\Val_roc_pr.png
+2026-08-24 18:20:19,896 - INFO - Epoch 11: Unfreezing ViT encoder...
+2026-08-24 18:20:19,899 - INFO - New CosineAnnealingLR: T_max=39, eta_min=1e-6
+2026-08-24 18:20:20,203 - INFO - GPU [Epoch 12] Alloc:3.41GB Res:4.52GB
+
+===========================================================================
+ Epoch 12/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.5827 | Acc:0.9095 | F1:0.5907 | Prec:0.4373 | Rec:0.9103 | IoU:0.4192 | AUC:0.9612 | AP:0.7637
+Val  - Loss:0.5911 | Acc:0.8965 | F1:0.5894 | Prec:0.4243 | Rec:0.9651 | IoU:0.4178 | AUC:0.9786 | AP:0.8323 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.5468 | MCC:0.5935 | BalAcc:0.9098
+ Val  → Kappa:0.5403 | MCC:0.6003 | BalAcc:0.9279 | MeanImgAUC:0.9713
+===========================================================================
+2026-08-24 18:23:33,893 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_011\plots\Train_cm.png
+2026-08-24 18:25:16,471 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_011\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 12
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      26470947  3258735 (Spec:0.8904)
+ True YES        88934  2380264 (Rec: 0.9640)
+ TP=2,380,264 FP=3,258,735 FN=88,934 TN=26,470,947
+---------------------------------------------
+
+2026-08-24 18:25:16,931 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_011\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 12
+---------------------------------------------
+ AUC:0.9783 | AP:0.8311
+ Best Thr:0.595 → TPR=0.9468 FPR=0.0856
+---------------------------------------------
+
+2026-08-24 18:25:53,968 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_011\plots\Val_roc_pr.png
+2026-08-24 18:25:56,360 - INFO - GPU [Epoch 13] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 13/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.5310 | Acc:0.9241 | F1:0.6396 | Prec:0.4842 | Rec:0.9416 | IoU:0.4701 | AUC:0.9734 | AP:0.8114
+Val  - Loss:0.4598 | Acc:0.9403 | F1:0.7088 | Prec:0.5665 | Rec:0.9466 | IoU:0.5489 | AUC:0.9828 | AP:0.8731 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.6020 | MCC:0.6437 | BalAcc:0.9322
+ Val  → Kappa:0.6779 | MCC:0.7057 | BalAcc:0.9432 | MeanImgAUC:0.9803
+===========================================================================
+2026-08-24 18:29:11,493 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_012\plots\Train_cm.png
+2026-08-24 18:30:51,952 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_012\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 13
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      27946418  1783264 (Spec:0.9400)
+ True YES       131544  2337654 (Rec: 0.9467)
+ TP=2,337,654 FP=1,783,264 FN=131,544 TN=27,946,418
+---------------------------------------------
+
+2026-08-24 18:30:52,391 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_012\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 13
+---------------------------------------------
+ AUC:0.9826 | AP:0.8717
+ Best Thr:0.509 → TPR=0.9452 FPR=0.0584
+---------------------------------------------
+
+2026-08-24 18:31:23,921 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_012\plots\Val_roc_pr.png
+2026-08-24 18:31:26,312 - INFO - GPU [Epoch 14] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 14/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.5334 | Acc:0.9273 | F1:0.6464 | Prec:0.4931 | Rec:0.9381 | IoU:0.4776 | AUC:0.9732 | AP:0.7959
+Val  - Loss:0.4995 | Acc:0.9104 | F1:0.6247 | Prec:0.4618 | Rec:0.9651 | IoU:0.4542 | AUC:0.9837 | AP:0.8849 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.6102 | MCC:0.6496 | BalAcc:0.9323
+ Val  → Kappa:0.5808 | MCC:0.6319 | BalAcc:0.9354 | MeanImgAUC:0.9768
+===========================================================================
+2026-08-24 18:34:53,623 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_013\plots\Train_cm.png
+2026-08-24 18:36:34,823 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_013\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 14
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      26915644  2814038 (Spec:0.9053)
+ True YES        87843  2381355 (Rec: 0.9644)
+ TP=2,381,355 FP=2,814,038 FN=87,843 TN=26,915,644
+---------------------------------------------
+
+2026-08-24 18:36:35,297 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_013\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 14
+---------------------------------------------
+ AUC:0.9839 | AP:0.8830
+ Best Thr:0.625 → TPR=0.9452 FPR=0.0677
+---------------------------------------------
+
+2026-08-24 18:37:10,337 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_013\plots\Val_roc_pr.png
+2026-08-24 18:37:12,686 - INFO - GPU [Epoch 15] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 15/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.5098 | Acc:0.9228 | F1:0.6406 | Prec:0.4826 | Rec:0.9522 | IoU:0.4712 | AUC:0.9775 | AP:0.8306
+Val  - Loss:0.4540 | Acc:0.9489 | F1:0.7382 | Prec:0.6087 | Rec:0.9377 | IoU:0.5851 | AUC:0.9852 | AP:0.8918 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.6025 | MCC:0.6463 | BalAcc:0.9364
+ Val  → Kappa:0.7113 | MCC:0.7317 | BalAcc:0.9437 | MeanImgAUC:0.9776
+===========================================================================
+2026-08-24 18:40:23,169 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_014\plots\Train_cm.png
+2026-08-24 18:42:02,142 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_014\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 15
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28231136  1498546 (Spec:0.9496)
+ True YES       153131  2316067 (Rec: 0.9380)
+ TP=2,316,067 FP=1,498,546 FN=153,131 TN=28,231,136
+---------------------------------------------
+
+2026-08-24 18:42:02,527 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_014\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 15
+---------------------------------------------
+ AUC:0.9851 | AP:0.8919
+ Best Thr:0.470 → TPR=0.9447 FPR=0.0558
+---------------------------------------------
+
+2026-08-24 18:42:33,906 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_014\plots\Val_roc_pr.png
+2026-08-24 18:42:36,210 - INFO - GPU [Epoch 16] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 16/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.4892 | Acc:0.9372 | F1:0.6858 | Prec:0.5382 | Rec:0.9450 | IoU:0.5218 | AUC:0.9787 | AP:0.8541
+Val  - Loss:0.4853 | Acc:0.9173 | F1:0.6380 | Prec:0.4798 | Rec:0.9517 | IoU:0.4684 | AUC:0.9824 | AP:0.8719 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.6538 | MCC:0.6859 | BalAcc:0.9408
+ Val  → Kappa:0.5969 | MCC:0.6417 | BalAcc:0.9331 | MeanImgAUC:0.9798
+===========================================================================
+2026-08-24 18:45:54,311 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_015\plots\Train_cm.png
+2026-08-24 18:47:32,453 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_015\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 16
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      27176822  2552860 (Spec:0.9141)
+ True YES       117144  2352054 (Rec: 0.9526)
+ TP=2,352,054 FP=2,552,860 FN=117,144 TN=27,176,822
+---------------------------------------------
+
+2026-08-24 18:47:32,936 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_015\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 16
+---------------------------------------------
+ AUC:0.9825 | AP:0.8719
+ Best Thr:0.635 → TPR=0.9317 FPR=0.0623
+---------------------------------------------
+
+2026-08-24 18:48:06,416 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_015\plots\Val_roc_pr.png
+2026-08-24 18:48:08,740 - INFO - GPU [Epoch 17] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 17/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.4760 | Acc:0.9312 | F1:0.6667 | Prec:0.5130 | Rec:0.9522 | IoU:0.5001 | AUC:0.9785 | AP:0.8612
+Val  - Loss:0.4365 | Acc:0.9513 | F1:0.7492 | Prec:0.6201 | Rec:0.9463 | IoU:0.5990 | AUC:0.9874 | AP:0.9062 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.6322 | MCC:0.6699 | BalAcc:0.9409
+ Val  → Kappa:0.7236 | MCC:0.7434 | BalAcc:0.9490 | MeanImgAUC:0.9835
+===========================================================================
+2026-08-24 18:51:17,906 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_016\plots\Train_cm.png
+2026-08-24 18:52:52,802 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_016\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 17
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28297899  1431783 (Spec:0.9518)
+ True YES       133086  2336112 (Rec: 0.9461)
+ TP=2,336,112 FP=1,431,783 FN=133,086 TN=28,297,899
+---------------------------------------------
+
+2026-08-24 18:52:53,176 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_016\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 17
+---------------------------------------------
+ AUC:0.9872 | AP:0.9048
+ Best Thr:0.455 → TPR=0.9571 FPR=0.0569
+---------------------------------------------
+
+2026-08-24 18:53:26,155 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_016\plots\Val_roc_pr.png
+2026-08-24 18:53:28,473 - INFO - GPU [Epoch 18] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 18/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.4711 | Acc:0.9418 | F1:0.6993 | Prec:0.5548 | Rec:0.9456 | IoU:0.5376 | AUC:0.9818 | AP:0.8584
+Val  - Loss:0.4439 | Acc:0.9442 | F1:0.7219 | Prec:0.5853 | Rec:0.9415 | IoU:0.5648 | AUC:0.9847 | AP:0.8953 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.6695 | MCC:0.6987 | BalAcc:0.9436
+ Val  → Kappa:0.6927 | MCC:0.7169 | BalAcc:0.9429 | MeanImgAUC:0.9815
+===========================================================================
+2026-08-24 18:56:35,845 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_017\plots\Train_cm.png
+2026-08-24 18:58:08,930 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_017\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 18
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28090872  1638810 (Spec:0.9449)
+ True YES       145826  2323372 (Rec: 0.9409)
+ TP=2,323,372 FP=1,638,810 FN=145,826 TN=28,090,872
+---------------------------------------------
+
+2026-08-24 18:58:09,360 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_017\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 18
+---------------------------------------------
+ AUC:0.9847 | AP:0.8951
+ Best Thr:0.495 → TPR=0.9419 FPR=0.0561
+---------------------------------------------
+
+2026-08-24 18:58:42,702 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_017\plots\Val_roc_pr.png
+2026-08-24 18:58:45,030 - INFO - GPU [Epoch 19] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 19/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.4505 | Acc:0.9416 | F1:0.7039 | Prec:0.5564 | Rec:0.9577 | IoU:0.5431 | AUC:0.9832 | AP:0.8811
+Val  - Loss:0.4653 | Acc:0.9587 | F1:0.7702 | Prec:0.6740 | Rec:0.8986 | IoU:0.6263 | AUC:0.9823 | AP:0.8768 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.6740 | MCC:0.7046 | BalAcc:0.9490
+ Val  → Kappa:0.7481 | MCC:0.7574 | BalAcc:0.9312 | MeanImgAUC:0.9790
+===========================================================================
+2026-08-24 19:02:11,608 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_018\plots\Train_cm.png
+2026-08-24 19:03:44,225 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_018\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 19
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28642190  1087492 (Spec:0.9634)
+ True YES       249254  2219944 (Rec: 0.8991)
+ TP=2,219,944 FP=1,087,492 FN=249,254 TN=28,642,190
+---------------------------------------------
+
+2026-08-24 19:03:44,671 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_018\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 19
+---------------------------------------------
+ AUC:0.9823 | AP:0.8765
+ Best Thr:0.386 → TPR=0.9296 FPR=0.0561
+---------------------------------------------
+
+2026-08-24 19:04:15,128 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_018\plots\Val_roc_pr.png
+2026-08-24 19:04:17,463 - INFO - GPU [Epoch 20] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 20/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.4493 | Acc:0.9452 | F1:0.7151 | Prec:0.5733 | Rec:0.9500 | IoU:0.5565 | AUC:0.9830 | AP:0.8754
+Val  - Loss:0.4240 | Acc:0.9446 | F1:0.7239 | Prec:0.5827 | Rec:0.9553 | IoU:0.5672 | AUC:0.9881 | AP:0.9057 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.6868 | MCC:0.7136 | BalAcc:0.9474
+ Val  → Kappa:0.6951 | MCC:0.7213 | BalAcc:0.9495 | MeanImgAUC:0.9810
+===========================================================================
+2026-08-24 19:07:36,315 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_019\plots\Train_cm.png
+2026-08-24 19:09:09,376 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_019\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 20
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28039973  1689709 (Spec:0.9432)
+ True YES       107766  2361432 (Rec: 0.9564)
+ TP=2,361,432 FP=1,689,709 FN=107,766 TN=28,039,973
+---------------------------------------------
+
+2026-08-24 19:09:09,774 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_019\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 20
+---------------------------------------------
+ AUC:0.9882 | AP:0.9079
+ Best Thr:0.511 → TPR=0.9548 FPR=0.0551
+---------------------------------------------
+
+2026-08-24 19:09:41,511 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_019\plots\Val_roc_pr.png
+2026-08-24 19:09:43,749 - INFO - GPU [Epoch 21] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 21/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.4371 | Acc:0.9493 | F1:0.7303 | Prec:0.5907 | Rec:0.9563 | IoU:0.5752 | AUC:0.9842 | AP:0.8914
+Val  - Loss:0.4323 | Acc:0.9487 | F1:0.7383 | Prec:0.6039 | Rec:0.9495 | IoU:0.5852 | AUC:0.9864 | AP:0.8962 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7040 | MCC:0.7290 | BalAcc:0.9525
+ Val  → Kappa:0.7114 | MCC:0.7339 | BalAcc:0.9491 | MeanImgAUC:0.9799
+===========================================================================
+2026-08-24 19:12:55,529 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_020\plots\Train_cm.png
+2026-08-24 19:14:27,585 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_020\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 21
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28191540  1538142 (Spec:0.9483)
+ True YES       123979  2345219 (Rec: 0.9498)
+ TP=2,345,219 FP=1,538,142 FN=123,979 TN=28,191,540
+---------------------------------------------
+
+2026-08-24 19:14:28,015 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_020\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 21
+---------------------------------------------
+ AUC:0.9860 | AP:0.8934
+ Best Thr:0.464 → TPR=0.9560 FPR=0.0571
+---------------------------------------------
+
+2026-08-24 19:14:58,594 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_020\plots\Val_roc_pr.png
+2026-08-24 19:15:00,888 - INFO - GPU [Epoch 22] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 22/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.4304 | Acc:0.9483 | F1:0.7284 | Prec:0.5905 | Rec:0.9501 | IoU:0.5728 | AUC:0.9827 | AP:0.8923
+Val  - Loss:0.4541 | Acc:0.9214 | F1:0.6538 | Prec:0.4939 | Rec:0.9666 | IoU:0.4856 | AUC:0.9876 | AP:0.8969 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7015 | MCC:0.7258 | BalAcc:0.9491
+ Val  → Kappa:0.6146 | MCC:0.6589 | BalAcc:0.9421 | MeanImgAUC:0.9830
+===========================================================================
+2026-08-24 19:18:14,447 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_021\plots\Train_cm.png
+2026-08-24 19:19:46,790 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_021\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 22
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      27297519  2432163 (Spec:0.9182)
+ True YES        83727  2385471 (Rec: 0.9661)
+ TP=2,385,471 FP=2,432,163 FN=83,727 TN=27,297,519
+---------------------------------------------
+
+2026-08-24 19:19:47,264 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_021\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 22
+---------------------------------------------
+ AUC:0.9877 | AP:0.8973
+ Best Thr:0.643 → TPR=0.9492 FPR=0.0550
+---------------------------------------------
+
+2026-08-24 19:20:19,972 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_021\plots\Val_roc_pr.png
+2026-08-24 19:20:22,275 - INFO - GPU [Epoch 23] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 23/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.4097 | Acc:0.9521 | F1:0.7468 | Prec:0.6088 | Rec:0.9656 | IoU:0.5959 | AUC:0.9863 | AP:0.9098
+Val  - Loss:0.4540 | Acc:0.9601 | F1:0.7763 | Prec:0.6794 | Rec:0.9055 | IoU:0.6344 | AUC:0.9780 | AP:0.8895 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7218 | MCC:0.7453 | BalAcc:0.9583
+ Val  → Kappa:0.7549 | MCC:0.7643 | BalAcc:0.9351 | MeanImgAUC:0.9788
+===========================================================================
+2026-08-24 19:23:40,125 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_022\plots\Train_cm.png
+2026-08-24 19:25:13,097 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_022\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 23
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28671460  1058222 (Spec:0.9644)
+ True YES       234539  2234659 (Rec: 0.9050)
+ TP=2,234,659 FP=1,058,222 FN=234,539 TN=28,671,460
+---------------------------------------------
+
+2026-08-24 19:25:13,483 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_022\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 23
+---------------------------------------------
+ AUC:0.9777 | AP:0.8882
+ Best Thr:0.383 → TPR=0.9361 FPR=0.0559
+---------------------------------------------
+
+2026-08-24 19:25:44,847 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_022\plots\Val_roc_pr.png
+2026-08-24 19:25:47,161 - INFO - GPU [Epoch 24] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 24/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.4071 | Acc:0.9571 | F1:0.7594 | Prec:0.6300 | Rec:0.9559 | IoU:0.6122 | AUC:0.9870 | AP:0.9130
+Val  - Loss:0.4183 | Acc:0.9399 | F1:0.7100 | Prec:0.5661 | Rec:0.9520 | IoU:0.5504 | AUC:0.9873 | AP:0.9058 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7370 | MCC:0.7564 | BalAcc:0.9566
+ Val  → Kappa:0.6789 | MCC:0.7075 | BalAcc:0.9454 | MeanImgAUC:0.9842
+===========================================================================
+2026-08-24 19:28:59,682 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_023\plots\Train_cm.png
+2026-08-24 19:30:35,648 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_023\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 24
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      27913625  1816057 (Spec:0.9389)
+ True YES       120480  2348718 (Rec: 0.9512)
+ TP=2,348,718 FP=1,816,057 FN=120,480 TN=27,913,625
+---------------------------------------------
+
+2026-08-24 19:30:36,015 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_023\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 24
+---------------------------------------------
+ AUC:0.9870 | AP:0.9030
+ Best Thr:0.525 → TPR=0.9475 FPR=0.0571
+---------------------------------------------
+
+2026-08-24 19:31:07,990 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_023\plots\Val_roc_pr.png
+2026-08-24 19:31:10,359 - INFO - GPU [Epoch 25] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 25/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.4060 | Acc:0.9534 | F1:0.7464 | Prec:0.6101 | Rec:0.9612 | IoU:0.5954 | AUC:0.9857 | AP:0.9066
+Val  - Loss:0.4315 | Acc:0.9576 | F1:0.7696 | Prec:0.6609 | Rec:0.9212 | IoU:0.6255 | AUC:0.9837 | AP:0.8986 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7222 | MCC:0.7448 | BalAcc:0.9570
+ Val  → Kappa:0.7470 | MCC:0.7595 | BalAcc:0.9409 | MeanImgAUC:0.9787
+===========================================================================
+2026-08-24 19:34:55,201 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_024\plots\Train_cm.png
+2026-08-24 19:36:23,121 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_024\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 25
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28570905  1158777 (Spec:0.9610)
+ True YES       192455  2276743 (Rec: 0.9221)
+ TP=2,276,743 FP=1,158,777 FN=192,455 TN=28,570,905
+---------------------------------------------
+
+2026-08-24 19:36:23,529 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_024\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 25
+---------------------------------------------
+ AUC:0.9841 | AP:0.8996
+ Best Thr:0.389 → TPR=0.9484 FPR=0.0561
+---------------------------------------------
+
+2026-08-24 19:36:50,761 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_024\plots\Val_roc_pr.png
+2026-08-24 19:36:52,875 - INFO - GPU [Epoch 26] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 26/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3886 | Acc:0.9605 | F1:0.7775 | Prec:0.6515 | Rec:0.9641 | IoU:0.6361 | AUC:0.9895 | AP:0.9184
+Val  - Loss:0.4191 | Acc:0.9351 | F1:0.6944 | Prec:0.5421 | Rec:0.9657 | IoU:0.5319 | AUC:0.9876 | AP:0.9150 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7568 | MCC:0.7743 | BalAcc:0.9622
+ Val  → Kappa:0.6613 | MCC:0.6959 | BalAcc:0.9491 | MeanImgAUC:0.9772
+===========================================================================
+2026-08-24 19:40:08,550 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_025\plots\Train_cm.png
+2026-08-24 19:41:31,923 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_025\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 26
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      27733713  1995969 (Spec:0.9329)
+ True YES        85717  2383481 (Rec: 0.9653)
+ TP=2,383,481 FP=1,995,969 FN=85,717 TN=27,733,713
+---------------------------------------------
+
+2026-08-24 19:41:32,387 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_025\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 26
+---------------------------------------------
+ AUC:0.9876 | AP:0.9143
+ Best Thr:0.619 → TPR=0.9528 FPR=0.0488
+---------------------------------------------
+
+2026-08-24 19:42:00,648 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_025\plots\Val_roc_pr.png
+2026-08-24 19:42:02,871 - INFO - GPU [Epoch 27] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 27/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3876 | Acc:0.9538 | F1:0.7505 | Prec:0.6122 | Rec:0.9697 | IoU:0.6007 | AUC:0.9897 | AP:0.9142
+Val  - Loss:0.4084 | Acc:0.9579 | F1:0.7722 | Prec:0.6595 | Rec:0.9314 | IoU:0.6290 | AUC:0.9857 | AP:0.9046 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7265 | MCC:0.7499 | BalAcc:0.9611
+ Val  → Kappa:0.7498 | MCC:0.7634 | BalAcc:0.9458 | MeanImgAUC:0.9765
+===========================================================================
+2026-08-24 19:45:12,256 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_026\plots\Train_cm.png
+2026-08-24 19:46:42,170 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_026\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 27
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28558711  1170971 (Spec:0.9606)
+ True YES       173092  2296106 (Rec: 0.9299)
+ TP=2,296,106 FP=1,170,971 FN=173,092 TN=28,558,711
+---------------------------------------------
+
+2026-08-24 19:46:42,615 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_026\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 27
+---------------------------------------------
+ AUC:0.9858 | AP:0.9049
+ Best Thr:0.423 → TPR=0.9415 FPR=0.0489
+---------------------------------------------
+
+2026-08-24 19:47:11,601 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_026\plots\Val_roc_pr.png
+2026-08-24 19:47:13,987 - INFO - GPU [Epoch 28] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 28/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3825 | Acc:0.9596 | F1:0.7765 | Prec:0.6484 | Rec:0.9675 | IoU:0.6346 | AUC:0.9895 | AP:0.9203
+Val  - Loss:0.4343 | Acc:0.9639 | F1:0.7935 | Prec:0.7103 | Rec:0.8989 | IoU:0.6577 | AUC:0.9811 | AP:0.8926 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7552 | MCC:0.7735 | BalAcc:0.9633
+ Val  → Kappa:0.7740 | MCC:0.7805 | BalAcc:0.9341 | MeanImgAUC:0.9738
+===========================================================================
+2026-08-24 19:50:24,819 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_027\plots\Train_cm.png
+2026-08-24 19:51:52,459 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_027\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 28
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28810469   919213 (Spec:0.9691)
+ True YES       254535  2214663 (Rec: 0.8969)
+ TP=2,214,663 FP=919,213 FN=254,535 TN=28,810,469
+---------------------------------------------
+
+2026-08-24 19:51:52,881 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_027\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 28
+---------------------------------------------
+ AUC:0.9808 | AP:0.8896
+ Best Thr:0.355 → TPR=0.9385 FPR=0.0536
+---------------------------------------------
+
+2026-08-24 19:52:22,468 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_027\plots\Val_roc_pr.png
+2026-08-24 19:52:22,486 - INFO - New best F1:0.7935 @ thr=0.5 | IoU:0.6577
+2026-08-24 19:52:26,415 - INFO - Best model saved — F1:0.7935 | Thr:0.50 (fixed)
+2026-08-24 19:52:26,775 - INFO - GPU [Epoch 29] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 29/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3826 | Acc:0.9582 | F1:0.7678 | Prec:0.6368 | Rec:0.9666 | IoU:0.6231 | AUC:0.9890 | AP:0.9183
+Val  - Loss:0.4169 | Acc:0.9503 | F1:0.7459 | Prec:0.6129 | Rec:0.9527 | IoU:0.5948 | AUC:0.9859 | AP:0.8961 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7459 | MCC:0.7655 | BalAcc:0.9621
+ Val  → Kappa:0.7198 | MCC:0.7414 | BalAcc:0.9514 | MeanImgAUC:0.9791
+===========================================================================
+2026-08-24 19:55:36,392 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_028\plots\Train_cm.png
+2026-08-24 19:57:05,576 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_028\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 29
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28257603  1472079 (Spec:0.9505)
+ True YES       119341  2349857 (Rec: 0.9517)
+ TP=2,349,857 FP=1,472,079 FN=119,341 TN=28,257,603
+---------------------------------------------
+
+2026-08-24 19:57:05,951 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_028\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 29
+---------------------------------------------
+ AUC:0.9854 | AP:0.8964
+ Best Thr:0.498 → TPR=0.9520 FPR=0.0498
+---------------------------------------------
+
+2026-08-24 19:57:34,943 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_028\plots\Val_roc_pr.png
+2026-08-24 19:57:37,065 - INFO - GPU [Epoch 30] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 30/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3736 | Acc:0.9626 | F1:0.7884 | Prec:0.6661 | Rec:0.9657 | IoU:0.6507 | AUC:0.9892 | AP:0.9252
+Val  - Loss:0.4093 | Acc:0.9604 | F1:0.7829 | Prec:0.6759 | Rec:0.9302 | IoU:0.6433 | AUC:0.9867 | AP:0.9065 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7686 | MCC:0.7846 | BalAcc:0.9640
+ Val  → Kappa:0.7617 | MCC:0.7735 | BalAcc:0.9466 | MeanImgAUC:0.9786
+===========================================================================
+2026-08-24 20:00:46,491 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_029\plots\Train_cm.png
+2026-08-24 20:02:13,573 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_029\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 30
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28628893  1100789 (Spec:0.9630)
+ True YES       179352  2289846 (Rec: 0.9274)
+ TP=2,289,846 FP=1,100,789 FN=179,352 TN=28,628,893
+---------------------------------------------
+
+2026-08-24 20:02:14,016 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_029\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 30
+---------------------------------------------
+ AUC:0.9859 | AP:0.9039
+ Best Thr:0.420 → TPR=0.9407 FPR=0.0466
+---------------------------------------------
+
+2026-08-24 20:02:42,887 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_029\plots\Val_roc_pr.png
+2026-08-24 20:02:45,337 - INFO - GPU [Epoch 31] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 31/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3681 | Acc:0.9614 | F1:0.7854 | Prec:0.6597 | Rec:0.9705 | IoU:0.6467 | AUC:0.9906 | AP:0.9251
+Val  - Loss:0.4148 | Acc:0.9588 | F1:0.7709 | Prec:0.6723 | Rec:0.9035 | IoU:0.6272 | AUC:0.9806 | AP:0.8980 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7651 | MCC:0.7823 | BalAcc:0.9656
+ Val  → Kappa:0.7488 | MCC:0.7587 | BalAcc:0.9334 | MeanImgAUC:0.9761
+===========================================================================
+2026-08-24 20:05:50,105 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_030\plots\Train_cm.png
+2026-08-24 20:07:20,555 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_030\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 31
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28641904  1087778 (Spec:0.9634)
+ True YES       239455  2229743 (Rec: 0.9030)
+ TP=2,229,743 FP=1,087,778 FN=239,455 TN=28,641,904
+---------------------------------------------
+
+2026-08-24 20:07:20,970 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_030\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 31
+---------------------------------------------
+ AUC:0.9808 | AP:0.8969
+ Best Thr:0.382 → TPR=0.9240 FPR=0.0521
+---------------------------------------------
+
+2026-08-24 20:07:50,028 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_030\plots\Val_roc_pr.png
+2026-08-24 20:07:52,244 - INFO - GPU [Epoch 32] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 32/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3601 | Acc:0.9652 | F1:0.7971 | Prec:0.6761 | Rec:0.9708 | IoU:0.6626 | AUC:0.9906 | AP:0.9341
+Val  - Loss:0.4284 | Acc:0.9596 | F1:0.7796 | Prec:0.6691 | Rec:0.9339 | IoU:0.6388 | AUC:0.9807 | AP:0.8996 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7787 | MCC:0.7940 | BalAcc:0.9678
+ Val  → Kappa:0.7581 | MCC:0.7709 | BalAcc:0.9478 | MeanImgAUC:0.9721
+===========================================================================
+2026-08-24 20:11:03,346 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_031\plots\Train_cm.png
+2026-08-24 20:12:41,657 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_031\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 32
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28590368  1139314 (Spec:0.9617)
+ True YES       163995  2305203 (Rec: 0.9336)
+ TP=2,305,203 FP=1,139,314 FN=163,995 TN=28,590,368
+---------------------------------------------
+
+2026-08-24 20:12:42,159 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_031\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 32
+---------------------------------------------
+ AUC:0.9803 | AP:0.8989
+ Best Thr:0.417 → TPR=0.9450 FPR=0.0480
+---------------------------------------------
+
+2026-08-24 20:13:11,793 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_031\plots\Val_roc_pr.png
+2026-08-24 20:13:14,113 - INFO - GPU [Epoch 33] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 33/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3579 | Acc:0.9664 | F1:0.8073 | Prec:0.6923 | Rec:0.9680 | IoU:0.6768 | AUC:0.9896 | AP:0.9347
+Val  - Loss:0.3672 | Acc:0.9587 | F1:0.7774 | Prec:0.6622 | Rec:0.9413 | IoU:0.6359 | AUC:0.9878 | AP:0.9144 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7894 | MCC:0.8027 | BalAcc:0.9672
+ Val  → Kappa:0.7554 | MCC:0.7696 | BalAcc:0.9507 | MeanImgAUC:0.9814
+===========================================================================
+2026-08-24 20:16:17,717 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_032\plots\Train_cm.png
+2026-08-24 20:17:50,499 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_032\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 33
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28537703  1191979 (Spec:0.9599)
+ True YES       147155  2322043 (Rec: 0.9404)
+ TP=2,322,043 FP=1,191,979 FN=147,155 TN=28,537,703
+---------------------------------------------
+
+2026-08-24 20:17:50,925 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_032\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 33
+---------------------------------------------
+ AUC:0.9876 | AP:0.9130
+ Best Thr:0.398 → TPR=0.9546 FPR=0.0511
+---------------------------------------------
+
+2026-08-24 20:18:20,337 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_032\plots\Val_roc_pr.png
+2026-08-24 20:18:22,645 - INFO - GPU [Epoch 34] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 34/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3523 | Acc:0.9657 | F1:0.8046 | Prec:0.6869 | Rec:0.9711 | IoU:0.6732 | AUC:0.9921 | AP:0.9337
+Val  - Loss:0.3879 | Acc:0.9587 | F1:0.7753 | Prec:0.6642 | Rec:0.9310 | IoU:0.6330 | AUC:0.9853 | AP:0.8996 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7864 | MCC:0.8006 | BalAcc:0.9682
+ Val  → Kappa:0.7533 | MCC:0.7663 | BalAcc:0.9460 | MeanImgAUC:0.9814
+===========================================================================
+2026-08-24 20:21:27,874 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_033\plots\Train_cm.png
+2026-08-24 20:23:03,503 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_033\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 34
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28560198  1169484 (Spec:0.9607)
+ True YES       166860  2302338 (Rec: 0.9324)
+ TP=2,302,338 FP=1,169,484 FN=166,860 TN=28,560,198
+---------------------------------------------
+
+2026-08-24 20:23:03,891 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_033\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 34
+---------------------------------------------
+ AUC:0.9857 | AP:0.9013
+ Best Thr:0.399 → TPR=0.9473 FPR=0.0505
+---------------------------------------------
+
+2026-08-24 20:23:31,931 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_033\plots\Val_roc_pr.png
+2026-08-24 20:23:34,271 - INFO - GPU [Epoch 35] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 35/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3483 | Acc:0.9671 | F1:0.8095 | Prec:0.6963 | Rec:0.9667 | IoU:0.6800 | AUC:0.9909 | AP:0.9388
+Val  - Loss:0.4021 | Acc:0.9525 | F1:0.7521 | Prec:0.6254 | Rec:0.9431 | IoU:0.6027 | AUC:0.9865 | AP:0.9041 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7921 | MCC:0.8048 | BalAcc:0.9669
+ Val  → Kappa:0.7270 | MCC:0.7458 | BalAcc:0.9482 | MeanImgAUC:0.9803
+===========================================================================
+2026-08-24 20:26:41,524 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_034\plots\Train_cm.png
+2026-08-24 20:28:13,827 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_034\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 35
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28327584  1402098 (Spec:0.9528)
+ True YES       141572  2327626 (Rec: 0.9427)
+ TP=2,327,626 FP=1,402,098 FN=141,572 TN=28,327,584
+---------------------------------------------
+
+2026-08-24 20:28:14,280 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_034\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 35
+---------------------------------------------
+ AUC:0.9861 | AP:0.9030
+ Best Thr:0.504 → TPR=0.9422 FPR=0.0467
+---------------------------------------------
+
+2026-08-24 20:28:44,733 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_034\plots\Val_roc_pr.png
+2026-08-24 20:28:47,190 - INFO - GPU [Epoch 36] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 36/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3476 | Acc:0.9664 | F1:0.8069 | Prec:0.6921 | Rec:0.9673 | IoU:0.6763 | AUC:0.9914 | AP:0.9374
+Val  - Loss:0.3868 | Acc:0.9627 | F1:0.7909 | Prec:0.6935 | Rec:0.9200 | IoU:0.6541 | AUC:0.9813 | AP:0.9040 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.7891 | MCC:0.8023 | BalAcc:0.9668
+ Val  → Kappa:0.7708 | MCC:0.7801 | BalAcc:0.9431 | MeanImgAUC:0.9774
+===========================================================================
+2026-08-24 20:31:49,349 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_035\plots\Train_cm.png
+2026-08-24 20:33:22,752 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_035\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 36
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28725892  1003790 (Spec:0.9662)
+ True YES       191462  2277736 (Rec: 0.9225)
+ TP=2,277,736 FP=1,003,790 FN=191,462 TN=28,725,892
+---------------------------------------------
+
+2026-08-24 20:33:23,193 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_035\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 36
+---------------------------------------------
+ AUC:0.9817 | AP:0.9055
+ Best Thr:0.375 → TPR=0.9424 FPR=0.0487
+---------------------------------------------
+
+2026-08-24 20:33:51,059 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_035\plots\Val_roc_pr.png
+2026-08-24 20:33:53,323 - INFO - GPU [Epoch 37] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 37/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3445 | Acc:0.9687 | F1:0.8170 | Prec:0.7074 | Rec:0.9667 | IoU:0.6906 | AUC:0.9912 | AP:0.9401
+Val  - Loss:0.3893 | Acc:0.9605 | F1:0.7824 | Prec:0.6776 | Rec:0.9257 | IoU:0.6426 | AUC:0.9838 | AP:0.9053 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8003 | MCC:0.8120 | BalAcc:0.9678
+ Val  → Kappa:0.7613 | MCC:0.7725 | BalAcc:0.9445 | MeanImgAUC:0.9776
+===========================================================================
+2026-08-24 20:36:56,826 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_036\plots\Train_cm.png
+2026-08-24 20:38:29,438 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_036\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 37
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28646292  1083390 (Spec:0.9636)
+ True YES       179950  2289248 (Rec: 0.9271)
+ TP=2,289,248 FP=1,083,390 FN=179,950 TN=28,646,292
+---------------------------------------------
+
+2026-08-24 20:38:29,958 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_036\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 37
+---------------------------------------------
+ AUC:0.9839 | AP:0.9062
+ Best Thr:0.387 → TPR=0.9431 FPR=0.0488
+---------------------------------------------
+
+2026-08-24 20:38:57,974 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_036\plots\Val_roc_pr.png
+2026-08-24 20:39:00,206 - INFO - GPU [Epoch 38] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 38/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3369 | Acc:0.9698 | F1:0.8217 | Prec:0.7123 | Rec:0.9707 | IoU:0.6973 | AUC:0.9920 | AP:0.9439
+Val  - Loss:0.3708 | Acc:0.9609 | F1:0.7867 | Prec:0.6783 | Rec:0.9364 | IoU:0.6484 | AUC:0.9858 | AP:0.9180 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8056 | MCC:0.8171 | BalAcc:0.9702
+ Val  → Kappa:0.7658 | MCC:0.7779 | BalAcc:0.9497 | MeanImgAUC:0.9823
+===========================================================================
+2026-08-24 20:42:07,762 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_037\plots\Train_cm.png
+2026-08-24 20:43:38,342 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_037\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 38
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28632859  1096823 (Spec:0.9631)
+ True YES       151501  2317697 (Rec: 0.9386)
+ TP=2,317,697 FP=1,096,823 FN=151,501 TN=28,632,859
+---------------------------------------------
+
+2026-08-24 20:43:38,717 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_037\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 38
+---------------------------------------------
+ AUC:0.9864 | AP:0.9203
+ Best Thr:0.409 → TPR=0.9496 FPR=0.0456
+---------------------------------------------
+
+2026-08-24 20:44:05,166 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_037\plots\Val_roc_pr.png
+2026-08-24 20:44:07,461 - INFO - GPU [Epoch 39] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 39/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3337 | Acc:0.9697 | F1:0.8208 | Prec:0.7119 | Rec:0.9691 | IoU:0.6961 | AUC:0.9927 | AP:0.9467
+Val  - Loss:0.3745 | Acc:0.9606 | F1:0.7810 | Prec:0.6754 | Rec:0.9257 | IoU:0.6407 | AUC:0.9855 | AP:0.9119 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8047 | MCC:0.8161 | BalAcc:0.9694
+ Val  → Kappa:0.7600 | MCC:0.7714 | BalAcc:0.9446 | MeanImgAUC:0.9818
+===========================================================================
+2026-08-24 20:47:15,844 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_038\plots\Train_cm.png
+2026-08-24 20:48:48,975 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_038\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 39
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28638364  1091318 (Spec:0.9633)
+ True YES       182347  2286851 (Rec: 0.9262)
+ TP=2,286,851 FP=1,091,318 FN=182,347 TN=28,638,364
+---------------------------------------------
+
+2026-08-24 20:48:49,424 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_038\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 39
+---------------------------------------------
+ AUC:0.9859 | AP:0.9124
+ Best Thr:0.370 → TPR=0.9460 FPR=0.0518
+---------------------------------------------
+
+2026-08-24 20:49:16,926 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_038\plots\Val_roc_pr.png
+2026-08-24 20:49:19,191 - INFO - GPU [Epoch 40] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 40/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3269 | Acc:0.9706 | F1:0.8278 | Prec:0.7194 | Rec:0.9746 | IoU:0.7061 | AUC:0.9937 | AP:0.9522
+Val  - Loss:0.3817 | Acc:0.9679 | F1:0.8129 | Prec:0.7343 | Rec:0.9102 | IoU:0.6847 | AUC:0.9807 | AP:0.9123 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8121 | MCC:0.8233 | BalAcc:0.9724
+ Val  → Kappa:0.7955 | MCC:0.8010 | BalAcc:0.9414 | MeanImgAUC:0.9734
+===========================================================================
+2026-08-24 20:52:35,287 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_039\plots\Train_cm.png
+2026-08-24 20:54:04,792 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_039\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 40
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28917213   812469 (Spec:0.9727)
+ True YES       220660  2248538 (Rec: 0.9106)
+ TP=2,248,538 FP=812,469 FN=220,660 TN=28,917,213
+---------------------------------------------
+
+2026-08-24 20:54:05,208 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_039\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 40
+---------------------------------------------
+ AUC:0.9809 | AP:0.9128
+ Best Thr:0.347 → TPR=0.9369 FPR=0.0442
+---------------------------------------------
+
+2026-08-24 20:54:31,559 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_039\plots\Val_roc_pr.png
+2026-08-24 20:54:31,564 - INFO - New best F1:0.8129 @ thr=0.5 | IoU:0.6847
+2026-08-24 20:54:35,501 - INFO - Best model saved — F1:0.8129 | Thr:0.50 (fixed)
+2026-08-24 20:54:35,788 - INFO - GPU [Epoch 41] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 41/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3277 | Acc:0.9716 | F1:0.8311 | Prec:0.7248 | Rec:0.9739 | IoU:0.7110 | AUC:0.9933 | AP:0.9512
+Val  - Loss:0.3674 | Acc:0.9625 | F1:0.7915 | Prec:0.6888 | Rec:0.9302 | IoU:0.6549 | AUC:0.9878 | AP:0.9184 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8159 | MCC:0.8266 | BalAcc:0.9727
+ Val  → Kappa:0.7714 | MCC:0.7819 | BalAcc:0.9477 | MeanImgAUC:0.9824
+===========================================================================
+2026-08-24 20:57:49,470 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_040\plots\Train_cm.png
+2026-08-24 20:59:17,989 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_040\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 41
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28707090  1022592 (Spec:0.9656)
+ True YES       169503  2299695 (Rec: 0.9314)
+ TP=2,299,695 FP=1,022,592 FN=169,503 TN=28,707,090
+---------------------------------------------
+
+2026-08-24 20:59:18,422 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_040\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 41
+---------------------------------------------
+ AUC:0.9878 | AP:0.9189
+ Best Thr:0.379 → TPR=0.9506 FPR=0.0475
+---------------------------------------------
+
+2026-08-24 20:59:45,772 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_040\plots\Val_roc_pr.png
+2026-08-24 20:59:48,064 - INFO - GPU [Epoch 42] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 42/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3234 | Acc:0.9722 | F1:0.8329 | Prec:0.7280 | Rec:0.9730 | IoU:0.7136 | AUC:0.9938 | AP:0.9536
+Val  - Loss:0.3752 | Acc:0.9645 | F1:0.7976 | Prec:0.7032 | Rec:0.9214 | IoU:0.6634 | AUC:0.9827 | AP:0.9116 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8180 | MCC:0.8283 | BalAcc:0.9725
+ Val  → Kappa:0.7786 | MCC:0.7871 | BalAcc:0.9447 | MeanImgAUC:0.9733
+===========================================================================
+2026-08-24 21:02:59,056 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_041\plots\Train_cm.png
+2026-08-24 21:04:24,653 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_041\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 42
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28773805   955877 (Spec:0.9678)
+ True YES       191050  2278148 (Rec: 0.9226)
+ TP=2,278,148 FP=955,877 FN=191,050 TN=28,773,805
+---------------------------------------------
+
+2026-08-24 21:04:25,091 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_041\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 42
+---------------------------------------------
+ AUC:0.9832 | AP:0.9128
+ Best Thr:0.346 → TPR=0.9498 FPR=0.0495
+---------------------------------------------
+
+2026-08-24 21:04:52,974 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_041\plots\Val_roc_pr.png
+2026-08-24 21:04:55,132 - INFO - GPU [Epoch 43] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 43/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3217 | Acc:0.9720 | F1:0.8320 | Prec:0.7281 | Rec:0.9705 | IoU:0.7123 | AUC:0.9924 | AP:0.9485
+Val  - Loss:0.3891 | Acc:0.9692 | F1:0.8168 | Prec:0.7470 | Rec:0.9009 | IoU:0.6903 | AUC:0.9808 | AP:0.9076 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8171 | MCC:0.8271 | BalAcc:0.9713
+ Val  → Kappa:0.8001 | MCC:0.8043 | BalAcc:0.9378 | MeanImgAUC:0.9767
+===========================================================================
+2026-08-24 21:08:06,395 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_042\plots\Train_cm.png
+2026-08-24 21:09:34,742 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_042\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 43
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28979691   749991 (Spec:0.9748)
+ True YES       240836  2228362 (Rec: 0.9025)
+ TP=2,228,362 FP=749,991 FN=240,836 TN=28,979,691
+---------------------------------------------
+
+2026-08-24 21:09:35,146 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_042\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 43
+---------------------------------------------
+ AUC:0.9809 | AP:0.9089
+ Best Thr:0.334 → TPR=0.9389 FPR=0.0448
+---------------------------------------------
+
+2026-08-24 21:10:00,714 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_042\plots\Val_roc_pr.png
+2026-08-24 21:10:00,718 - INFO - New best F1:0.8168 @ thr=0.5 | IoU:0.6903
+2026-08-24 21:10:04,696 - INFO - Best model saved — F1:0.8168 | Thr:0.50 (fixed)
+2026-08-24 21:10:04,976 - INFO - GPU [Epoch 44] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 44/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3227 | Acc:0.9712 | F1:0.8273 | Prec:0.7191 | Rec:0.9737 | IoU:0.7054 | AUC:0.9934 | AP:0.9503
+Val  - Loss:0.3694 | Acc:0.9643 | F1:0.7985 | Prec:0.6998 | Rec:0.9297 | IoU:0.6646 | AUC:0.9850 | AP:0.9150 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8119 | MCC:0.8230 | BalAcc:0.9724
+ Val  → Kappa:0.7794 | MCC:0.7888 | BalAcc:0.9484 | MeanImgAUC:0.9787
+===========================================================================
+2026-08-24 21:13:15,247 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_043\plots\Train_cm.png
+2026-08-24 21:14:40,290 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_043\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 44
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28757356   972326 (Spec:0.9673)
+ True YES       173519  2295679 (Rec: 0.9297)
+ TP=2,295,679 FP=972,326 FN=173,519 TN=28,757,356
+---------------------------------------------
+
+2026-08-24 21:14:40,715 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_043\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 44
+---------------------------------------------
+ AUC:0.9847 | AP:0.9154
+ Best Thr:0.384 → TPR=0.9451 FPR=0.0440
+---------------------------------------------
+
+2026-08-24 21:15:06,345 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_043\plots\Val_roc_pr.png
+2026-08-24 21:15:08,615 - INFO - GPU [Epoch 45] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 45/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3210 | Acc:0.9727 | F1:0.8404 | Prec:0.7396 | Rec:0.9730 | IoU:0.7247 | AUC:0.9932 | AP:0.9523
+Val  - Loss:0.3581 | Acc:0.9670 | F1:0.8112 | Prec:0.7263 | Rec:0.9185 | IoU:0.6823 | AUC:0.9844 | AP:0.9136 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8258 | MCC:0.8351 | BalAcc:0.9728
+ Val  → Kappa:0.7934 | MCC:0.7999 | BalAcc:0.9448 | MeanImgAUC:0.9772
+===========================================================================
+2026-08-24 21:18:20,586 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_044\plots\Train_cm.png
+2026-08-24 21:19:42,234 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_044\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 45
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28861406   868276 (Spec:0.9708)
+ True YES       198892  2270306 (Rec: 0.9195)
+ TP=2,270,306 FP=868,276 FN=198,892 TN=28,861,406
+---------------------------------------------
+
+2026-08-24 21:19:42,655 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_044\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 45
+---------------------------------------------
+ AUC:0.9841 | AP:0.9123
+ Best Thr:0.352 → TPR=0.9409 FPR=0.0430
+---------------------------------------------
+
+2026-08-24 21:20:07,827 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_044\plots\Val_roc_pr.png
+2026-08-24 21:20:09,953 - INFO - GPU [Epoch 46] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 46/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3146 | Acc:0.9739 | F1:0.8443 | Prec:0.7441 | Rec:0.9758 | IoU:0.7306 | AUC:0.9938 | AP:0.9571
+Val  - Loss:0.3662 | Acc:0.9656 | F1:0.8023 | Prec:0.7142 | Rec:0.9152 | IoU:0.6699 | AUC:0.9839 | AP:0.9097 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8304 | MCC:0.8394 | BalAcc:0.9748
+ Val  → Kappa:0.7838 | MCC:0.7910 | BalAcc:0.9425 | MeanImgAUC:0.9765
+===========================================================================
+2026-08-24 21:23:20,472 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_045\plots\Train_cm.png
+2026-08-24 21:24:50,786 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_045\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 46
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28835857   893825 (Spec:0.9699)
+ True YES       210648  2258550 (Rec: 0.9147)
+ TP=2,258,550 FP=893,825 FN=210,648 TN=28,835,857
+---------------------------------------------
+
+2026-08-24 21:24:51,206 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_045\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 46
+---------------------------------------------
+ AUC:0.9842 | AP:0.9104
+ Best Thr:0.325 → TPR=0.9463 FPR=0.0504
+---------------------------------------------
+
+2026-08-24 21:25:18,276 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_045\plots\Val_roc_pr.png
+2026-08-24 21:25:20,634 - INFO - GPU [Epoch 47] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 47/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3151 | Acc:0.9747 | F1:0.8468 | Prec:0.7484 | Rec:0.9749 | IoU:0.7342 | AUC:0.9940 | AP:0.9566
+Val  - Loss:0.3634 | Acc:0.9645 | F1:0.7997 | Prec:0.7068 | Rec:0.9206 | IoU:0.6662 | AUC:0.9849 | AP:0.9090 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8332 | MCC:0.8419 | BalAcc:0.9748
+ Val  → Kappa:0.7806 | MCC:0.7888 | BalAcc:0.9444 | MeanImgAUC:0.9790
+===========================================================================
+2026-08-24 21:28:32,369 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_046\plots\Train_cm.png
+2026-08-24 21:30:03,638 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_046\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 47
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28789121   940561 (Spec:0.9684)
+ True YES       196911  2272287 (Rec: 0.9203)
+ TP=2,272,287 FP=940,561 FN=196,911 TN=28,789,121
+---------------------------------------------
+
+2026-08-24 21:30:04,124 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_046\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 47
+---------------------------------------------
+ AUC:0.9848 | AP:0.9100
+ Best Thr:0.328 → TPR=0.9504 FPR=0.0503
+---------------------------------------------
+
+2026-08-24 21:30:32,539 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_046\plots\Val_roc_pr.png
+2026-08-24 21:30:34,777 - INFO - GPU [Epoch 48] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 48/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3141 | Acc:0.9740 | F1:0.8441 | Prec:0.7441 | Rec:0.9751 | IoU:0.7302 | AUC:0.9940 | AP:0.9541
+Val  - Loss:0.3694 | Acc:0.9684 | F1:0.8130 | Prec:0.7446 | Rec:0.8952 | IoU:0.6849 | AUC:0.9792 | AP:0.9056 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8302 | MCC:0.8393 | BalAcc:0.9745
+ Val  → Kappa:0.7959 | MCC:0.7999 | BalAcc:0.9348 | MeanImgAUC:0.9703
+===========================================================================
+2026-08-24 21:33:42,886 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_047\plots\Train_cm.png
+2026-08-24 21:35:13,387 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_047\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 48
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28955887   773795 (Spec:0.9740)
+ True YES       256835  2212363 (Rec: 0.8960)
+ TP=2,212,363 FP=773,795 FN=256,835 TN=28,955,887
+---------------------------------------------
+
+2026-08-24 21:35:13,806 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_047\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 48
+---------------------------------------------
+ AUC:0.9794 | AP:0.9050
+ Best Thr:0.297 → TPR=0.9415 FPR=0.0502
+---------------------------------------------
+
+2026-08-24 21:35:42,096 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_047\plots\Val_roc_pr.png
+2026-08-24 21:35:44,489 - INFO - GPU [Epoch 49] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 49/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3114 | Acc:0.9750 | F1:0.8470 | Prec:0.7521 | Rec:0.9694 | IoU:0.7347 | AUC:0.9934 | AP:0.9561
+Val  - Loss:0.3538 | Acc:0.9683 | F1:0.8130 | Prec:0.7421 | Rec:0.8988 | IoU:0.6849 | AUC:0.9838 | AP:0.9103 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8337 | MCC:0.8416 | BalAcc:0.9724
+ Val  → Kappa:0.7959 | MCC:0.8002 | BalAcc:0.9364 | MeanImgAUC:0.9796
+===========================================================================
+2026-08-24 21:38:52,189 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_048\plots\Train_cm.png
+2026-08-24 21:40:22,484 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_048\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 49
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28962942   766740 (Spec:0.9742)
+ True YES       245960  2223238 (Rec: 0.9004)
+ TP=2,223,238 FP=766,740 FN=245,960 TN=28,962,942
+---------------------------------------------
+
+2026-08-24 21:40:22,920 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_048\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 49
+---------------------------------------------
+ AUC:0.9840 | AP:0.9098
+ Best Thr:0.293 → TPR=0.9459 FPR=0.0510
+---------------------------------------------
+
+2026-08-24 21:40:49,596 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_048\plots\Val_roc_pr.png
+2026-08-24 21:40:51,912 - INFO - GPU [Epoch 50] Alloc:3.76GB Res:5.00GB
+
+===========================================================================
+ Epoch 50/50  [loss=bce, seed=123]
+===========================================================================
+Train - Loss:0.3045 | Acc:0.9764 | F1:0.8566 | Prec:0.7630 | Rec:0.9765 | IoU:0.7492 | AUC:0.9951 | AP:0.9639
+Val  - Loss:0.3600 | Acc:0.9672 | F1:0.8094 | Prec:0.7315 | Rec:0.9058 | IoU:0.6798 | AUC:0.9836 | AP:0.9098 | Thr:0.50 (fixed)
+---------------------------------------------------------------------------
+ Train → Kappa:0.8440 | MCC:0.8516 | BalAcc:0.9764
+ Val  → Kappa:0.7916 | MCC:0.7970 | BalAcc:0.9390 | MeanImgAUC:0.9761
+===========================================================================
+2026-08-24 21:43:54,395 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_049\plots\Train_cm.png
+2026-08-24 21:45:17,024 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_049\plots\Train_roc_pr.png
+
+---------------------------------------------
+ CM — Val | Epoch 50
+---------------------------------------------
+              Pred NO Pred YES
+ True NO      28910036   819646 (Spec:0.9724)
+ True YES       231297  2237901 (Rec: 0.9063)
+ TP=2,237,901 FP=819,646 FN=231,297 TN=28,910,036
+---------------------------------------------
+
+2026-08-24 21:45:17,395 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_049\plots\Val_cm.png
+---------------------------------------------
+ ROC — Val | Epoch 50
+---------------------------------------------
+ AUC:0.9838 | AP:0.9105
+ Best Thr:0.309 → TPR=0.9438 FPR=0.0506
+---------------------------------------------
+
+2026-08-24 21:45:45,397 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_bce_seed_123\final\epoch_049\plots\Val_roc_pr.png
+2026-08-24 21:45:48,154 - INFO - Training finished at epoch 50 | best val F1 = 0.8168
+
+===========================================================================
+FINAL TEST RESULTS  [loss=bce, seed=123]
+===========================================================================
+ threshold                : 0.5000 (fixed)
+ accuracy                 : 0.9649
+ balanced_accuracy        : 0.9255
+ f1                       : 0.7885
+ precision                : 0.7149
+ recall                   : 0.8791
+ iou                      : 0.6509
+ kappa                    : 0.7696
+ mcc                      : 0.7745
+ auc                      : 0.9685
+ ap                       : 0.8905
+ mean_per_image_auc       : 0.9561
+===========================================================================
+2026-08-24 21:46:31,817 - INFO - Complete | loss=bce seed=123 | test F1:0.7885 @ thr=0.500

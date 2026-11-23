@@ -1,0 +1,647 @@
+2026-08-25 12:13:26,035 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=3 | Seed: 123 | LOSS ABLATION: focal_tversky
+2026-08-25 12:13:26,046 - INFO - Seed set to 123
+2026-08-25 12:13:26,071 - INFO - Loading dataset paths... [LOSS_MODE=focal_tversky, SEED=123]
+2026-08-25 12:13:26,138 - INFO - Pairs verified: 360 samples
+2026-08-25 12:13:26,146 - INFO - Pairs verified: 120 samples
+2026-08-25 12:13:26,154 - INFO - Pairs verified: 120 samples
+2026-08-25 12:13:29,991 - INFO - pos_weight = 12.06
+2026-08-25 12:13:30,016 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-08-25 12:13:30,796 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-25 12:13:30,867 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-25 12:13:31,183 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-25 12:13:34,532 - INFO - Objective: focal_tversky  (SingleLoss)
+2026-08-25 12:13:36,471 - INFO - RESUME from ckpt_epoch_000.pth (completed epoch 1)
+2026-08-25 12:13:38,336 - INFO - Resuming at epoch 2/50 | best val F1 so far = 0.1492 | lr = 6.022e-06
+2026-08-25 12:13:39,064 - INFO - GPU [Epoch 2] Alloc:1.65GB Res:1.87GB
+2026-08-25 12:15:11,095 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=3 | Seed: 123 | LOSS ABLATION: focal_tversky
+2026-08-25 12:15:11,117 - INFO - Seed set to 123
+2026-08-25 12:15:11,140 - INFO - Loading dataset paths... [LOSS_MODE=focal_tversky, SEED=123]
+2026-08-25 12:15:11,186 - INFO - Pairs verified: 360 samples
+2026-08-25 12:15:11,202 - INFO - Pairs verified: 120 samples
+2026-08-25 12:15:11,207 - INFO - Pairs verified: 120 samples
+2026-08-25 12:15:12,145 - INFO - pos_weight = 12.06
+2026-08-25 12:15:12,170 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-08-25 12:15:13,839 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-25 12:15:13,911 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-25 12:15:14,193 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-25 12:15:17,296 - INFO - Objective: focal_tversky  (SingleLoss)
+2026-08-25 12:15:19,232 - INFO - RESUME from ckpt_epoch_000.pth (completed epoch 1)
+2026-08-25 12:15:20,987 - INFO - Resuming at epoch 2/50 | best val F1 so far = 0.1492 | lr = 6.022e-06
+2026-08-25 12:15:21,639 - INFO - GPU [Epoch 2] Alloc:1.65GB Res:1.87GB
+2026-08-25 12:25:27,086 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_001\plots\Train_cm.png
+2026-08-25 12:32:31,421 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_001\plots\Train_roc_pr.png
+2026-08-25 12:32:32,987 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_001\plots\Val_cm.png
+2026-08-25 12:35:55,456 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_001\plots\Val_roc_pr.png
+2026-08-25 12:35:55,481 - INFO - New best F1:0.2452 @ thr=0.5 | IoU:0.1397
+2026-08-25 12:36:05,168 - INFO - Best model saved — F1:0.2452 | Thr:0.50 (fixed)
+2026-08-25 12:36:06,043 - INFO - GPU [Epoch 3] Alloc:1.72GB Res:1.97GB
+2026-08-25 12:41:17,929 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_002\plots\Train_cm.png
+2026-08-25 12:43:04,019 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_002\plots\Train_roc_pr.png
+2026-08-25 12:43:04,456 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_002\plots\Val_cm.png
+2026-08-25 12:43:48,910 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_002\plots\Val_roc_pr.png
+2026-08-25 12:43:48,923 - INFO - New best F1:0.3750 @ thr=0.5 | IoU:0.2307
+2026-08-25 12:43:52,237 - INFO - Best model saved — F1:0.3750 | Thr:0.50 (fixed)
+2026-08-25 12:43:52,498 - INFO - GPU [Epoch 4] Alloc:1.72GB Res:1.97GB
+2026-08-25 12:47:09,210 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_003\plots\Train_cm.png
+2026-08-25 12:48:51,034 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_003\plots\Train_roc_pr.png
+2026-08-25 12:48:51,457 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_003\plots\Val_cm.png
+2026-08-25 12:49:27,188 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_003\plots\Val_roc_pr.png
+2026-08-25 12:49:27,194 - INFO - New best F1:0.5311 @ thr=0.5 | IoU:0.3616
+2026-08-25 12:49:30,412 - INFO - Best model saved — F1:0.5311 | Thr:0.50 (fixed)
+2026-08-25 12:49:30,645 - INFO - GPU [Epoch 5] Alloc:1.72GB Res:1.97GB
+2026-08-25 12:52:37,772 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_004\plots\Train_cm.png
+2026-08-25 12:54:11,853 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_004\plots\Train_roc_pr.png
+2026-08-25 12:54:12,265 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_004\plots\Val_cm.png
+2026-08-25 12:54:44,503 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_004\plots\Val_roc_pr.png
+2026-08-25 12:54:44,503 - INFO - New best F1:0.5919 @ thr=0.5 | IoU:0.4203
+2026-08-25 12:54:47,749 - INFO - Best model saved — F1:0.5919 | Thr:0.50 (fixed)
+2026-08-25 12:54:48,035 - INFO - GPU [Epoch 6] Alloc:1.72GB Res:1.97GB
+2026-08-25 12:57:57,352 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_005\plots\Train_cm.png
+2026-08-25 12:59:27,489 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_005\plots\Train_roc_pr.png
+2026-08-25 12:59:27,887 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_005\plots\Val_cm.png
+2026-08-25 12:59:58,486 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_005\plots\Val_roc_pr.png
+2026-08-25 12:59:58,486 - INFO - New best F1:0.6720 @ thr=0.5 | IoU:0.5060
+2026-08-25 13:00:01,774 - INFO - Best model saved — F1:0.6720 | Thr:0.50 (fixed)
+2026-08-25 13:00:01,979 - INFO - GPU [Epoch 7] Alloc:1.72GB Res:1.97GB
+2026-08-25 13:03:01,890 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_006\plots\Train_cm.png
+2026-08-25 13:04:29,133 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_006\plots\Train_roc_pr.png
+2026-08-25 13:04:29,544 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_006\plots\Val_cm.png
+2026-08-25 13:05:02,202 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_006\plots\Val_roc_pr.png
+2026-08-25 13:05:04,041 - INFO - GPU [Epoch 8] Alloc:1.72GB Res:1.97GB
+2026-08-25 13:08:15,081 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_007\plots\Train_cm.png
+2026-08-25 13:09:52,194 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_007\plots\Train_roc_pr.png
+2026-08-25 13:09:52,630 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_007\plots\Val_cm.png
+2026-08-25 13:10:20,879 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_007\plots\Val_roc_pr.png
+2026-08-25 13:10:20,895 - INFO - New best F1:0.7184 @ thr=0.5 | IoU:0.5605
+2026-08-25 13:10:24,271 - INFO - Best model saved — F1:0.7184 | Thr:0.50 (fixed)
+2026-08-25 13:10:24,533 - INFO - GPU [Epoch 9] Alloc:1.72GB Res:1.97GB
+2026-08-25 13:13:36,426 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_008\plots\Train_cm.png
+2026-08-25 13:15:00,880 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_008\plots\Train_roc_pr.png
+2026-08-25 13:15:01,300 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_008\plots\Val_cm.png
+2026-08-25 13:15:28,240 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_008\plots\Val_roc_pr.png
+2026-08-25 13:15:30,151 - INFO - GPU [Epoch 10] Alloc:1.72GB Res:1.97GB
+2026-08-25 13:18:36,152 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_009\plots\Train_cm.png
+2026-08-25 13:19:57,344 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_009\plots\Train_roc_pr.png
+2026-08-25 13:19:57,777 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_009\plots\Val_cm.png
+2026-08-25 13:20:24,532 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_009\plots\Val_roc_pr.png
+2026-08-25 13:20:24,544 - INFO - New best F1:0.7614 @ thr=0.5 | IoU:0.6148
+2026-08-25 13:20:27,992 - INFO - Best model saved — F1:0.7614 | Thr:0.50 (fixed)
+2026-08-25 13:20:28,248 - INFO - GPU [Epoch 11] Alloc:1.72GB Res:1.97GB
+2026-08-25 13:23:30,742 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_010\plots\Train_cm.png
+2026-08-25 13:24:53,145 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_010\plots\Train_roc_pr.png
+2026-08-25 13:24:53,540 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_010\plots\Val_cm.png
+2026-08-25 13:25:18,665 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_010\plots\Val_roc_pr.png
+2026-08-25 13:25:18,665 - INFO - New best F1:0.7699 @ thr=0.5 | IoU:0.6259
+2026-08-25 13:25:22,018 - INFO - Best model saved — F1:0.7699 | Thr:0.50 (fixed)
+2026-08-25 13:25:22,020 - INFO - Epoch 11: Unfreezing ViT encoder...
+2026-08-25 13:25:22,020 - INFO - New CosineAnnealingLR: T_max=39, eta_min=1e-6
+2026-08-25 13:25:22,217 - INFO - GPU [Epoch 12] Alloc:1.72GB Res:1.97GB
+2026-08-25 13:28:32,048 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_011\plots\Train_cm.png
+2026-08-25 13:29:53,650 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_011\plots\Train_roc_pr.png
+2026-08-25 13:29:54,056 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_011\plots\Val_cm.png
+2026-08-25 13:30:20,279 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_011\plots\Val_roc_pr.png
+2026-08-25 13:30:22,464 - INFO - GPU [Epoch 13] Alloc:2.07GB Res:2.70GB
+2026-08-25 13:33:26,031 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_012\plots\Train_cm.png
+2026-08-25 13:34:47,053 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_012\plots\Train_roc_pr.png
+2026-08-25 13:34:47,439 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_012\plots\Val_cm.png
+2026-08-25 13:35:14,923 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_012\plots\Val_roc_pr.png
+2026-08-25 13:35:17,133 - INFO - GPU [Epoch 14] Alloc:2.07GB Res:2.70GB
+2026-08-25 13:38:23,314 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_013\plots\Train_cm.png
+2026-08-25 13:39:47,133 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_013\plots\Train_roc_pr.png
+2026-08-25 13:39:47,532 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_013\plots\Val_cm.png
+2026-08-25 13:40:13,479 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_013\plots\Val_roc_pr.png
+2026-08-25 13:40:15,618 - INFO - GPU [Epoch 15] Alloc:2.07GB Res:2.70GB
+2026-08-25 13:43:26,380 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_014\plots\Train_cm.png
+2026-08-25 13:44:46,885 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_014\plots\Train_roc_pr.png
+2026-08-25 13:44:47,338 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_014\plots\Val_cm.png
+2026-08-25 13:45:12,410 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_014\plots\Val_roc_pr.png
+2026-08-25 13:45:14,575 - INFO - GPU [Epoch 16] Alloc:2.07GB Res:2.70GB
+2026-08-25 13:48:22,740 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_015\plots\Train_cm.png
+2026-08-25 13:49:43,448 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_015\plots\Train_roc_pr.png
+2026-08-25 13:49:43,836 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_015\plots\Val_cm.png
+2026-08-25 13:50:10,899 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_015\plots\Val_roc_pr.png
+2026-08-25 13:50:13,068 - INFO - GPU [Epoch 17] Alloc:2.07GB Res:2.70GB
+2026-08-25 13:53:23,220 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_016\plots\Train_cm.png
+2026-08-25 13:54:44,527 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_016\plots\Train_roc_pr.png
+2026-08-25 13:54:44,941 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_016\plots\Val_cm.png
+2026-08-25 13:55:12,053 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_016\plots\Val_roc_pr.png
+2026-08-25 13:55:14,245 - INFO - GPU [Epoch 18] Alloc:2.07GB Res:2.70GB
+2026-08-25 13:58:19,426 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_017\plots\Train_cm.png
+2026-08-25 13:59:38,406 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_017\plots\Train_roc_pr.png
+2026-08-25 13:59:38,815 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_017\plots\Val_cm.png
+2026-08-25 14:00:04,750 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_017\plots\Val_roc_pr.png
+2026-08-25 14:00:04,750 - INFO - New best F1:0.7724 @ thr=0.5 | IoU:0.6291
+2026-08-25 14:00:08,541 - INFO - Best model saved — F1:0.7724 | Thr:0.50 (fixed)
+2026-08-25 14:00:08,747 - INFO - GPU [Epoch 19] Alloc:2.07GB Res:2.70GB
+2026-08-25 14:03:18,030 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_018\plots\Train_cm.png
+2026-08-25 14:04:34,792 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_018\plots\Train_roc_pr.png
+2026-08-25 14:04:35,171 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_018\plots\Val_cm.png
+2026-08-25 14:05:00,187 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_018\plots\Val_roc_pr.png
+2026-08-25 14:05:02,368 - INFO - GPU [Epoch 20] Alloc:2.07GB Res:2.70GB
+2026-08-25 14:08:04,737 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_019\plots\Train_cm.png
+2026-08-25 14:09:25,099 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_019\plots\Train_roc_pr.png
+2026-08-25 14:09:25,465 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_019\plots\Val_cm.png
+2026-08-25 14:09:49,120 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_019\plots\Val_roc_pr.png
+2026-08-25 14:09:51,366 - INFO - GPU [Epoch 21] Alloc:2.07GB Res:2.70GB
+2026-08-25 14:12:56,663 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_020\plots\Train_cm.png
+2026-08-25 14:14:11,547 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_020\plots\Train_roc_pr.png
+2026-08-25 14:14:11,956 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_020\plots\Val_cm.png
+2026-08-25 14:14:35,545 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_020\plots\Val_roc_pr.png
+2026-08-25 14:14:37,712 - INFO - GPU [Epoch 22] Alloc:2.07GB Res:2.70GB
+2026-08-25 14:17:40,237 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_021\plots\Train_cm.png
+2026-08-25 14:18:56,039 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_021\plots\Train_roc_pr.png
+2026-08-25 14:18:56,433 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_021\plots\Val_cm.png
+2026-08-25 14:19:21,013 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_021\plots\Val_roc_pr.png
+2026-08-25 14:19:23,212 - INFO - GPU [Epoch 23] Alloc:2.07GB Res:2.70GB
+2026-08-25 14:22:30,619 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_022\plots\Train_cm.png
+2026-08-25 14:23:46,395 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_022\plots\Train_roc_pr.png
+2026-08-25 14:23:46,822 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_022\plots\Val_cm.png
+2026-08-25 14:24:09,751 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_022\plots\Val_roc_pr.png
+2026-08-25 14:24:11,859 - INFO - GPU [Epoch 24] Alloc:2.07GB Res:2.70GB
+2026-08-25 14:27:20,751 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_023\plots\Train_cm.png
+2026-08-25 14:28:37,646 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_023\plots\Train_roc_pr.png
+2026-08-25 14:28:38,060 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_023\plots\Val_cm.png
+2026-08-25 14:29:03,318 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_023\plots\Val_roc_pr.png
+2026-08-25 14:29:03,332 - INFO - New best F1:0.7966 @ thr=0.5 | IoU:0.6619
+2026-08-25 14:29:07,135 - INFO - Best model saved — F1:0.7966 | Thr:0.50 (fixed)
+2026-08-25 14:29:07,339 - INFO - GPU [Epoch 25] Alloc:2.07GB Res:2.70GB
+2026-08-25 14:32:15,810 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_024\plots\Train_cm.png
+2026-08-25 14:33:32,417 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_024\plots\Train_roc_pr.png
+2026-08-25 14:33:32,850 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_024\plots\Val_cm.png
+2026-08-25 14:33:56,455 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_024\plots\Val_roc_pr.png
+2026-08-25 14:33:58,611 - INFO - GPU [Epoch 26] Alloc:2.07GB Res:2.70GB
+2026-08-25 14:37:06,236 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_025\plots\Train_cm.png
+2026-08-25 14:38:23,318 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_025\plots\Train_roc_pr.png
+2026-08-25 14:38:23,721 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_025\plots\Val_cm.png
+2026-08-25 14:38:48,458 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_025\plots\Val_roc_pr.png
+2026-08-25 14:38:50,682 - INFO - GPU [Epoch 27] Alloc:2.07GB Res:2.70GB
+2026-08-25 14:41:56,894 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_026\plots\Train_cm.png
+2026-08-25 14:43:14,796 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_026\plots\Train_roc_pr.png
+2026-08-25 14:43:15,174 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_026\plots\Val_cm.png
+2026-08-25 14:43:39,165 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_026\plots\Val_roc_pr.png
+2026-08-25 14:43:41,385 - INFO - GPU [Epoch 28] Alloc:2.07GB Res:2.70GB
+2026-08-25 14:46:55,201 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_027\plots\Train_cm.png
+2026-08-25 14:48:11,170 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_027\plots\Train_roc_pr.png
+2026-08-25 14:48:11,568 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_027\plots\Val_cm.png
+2026-08-25 14:48:34,419 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_027\plots\Val_roc_pr.png
+2026-08-25 14:48:36,550 - INFO - GPU [Epoch 29] Alloc:2.07GB Res:2.70GB
+2026-08-25 14:51:46,086 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_028\plots\Train_cm.png
+2026-08-25 14:53:00,375 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_028\plots\Train_roc_pr.png
+2026-08-25 14:53:00,778 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_028\plots\Val_cm.png
+2026-08-25 14:53:22,923 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_028\plots\Val_roc_pr.png
+2026-08-25 14:53:25,175 - INFO - GPU [Epoch 30] Alloc:2.07GB Res:2.70GB
+2026-08-25 14:56:36,418 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_029\plots\Train_cm.png
+2026-08-25 14:57:50,752 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_029\plots\Train_roc_pr.png
+2026-08-25 14:57:51,160 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_029\plots\Val_cm.png
+2026-08-25 14:58:14,393 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_029\plots\Val_roc_pr.png
+2026-08-25 14:58:16,469 - INFO - GPU [Epoch 31] Alloc:2.07GB Res:2.70GB
+2026-08-25 15:01:28,966 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_030\plots\Train_cm.png
+2026-08-25 15:02:44,399 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_030\plots\Train_roc_pr.png
+2026-08-25 15:02:44,862 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_030\plots\Val_cm.png
+2026-08-25 15:03:08,790 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_030\plots\Val_roc_pr.png
+2026-08-25 15:03:11,065 - INFO - GPU [Epoch 32] Alloc:2.07GB Res:2.70GB
+2026-08-25 15:06:20,465 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_031\plots\Train_cm.png
+2026-08-25 15:07:35,910 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_031\plots\Train_roc_pr.png
+2026-08-25 15:07:36,315 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_031\plots\Val_cm.png
+2026-08-25 15:07:59,155 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_031\plots\Val_roc_pr.png
+2026-08-25 15:08:01,338 - INFO - GPU [Epoch 33] Alloc:2.07GB Res:2.70GB
+2026-08-25 15:11:05,121 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_032\plots\Train_cm.png
+2026-08-25 15:12:20,734 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_032\plots\Train_roc_pr.png
+2026-08-25 15:12:21,124 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_032\plots\Val_cm.png
+2026-08-25 15:12:44,425 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_032\plots\Val_roc_pr.png
+2026-08-25 15:12:44,425 - INFO - New best F1:0.7996 @ thr=0.5 | IoU:0.6661
+2026-08-25 15:12:48,348 - INFO - Best model saved — F1:0.7996 | Thr:0.50 (fixed)
+2026-08-25 15:12:48,544 - INFO - GPU [Epoch 34] Alloc:2.07GB Res:2.70GB
+2026-08-25 15:15:57,027 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_033\plots\Train_cm.png
+2026-08-25 15:17:08,772 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_033\plots\Train_roc_pr.png
+2026-08-25 15:17:09,181 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_033\plots\Val_cm.png
+2026-08-25 15:17:31,443 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_033\plots\Val_roc_pr.png
+2026-08-25 15:17:33,668 - INFO - GPU [Epoch 35] Alloc:2.07GB Res:2.70GB
+2026-08-25 15:20:43,476 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_034\plots\Train_cm.png
+2026-08-25 15:21:55,070 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_034\plots\Train_roc_pr.png
+2026-08-25 15:21:55,456 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_034\plots\Val_cm.png
+2026-08-25 15:22:18,049 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_034\plots\Val_roc_pr.png
+2026-08-25 15:22:20,153 - INFO - GPU [Epoch 36] Alloc:2.07GB Res:2.70GB
+2026-08-25 15:25:27,084 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_035\plots\Train_cm.png
+2026-08-25 15:26:38,061 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_035\plots\Train_roc_pr.png
+2026-08-25 15:26:38,474 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_035\plots\Val_cm.png
+2026-08-25 15:27:00,925 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_035\plots\Val_roc_pr.png
+2026-08-25 15:27:03,137 - INFO - GPU [Epoch 37] Alloc:2.07GB Res:2.70GB
+2026-08-25 15:30:06,347 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_036\plots\Train_cm.png
+2026-08-25 15:31:18,143 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_036\plots\Train_roc_pr.png
+2026-08-25 15:31:18,534 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_036\plots\Val_cm.png
+2026-08-25 15:31:40,653 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_036\plots\Val_roc_pr.png
+2026-08-25 15:31:42,855 - INFO - GPU [Epoch 38] Alloc:2.07GB Res:2.70GB
+2026-08-25 15:34:50,388 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_037\plots\Train_cm.png
+2026-08-25 15:36:03,667 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_037\plots\Train_roc_pr.png
+2026-08-25 15:36:04,073 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_037\plots\Val_cm.png
+2026-08-25 15:36:26,979 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_037\plots\Val_roc_pr.png
+2026-08-25 15:36:29,157 - INFO - GPU [Epoch 39] Alloc:2.07GB Res:2.70GB
+2026-08-25 15:39:39,047 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_038\plots\Train_cm.png
+2026-08-25 15:40:50,754 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_038\plots\Train_roc_pr.png
+2026-08-25 15:40:51,206 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_038\plots\Val_cm.png
+2026-08-25 15:41:13,729 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_038\plots\Val_roc_pr.png
+2026-08-25 15:41:13,745 - INFO - New best F1:0.8146 @ thr=0.5 | IoU:0.6873
+2026-08-25 15:41:17,687 - INFO - Best model saved — F1:0.8146 | Thr:0.50 (fixed)
+2026-08-25 15:41:17,893 - INFO - GPU [Epoch 40] Alloc:2.07GB Res:2.70GB
+2026-08-25 15:44:27,056 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_039\plots\Train_cm.png
+2026-08-25 15:45:38,550 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_039\plots\Train_roc_pr.png
+2026-08-25 15:45:38,963 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_039\plots\Val_cm.png
+2026-08-25 15:46:01,287 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_039\plots\Val_roc_pr.png
+2026-08-25 15:46:03,398 - INFO - GPU [Epoch 41] Alloc:2.07GB Res:2.70GB
+2026-08-25 15:49:14,415 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_040\plots\Train_cm.png
+2026-08-25 15:50:25,069 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_040\plots\Train_roc_pr.png
+2026-08-25 15:50:25,485 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_040\plots\Val_cm.png
+2026-08-25 15:50:47,911 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_040\plots\Val_roc_pr.png
+2026-08-25 15:50:50,072 - INFO - GPU [Epoch 42] Alloc:2.07GB Res:2.70GB
+2026-08-25 15:53:59,524 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_041\plots\Train_cm.png
+2026-08-25 15:55:09,453 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_041\plots\Train_roc_pr.png
+2026-08-25 15:55:09,848 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_041\plots\Val_cm.png
+2026-08-25 15:55:31,303 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_041\plots\Val_roc_pr.png
+2026-08-25 15:55:33,503 - INFO - GPU [Epoch 43] Alloc:2.07GB Res:2.70GB
+2026-08-25 15:58:45,334 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_042\plots\Train_cm.png
+2026-08-25 15:59:56,349 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_042\plots\Train_roc_pr.png
+2026-08-25 15:59:56,739 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_042\plots\Val_cm.png
+2026-08-25 16:00:18,457 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_042\plots\Val_roc_pr.png
+2026-08-25 16:00:20,679 - INFO - GPU [Epoch 44] Alloc:2.07GB Res:2.70GB
+2026-08-25 16:03:32,498 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_043\plots\Train_cm.png
+2026-08-25 16:04:42,683 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_043\plots\Train_roc_pr.png
+2026-08-25 16:04:43,075 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_043\plots\Val_cm.png
+2026-08-25 16:05:03,366 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_043\plots\Val_roc_pr.png
+2026-08-25 16:05:05,572 - INFO - GPU [Epoch 45] Alloc:2.07GB Res:2.70GB
+2026-08-25 16:08:14,107 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_044\plots\Train_cm.png
+2026-08-25 16:09:25,203 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_044\plots\Train_roc_pr.png
+2026-08-25 16:09:25,671 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_044\plots\Val_cm.png
+2026-08-25 16:09:47,823 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_044\plots\Val_roc_pr.png
+2026-08-25 16:09:47,823 - INFO - New best F1:0.8168 @ thr=0.5 | IoU:0.6904
+2026-08-25 16:09:51,766 - INFO - Best model saved — F1:0.8168 | Thr:0.50 (fixed)
+2026-08-25 16:09:51,961 - INFO - GPU [Epoch 46] Alloc:2.07GB Res:2.70GB
+2026-08-25 16:12:59,747 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_045\plots\Train_cm.png
+2026-08-25 16:14:09,595 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_045\plots\Train_roc_pr.png
+2026-08-25 16:14:09,999 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_045\plots\Val_cm.png
+2026-08-25 16:14:32,450 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_045\plots\Val_roc_pr.png
+2026-08-25 16:14:34,670 - INFO - GPU [Epoch 47] Alloc:2.07GB Res:2.70GB
+2026-08-25 16:17:43,515 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_046\plots\Train_cm.png
+2026-08-25 16:18:53,481 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_046\plots\Train_roc_pr.png
+2026-08-25 16:18:53,886 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_046\plots\Val_cm.png
+2026-08-25 16:19:15,629 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_046\plots\Val_roc_pr.png
+2026-08-25 16:19:17,850 - INFO - GPU [Epoch 48] Alloc:2.07GB Res:2.70GB
+2026-08-25 16:22:27,619 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_047\plots\Train_cm.png
+2026-08-25 16:23:38,428 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_047\plots\Train_roc_pr.png
+2026-08-25 16:23:38,836 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_047\plots\Val_cm.png
+2026-08-25 16:24:01,050 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_047\plots\Val_roc_pr.png
+2026-08-25 16:24:03,239 - INFO - GPU [Epoch 49] Alloc:2.07GB Res:2.70GB
+2026-08-25 16:27:09,730 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_048\plots\Train_cm.png
+2026-08-25 16:28:19,219 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_048\plots\Train_roc_pr.png
+2026-08-25 16:28:19,597 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_048\plots\Val_cm.png
+2026-08-25 16:28:41,549 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_048\plots\Val_roc_pr.png
+2026-08-25 16:28:43,732 - INFO - GPU [Epoch 50] Alloc:2.07GB Res:2.70GB
+2026-08-25 16:31:53,328 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_049\plots\Train_cm.png
+2026-08-25 16:33:02,773 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_049\plots\Train_roc_pr.png
+2026-08-25 16:33:03,150 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_049\plots\Val_cm.png
+2026-08-25 16:33:24,902 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_123\final\epoch_049\plots\Val_roc_pr.png
+2026-08-25 16:33:27,514 - INFO - Training finished at epoch 50 | best val F1 = 0.8168
+2026-08-25 16:34:08,993 - INFO - Complete | loss=focal_tversky seed=123 | test F1:0.8073 @ thr=0.500
+2026-08-25 16:34:09,167 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=3 | Seed: 2025 | LOSS ABLATION: focal_tversky
+2026-08-25 16:34:09,180 - INFO - Seed set to 2025
+2026-08-25 16:34:09,185 - INFO - Loading dataset paths... [LOSS_MODE=focal_tversky, SEED=2025]
+2026-08-25 16:34:09,196 - INFO - Pairs verified: 360 samples
+2026-08-25 16:34:09,197 - INFO - Pairs verified: 120 samples
+2026-08-25 16:34:09,199 - INFO - Pairs verified: 120 samples
+2026-08-25 16:34:09,495 - INFO - pos_weight = 11.33
+2026-08-25 16:34:09,495 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-08-25 16:34:11,177 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-25 16:34:11,237 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-25 16:34:11,490 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-25 16:34:12,438 - INFO - Objective: focal_tversky  (SingleLoss)
+2026-08-25 16:34:12,450 - INFO - No ckpt_epoch_*.pth found - starting from scratch
+2026-08-25 16:34:12,657 - INFO - GPU [Epoch 1] Alloc:0.77GB Res:3.17GB
+2026-08-25 16:37:22,770 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_000\plots\Train_cm.png
+2026-08-25 16:39:03,283 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_000\plots\Train_roc_pr.png
+2026-08-25 16:39:03,658 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_000\plots\Val_cm.png
+2026-08-25 16:39:40,259 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_000\plots\Val_roc_pr.png
+2026-08-25 16:39:40,269 - INFO - New best F1:0.1090 @ thr=0.5 | IoU:0.0576
+2026-08-25 16:39:43,434 - INFO - Best model saved — F1:0.1090 | Thr:0.50 (fixed)
+2026-08-25 16:39:43,647 - INFO - GPU [Epoch 2] Alloc:1.73GB Res:2.71GB
+2026-08-25 16:42:47,628 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_001\plots\Train_cm.png
+2026-08-25 16:44:30,210 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_001\plots\Train_roc_pr.png
+2026-08-25 16:44:30,617 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_001\plots\Val_cm.png
+2026-08-25 16:45:17,789 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_001\plots\Val_roc_pr.png
+2026-08-25 16:45:17,797 - INFO - New best F1:0.4810 @ thr=0.5 | IoU:0.3167
+2026-08-25 16:45:21,131 - INFO - Best model saved — F1:0.4810 | Thr:0.50 (fixed)
+2026-08-25 16:45:21,352 - INFO - GPU [Epoch 3] Alloc:1.73GB Res:2.71GB
+2026-08-25 16:48:31,730 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_002\plots\Train_cm.png
+2026-08-25 16:50:20,751 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_002\plots\Train_roc_pr.png
+2026-08-25 16:50:21,137 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_002\plots\Val_cm.png
+2026-08-25 16:51:02,219 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_002\plots\Val_roc_pr.png
+2026-08-25 16:51:04,134 - INFO - GPU [Epoch 4] Alloc:1.73GB Res:2.71GB
+2026-08-25 16:54:13,948 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_003\plots\Train_cm.png
+2026-08-25 16:55:59,563 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_003\plots\Train_roc_pr.png
+2026-08-25 16:55:59,956 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_003\plots\Val_cm.png
+2026-08-25 16:56:36,114 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_003\plots\Val_roc_pr.png
+2026-08-25 16:56:36,119 - INFO - New best F1:0.5786 @ thr=0.5 | IoU:0.4071
+2026-08-25 16:56:39,569 - INFO - Best model saved — F1:0.5786 | Thr:0.50 (fixed)
+2026-08-25 16:56:39,848 - INFO - GPU [Epoch 5] Alloc:1.73GB Res:2.71GB
+2026-08-25 16:59:47,523 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_004\plots\Train_cm.png
+2026-08-25 17:01:21,016 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_004\plots\Train_roc_pr.png
+2026-08-25 17:01:21,419 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_004\plots\Val_cm.png
+2026-08-25 17:01:52,386 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_004\plots\Val_roc_pr.png
+2026-08-25 17:01:52,386 - INFO - New best F1:0.6283 @ thr=0.5 | IoU:0.4580
+2026-08-25 17:01:55,720 - INFO - Best model saved — F1:0.6283 | Thr:0.50 (fixed)
+2026-08-25 17:01:55,953 - INFO - GPU [Epoch 6] Alloc:1.73GB Res:2.71GB
+2026-08-25 17:05:09,520 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_005\plots\Train_cm.png
+2026-08-25 17:06:39,532 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_005\plots\Train_roc_pr.png
+2026-08-25 17:06:39,953 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_005\plots\Val_cm.png
+2026-08-25 17:07:10,343 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_005\plots\Val_roc_pr.png
+2026-08-25 17:07:12,179 - INFO - GPU [Epoch 7] Alloc:1.73GB Res:2.71GB
+2026-08-25 17:10:21,664 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_006\plots\Train_cm.png
+2026-08-25 17:11:52,165 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_006\plots\Train_roc_pr.png
+2026-08-25 17:11:52,579 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_006\plots\Val_cm.png
+2026-08-25 17:12:22,094 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_006\plots\Val_roc_pr.png
+2026-08-25 17:12:22,108 - INFO - New best F1:0.7257 @ thr=0.5 | IoU:0.5695
+2026-08-25 17:12:25,392 - INFO - Best model saved — F1:0.7257 | Thr:0.50 (fixed)
+2026-08-25 17:12:25,684 - INFO - GPU [Epoch 8] Alloc:1.73GB Res:2.71GB
+2026-08-25 17:15:29,235 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_007\plots\Train_cm.png
+2026-08-25 17:16:52,270 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_007\plots\Train_roc_pr.png
+2026-08-25 17:16:52,658 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_007\plots\Val_cm.png
+2026-08-25 17:17:20,033 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_007\plots\Val_roc_pr.png
+2026-08-25 17:17:21,915 - INFO - GPU [Epoch 9] Alloc:1.73GB Res:2.71GB
+2026-08-25 17:20:33,344 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_008\plots\Train_cm.png
+2026-08-25 17:21:53,700 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_008\plots\Train_roc_pr.png
+2026-08-25 17:21:54,113 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_008\plots\Val_cm.png
+2026-08-25 17:22:21,611 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_008\plots\Val_roc_pr.png
+2026-08-25 17:22:21,622 - INFO - New best F1:0.7471 @ thr=0.5 | IoU:0.5963
+2026-08-25 17:22:24,909 - INFO - Best model saved — F1:0.7471 | Thr:0.50 (fixed)
+2026-08-25 17:22:25,121 - INFO - GPU [Epoch 10] Alloc:1.73GB Res:2.71GB
+2026-08-25 17:25:34,568 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_009\plots\Train_cm.png
+2026-08-25 17:26:55,777 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_009\plots\Train_roc_pr.png
+2026-08-25 17:26:56,185 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_009\plots\Val_cm.png
+2026-08-25 17:27:19,040 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_009\plots\Val_roc_pr.png
+2026-08-25 17:27:19,056 - INFO - New best F1:0.7869 @ thr=0.5 | IoU:0.6486
+2026-08-25 17:27:22,397 - INFO - Best model saved — F1:0.7869 | Thr:0.50 (fixed)
+2026-08-25 17:27:22,587 - INFO - GPU [Epoch 11] Alloc:1.73GB Res:2.71GB
+2026-08-25 17:30:30,864 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_010\plots\Train_cm.png
+2026-08-25 17:31:50,186 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_010\plots\Train_roc_pr.png
+2026-08-25 17:31:50,602 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_010\plots\Val_cm.png
+2026-08-25 17:32:17,711 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_010\plots\Val_roc_pr.png
+2026-08-25 17:32:19,255 - INFO - Epoch 11: Unfreezing ViT encoder...
+2026-08-25 17:32:19,255 - INFO - New CosineAnnealingLR: T_max=39, eta_min=1e-6
+2026-08-25 17:32:19,457 - INFO - GPU [Epoch 12] Alloc:1.73GB Res:2.71GB
+2026-08-25 17:35:36,191 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_011\plots\Train_cm.png
+2026-08-25 17:37:24,990 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_011\plots\Train_roc_pr.png
+2026-08-25 17:37:26,705 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_011\plots\Val_cm.png
+2026-08-25 17:38:51,435 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_011\plots\Val_roc_pr.png
+2026-08-25 17:38:53,625 - INFO - GPU [Epoch 13] Alloc:2.07GB Res:3.14GB
+2026-08-25 17:42:04,068 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_012\plots\Train_cm.png
+2026-08-25 17:43:28,659 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_012\plots\Train_roc_pr.png
+2026-08-25 17:43:29,086 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_012\plots\Val_cm.png
+2026-08-25 17:43:58,025 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_012\plots\Val_roc_pr.png
+2026-08-25 17:44:00,160 - INFO - GPU [Epoch 14] Alloc:2.07GB Res:3.14GB
+2026-08-25 17:47:07,861 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_013\plots\Train_cm.png
+2026-08-25 17:48:29,804 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_013\plots\Train_roc_pr.png
+2026-08-25 17:48:30,190 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_013\plots\Val_cm.png
+2026-08-25 17:48:56,595 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_013\plots\Val_roc_pr.png
+2026-08-25 17:48:58,825 - INFO - GPU [Epoch 15] Alloc:2.07GB Res:3.14GB
+2026-08-25 17:52:13,881 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_014\plots\Train_cm.png
+2026-08-25 17:53:32,863 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_014\plots\Train_roc_pr.png
+2026-08-25 17:53:33,290 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_014\plots\Val_cm.png
+2026-08-25 17:53:59,402 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_014\plots\Val_roc_pr.png
+2026-08-25 17:53:59,402 - INFO - New best F1:0.7915 @ thr=0.5 | IoU:0.6549
+2026-08-25 17:54:03,336 - INFO - Best model saved — F1:0.7915 | Thr:0.50 (fixed)
+2026-08-25 17:54:03,597 - INFO - GPU [Epoch 16] Alloc:2.07GB Res:3.14GB
+2026-08-25 17:57:10,292 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_015\plots\Train_cm.png
+2026-08-25 17:58:28,952 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_015\plots\Train_roc_pr.png
+2026-08-25 17:58:29,343 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_015\plots\Val_cm.png
+2026-08-25 17:58:57,114 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_015\plots\Val_roc_pr.png
+2026-08-25 17:58:59,369 - INFO - GPU [Epoch 17] Alloc:2.07GB Res:3.14GB
+2026-08-25 18:02:08,043 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_016\plots\Train_cm.png
+2026-08-25 18:03:26,951 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_016\plots\Train_roc_pr.png
+2026-08-25 18:03:27,377 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_016\plots\Val_cm.png
+2026-08-25 18:03:52,762 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_016\plots\Val_roc_pr.png
+2026-08-25 18:03:54,934 - INFO - GPU [Epoch 18] Alloc:2.07GB Res:3.14GB
+2026-08-25 18:07:14,662 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_017\plots\Train_cm.png
+2026-08-25 18:08:32,665 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_017\plots\Train_roc_pr.png
+2026-08-25 18:08:33,102 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_017\plots\Val_cm.png
+2026-08-25 18:09:00,443 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_017\plots\Val_roc_pr.png
+2026-08-25 18:09:02,640 - INFO - GPU [Epoch 19] Alloc:2.07GB Res:3.14GB
+2026-08-25 18:12:11,542 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_018\plots\Train_cm.png
+2026-08-25 18:13:28,294 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_018\plots\Train_roc_pr.png
+2026-08-25 18:13:28,692 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_018\plots\Val_cm.png
+2026-08-25 18:13:54,336 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_018\plots\Val_roc_pr.png
+2026-08-25 18:13:56,472 - INFO - GPU [Epoch 20] Alloc:2.07GB Res:3.14GB
+2026-08-25 18:17:14,422 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_019\plots\Train_cm.png
+2026-08-25 18:18:30,604 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_019\plots\Train_roc_pr.png
+2026-08-25 18:18:31,039 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_019\plots\Val_cm.png
+2026-08-25 18:18:57,114 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_019\plots\Val_roc_pr.png
+2026-08-25 18:18:59,322 - INFO - GPU [Epoch 21] Alloc:2.07GB Res:3.14GB
+2026-08-25 18:22:08,655 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_020\plots\Train_cm.png
+2026-08-25 18:23:25,419 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_020\plots\Train_roc_pr.png
+2026-08-25 18:23:25,815 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_020\plots\Val_cm.png
+2026-08-25 18:23:50,154 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_020\plots\Val_roc_pr.png
+2026-08-25 18:23:52,296 - INFO - GPU [Epoch 22] Alloc:2.07GB Res:3.14GB
+2026-08-25 18:27:06,606 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_021\plots\Train_cm.png
+2026-08-25 18:28:20,660 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_021\plots\Train_roc_pr.png
+2026-08-25 18:28:21,079 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_021\plots\Val_cm.png
+2026-08-25 18:28:45,340 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_021\plots\Val_roc_pr.png
+2026-08-25 18:28:47,429 - INFO - GPU [Epoch 23] Alloc:2.07GB Res:3.14GB
+2026-08-25 18:31:59,136 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_022\plots\Train_cm.png
+2026-08-25 18:33:11,342 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_022\plots\Train_roc_pr.png
+2026-08-25 18:33:11,770 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_022\plots\Val_cm.png
+2026-08-25 18:33:35,401 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_022\plots\Val_roc_pr.png
+2026-08-25 18:33:37,638 - INFO - GPU [Epoch 24] Alloc:2.07GB Res:3.14GB
+2026-08-25 18:36:51,270 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_023\plots\Train_cm.png
+2026-08-25 18:38:05,652 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_023\plots\Train_roc_pr.png
+2026-08-25 18:38:06,051 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_023\plots\Val_cm.png
+2026-08-25 18:38:29,714 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_023\plots\Val_roc_pr.png
+2026-08-25 18:38:31,838 - INFO - GPU [Epoch 25] Alloc:2.07GB Res:3.14GB
+2026-08-25 18:41:42,006 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_024\plots\Train_cm.png
+2026-08-25 18:42:54,060 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_024\plots\Train_roc_pr.png
+2026-08-25 18:42:54,466 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_024\plots\Val_cm.png
+2026-08-25 18:43:17,554 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_024\plots\Val_roc_pr.png
+2026-08-25 18:43:17,554 - INFO - New best F1:0.7970 @ thr=0.5 | IoU:0.6626
+2026-08-25 18:43:21,432 - INFO - Best model saved — F1:0.7970 | Thr:0.50 (fixed)
+2026-08-25 18:43:21,712 - INFO - GPU [Epoch 26] Alloc:2.07GB Res:3.14GB
+2026-08-25 18:46:33,874 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_025\plots\Train_cm.png
+2026-08-25 18:47:47,862 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_025\plots\Train_roc_pr.png
+2026-08-25 18:47:48,272 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_025\plots\Val_cm.png
+2026-08-25 18:48:12,495 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_025\plots\Val_roc_pr.png
+2026-08-25 18:48:14,634 - INFO - GPU [Epoch 27] Alloc:2.07GB Res:3.14GB
+2026-08-25 18:51:30,827 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_026\plots\Train_cm.png
+2026-08-25 18:52:44,980 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_026\plots\Train_roc_pr.png
+2026-08-25 18:52:45,394 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_026\plots\Val_cm.png
+2026-08-25 18:53:08,640 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_026\plots\Val_roc_pr.png
+2026-08-25 18:53:10,755 - INFO - GPU [Epoch 28] Alloc:2.07GB Res:3.14GB
+2026-08-25 18:56:20,460 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_027\plots\Train_cm.png
+2026-08-25 18:57:33,187 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_027\plots\Train_roc_pr.png
+2026-08-25 18:57:33,617 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_027\plots\Val_cm.png
+2026-08-25 18:57:57,116 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_027\plots\Val_roc_pr.png
+2026-08-25 18:57:57,132 - INFO - New best F1:0.7979 @ thr=0.5 | IoU:0.6638
+2026-08-25 18:58:01,278 - INFO - Best model saved — F1:0.7979 | Thr:0.50 (fixed)
+2026-08-25 18:58:01,495 - INFO - GPU [Epoch 29] Alloc:2.07GB Res:3.14GB
+2026-08-25 19:01:08,547 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_028\plots\Train_cm.png
+2026-08-25 19:02:19,380 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_028\plots\Train_roc_pr.png
+2026-08-25 19:02:19,791 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_028\plots\Val_cm.png
+2026-08-25 19:02:41,583 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_028\plots\Val_roc_pr.png
+2026-08-25 19:02:43,731 - INFO - GPU [Epoch 30] Alloc:2.07GB Res:3.14GB
+2026-08-25 19:05:52,568 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_029\plots\Train_cm.png
+2026-08-25 19:07:03,333 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_029\plots\Train_roc_pr.png
+2026-08-25 19:07:03,759 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_029\plots\Val_cm.png
+2026-08-25 19:07:27,281 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_029\plots\Val_roc_pr.png
+2026-08-25 19:07:29,509 - INFO - GPU [Epoch 31] Alloc:2.07GB Res:3.14GB
+2026-08-25 19:10:43,297 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_030\plots\Train_cm.png
+2026-08-25 19:11:54,204 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_030\plots\Train_roc_pr.png
+2026-08-25 19:11:54,629 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_030\plots\Val_cm.png
+2026-08-25 19:12:16,989 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_030\plots\Val_roc_pr.png
+2026-08-25 19:12:19,216 - INFO - GPU [Epoch 32] Alloc:2.07GB Res:3.14GB
+2026-08-25 19:15:43,865 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_031\plots\Train_cm.png
+2026-08-25 19:16:55,192 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_031\plots\Train_roc_pr.png
+2026-08-25 19:16:55,634 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_031\plots\Val_cm.png
+2026-08-25 19:17:18,734 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_031\plots\Val_roc_pr.png
+2026-08-25 19:17:20,813 - INFO - GPU [Epoch 33] Alloc:2.07GB Res:3.14GB
+2026-08-25 19:20:33,442 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_032\plots\Train_cm.png
+2026-08-25 19:21:44,581 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_032\plots\Train_roc_pr.png
+2026-08-25 19:21:45,014 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_032\plots\Val_cm.png
+2026-08-25 19:22:06,960 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_032\plots\Val_roc_pr.png
+2026-08-25 19:22:06,960 - INFO - New best F1:0.8006 @ thr=0.5 | IoU:0.6675
+2026-08-25 19:22:10,956 - INFO - Best model saved — F1:0.8006 | Thr:0.50 (fixed)
+2026-08-25 19:22:11,141 - INFO - GPU [Epoch 34] Alloc:2.07GB Res:3.14GB
+2026-08-25 19:25:28,856 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_033\plots\Train_cm.png
+2026-08-25 19:26:38,244 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_033\plots\Train_roc_pr.png
+2026-08-25 19:26:38,635 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_033\plots\Val_cm.png
+2026-08-25 19:27:00,703 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_033\plots\Val_roc_pr.png
+2026-08-25 19:27:00,703 - INFO - New best F1:0.8098 @ thr=0.5 | IoU:0.6803
+2026-08-25 19:27:04,598 - INFO - Best model saved — F1:0.8098 | Thr:0.50 (fixed)
+2026-08-25 19:27:04,808 - INFO - GPU [Epoch 35] Alloc:2.07GB Res:3.14GB
+2026-08-25 19:30:15,876 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_034\plots\Train_cm.png
+2026-08-25 19:31:24,372 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_034\plots\Train_roc_pr.png
+2026-08-25 19:31:24,769 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_034\plots\Val_cm.png
+2026-08-25 19:31:45,091 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_034\plots\Val_roc_pr.png
+2026-08-25 19:31:47,275 - INFO - GPU [Epoch 36] Alloc:2.07GB Res:3.14GB
+2026-08-25 19:34:51,780 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_035\plots\Train_cm.png
+2026-08-25 19:35:55,586 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_035\plots\Train_roc_pr.png
+2026-08-25 19:35:55,997 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_035\plots\Val_cm.png
+2026-08-25 19:36:15,470 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_035\plots\Val_roc_pr.png
+2026-08-25 19:36:17,729 - INFO - GPU [Epoch 37] Alloc:2.07GB Res:3.14GB
+2026-08-25 19:39:30,141 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_036\plots\Train_cm.png
+2026-08-25 19:40:36,442 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_036\plots\Train_roc_pr.png
+2026-08-25 19:40:36,865 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_036\plots\Val_cm.png
+2026-08-25 19:40:58,253 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_036\plots\Val_roc_pr.png
+2026-08-25 19:41:00,406 - INFO - GPU [Epoch 38] Alloc:2.07GB Res:3.14GB
+2026-08-25 19:44:12,181 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_037\plots\Train_cm.png
+2026-08-25 19:45:20,183 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_037\plots\Train_roc_pr.png
+2026-08-25 19:45:20,590 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_037\plots\Val_cm.png
+2026-08-25 19:45:42,487 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_037\plots\Val_roc_pr.png
+2026-08-25 19:45:42,506 - INFO - New best F1:0.8158 @ thr=0.5 | IoU:0.6888
+2026-08-25 19:45:46,677 - INFO - Best model saved — F1:0.8158 | Thr:0.50 (fixed)
+2026-08-25 19:45:46,926 - INFO - GPU [Epoch 39] Alloc:2.07GB Res:3.14GB
+2026-08-25 19:49:01,456 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_038\plots\Train_cm.png
+2026-08-25 19:50:11,741 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_038\plots\Train_roc_pr.png
+2026-08-25 19:50:12,123 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_038\plots\Val_cm.png
+2026-08-25 19:50:34,305 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_038\plots\Val_roc_pr.png
+2026-08-25 19:50:36,509 - INFO - GPU [Epoch 40] Alloc:2.07GB Res:3.14GB
+2026-08-25 19:53:49,864 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_039\plots\Train_cm.png
+2026-08-25 19:54:58,628 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_039\plots\Train_roc_pr.png
+2026-08-25 19:54:59,055 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_039\plots\Val_cm.png
+2026-08-25 19:55:21,681 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_039\plots\Val_roc_pr.png
+2026-08-25 19:55:21,683 - INFO - New best F1:0.8220 @ thr=0.5 | IoU:0.6979
+2026-08-25 19:55:25,728 - INFO - Best model saved — F1:0.8220 | Thr:0.50 (fixed)
+2026-08-25 19:55:25,944 - INFO - GPU [Epoch 41] Alloc:2.07GB Res:3.14GB
+2026-08-25 19:58:33,497 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_040\plots\Train_cm.png
+2026-08-25 19:59:42,322 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_040\plots\Train_roc_pr.png
+2026-08-25 19:59:42,740 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_040\plots\Val_cm.png
+2026-08-25 20:00:04,319 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_040\plots\Val_roc_pr.png
+2026-08-25 20:00:06,410 - INFO - GPU [Epoch 42] Alloc:2.07GB Res:3.14GB
+2026-08-25 20:03:16,630 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_041\plots\Train_cm.png
+2026-08-25 20:04:25,607 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_041\plots\Train_roc_pr.png
+2026-08-25 20:04:26,041 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_041\plots\Val_cm.png
+2026-08-25 20:04:47,789 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_041\plots\Val_roc_pr.png
+2026-08-25 20:04:49,938 - INFO - GPU [Epoch 43] Alloc:2.07GB Res:3.14GB
+2026-08-25 20:07:54,907 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_042\plots\Train_cm.png
+2026-08-25 20:09:03,117 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_042\plots\Train_roc_pr.png
+2026-08-25 20:09:03,529 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_042\plots\Val_cm.png
+2026-08-25 20:09:24,444 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_042\plots\Val_roc_pr.png
+2026-08-25 20:09:26,657 - INFO - GPU [Epoch 44] Alloc:2.07GB Res:3.14GB
+2026-08-25 20:12:36,564 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_043\plots\Train_cm.png
+2026-08-25 20:13:45,385 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_043\plots\Train_roc_pr.png
+2026-08-25 20:13:45,785 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_043\plots\Val_cm.png
+2026-08-25 20:14:07,826 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_043\plots\Val_roc_pr.png
+2026-08-25 20:14:07,826 - INFO - New best F1:0.8232 @ thr=0.5 | IoU:0.6995
+2026-08-25 20:14:11,829 - INFO - Best model saved — F1:0.8232 | Thr:0.50 (fixed)
+2026-08-25 20:14:12,043 - INFO - GPU [Epoch 45] Alloc:2.07GB Res:3.14GB
+2026-08-25 20:17:23,772 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_044\plots\Train_cm.png
+2026-08-25 20:18:31,998 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_044\plots\Train_roc_pr.png
+2026-08-25 20:18:32,378 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_044\plots\Val_cm.png
+2026-08-25 20:18:54,789 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_044\plots\Val_roc_pr.png
+2026-08-25 20:18:56,892 - INFO - GPU [Epoch 46] Alloc:2.07GB Res:3.14GB
+2026-08-25 20:22:06,604 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_045\plots\Train_cm.png
+2026-08-25 20:23:16,070 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_045\plots\Train_roc_pr.png
+2026-08-25 20:23:16,490 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_045\plots\Val_cm.png
+2026-08-25 20:23:38,025 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_045\plots\Val_roc_pr.png
+2026-08-25 20:23:40,186 - INFO - GPU [Epoch 47] Alloc:2.07GB Res:3.14GB
+2026-08-25 20:26:55,335 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_046\plots\Train_cm.png
+2026-08-25 20:28:03,945 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_046\plots\Train_roc_pr.png
+2026-08-25 20:28:04,348 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_046\plots\Val_cm.png
+2026-08-25 20:28:25,524 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_046\plots\Val_roc_pr.png
+2026-08-25 20:28:27,692 - INFO - GPU [Epoch 48] Alloc:2.07GB Res:3.14GB
+2026-08-25 20:31:39,277 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_047\plots\Train_cm.png
+2026-08-25 20:32:46,036 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_047\plots\Train_roc_pr.png
+2026-08-25 20:32:46,416 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_047\plots\Val_cm.png
+2026-08-25 20:33:07,633 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_047\plots\Val_roc_pr.png
+2026-08-25 20:33:09,733 - INFO - GPU [Epoch 49] Alloc:2.07GB Res:3.14GB
+2026-08-25 20:36:20,192 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_048\plots\Train_cm.png
+2026-08-25 20:37:25,419 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_048\plots\Train_roc_pr.png
+2026-08-25 20:37:25,817 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_048\plots\Val_cm.png
+2026-08-25 20:37:47,397 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_048\plots\Val_roc_pr.png
+2026-08-25 20:37:49,669 - INFO - GPU [Epoch 50] Alloc:2.07GB Res:3.14GB
+2026-08-25 20:40:59,038 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_049\plots\Train_cm.png
+2026-08-25 20:42:03,776 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_049\plots\Train_roc_pr.png
+2026-08-25 20:42:04,184 - INFO - CM saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_049\plots\Val_cm.png
+2026-08-25 20:42:25,918 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\ABL_CLCD_logit_focal_tversky_seed_2025\final\epoch_049\plots\Val_roc_pr.png
+2026-08-25 20:42:28,427 - INFO - Training finished at epoch 50 | best val F1 = 0.8232
+2026-08-25 20:43:10,503 - INFO - Complete | loss=focal_tversky seed=2025 | test F1:0.8097 @ thr=0.500
+2026-08-25 20:43:10,718 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=3 | Seed: 2025 | LOSS ABLATION: bce
+2026-08-25 20:43:10,718 - INFO - Seed set to 2025
+2026-08-25 20:43:10,729 - INFO - Loading dataset paths... [LOSS_MODE=bce, SEED=2025]
+2026-08-25 20:43:10,740 - INFO - Pairs verified: 360 samples
+2026-08-25 20:43:10,742 - INFO - Pairs verified: 120 samples
+2026-08-25 20:43:10,744 - INFO - Pairs verified: 120 samples
+2026-08-25 20:43:11,032 - INFO - pos_weight = 11.33
+2026-08-25 20:43:11,052 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-08-25 20:43:12,912 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-25 20:43:12,992 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-25 20:43:13,542 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-25 20:43:14,517 - INFO - Objective: bce  (SingleLoss)
+2026-08-25 20:43:14,532 - ERROR - Fatal error: PytorchStreamReader failed reading zip archive: failed finding central directory
+Traceback (most recent call last):
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_21432\2361465910.py", line 1216, in <module>
+    main()
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_21432\2361465910.py", line 995, in main
+    _ck = torch.load(_path, map_location=DEVICE, weights_only=False)
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\serialization.py", line 1432, in load
+    with _open_zipfile_reader(opened_file) as opened_zipfile:
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\serialization.py", line 763, in __init__
+    super().__init__(torch._C.PyTorchFileReader(name_or_buffer))
+RuntimeError: PytorchStreamReader failed reading zip archive: failed finding central directory
+2026-08-25 23:11:47,434 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=3 | Seed: 2025 | LOSS ABLATION: bce
+2026-08-25 23:11:47,442 - INFO - Seed set to 2025
+2026-08-25 23:11:47,446 - INFO - Loading dataset paths... [LOSS_MODE=bce, SEED=2025]
+2026-08-25 23:11:47,458 - INFO - Pairs verified: 360 samples
+2026-08-25 23:11:47,460 - INFO - Pairs verified: 120 samples
+2026-08-25 23:11:47,462 - INFO - Pairs verified: 120 samples
+2026-08-25 23:11:47,767 - INFO - pos_weight = 11.33
+2026-08-25 23:11:47,772 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-08-25 23:11:50,409 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-25 23:11:50,507 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-25 23:11:50,847 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-25 23:11:51,679 - INFO - Objective: bce  (SingleLoss)
+2026-08-25 23:11:51,679 - ERROR - Fatal error: PytorchStreamReader failed reading zip archive: failed finding central directory
+Traceback (most recent call last):
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_21432\2361465910.py", line 1216, in <module>
+    main()
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_21432\2361465910.py", line 995, in main
+    _ck = torch.load(_path, map_location=DEVICE, weights_only=False)
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\serialization.py", line 1432, in load
+    with _open_zipfile_reader(opened_file) as opened_zipfile:
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\serialization.py", line 763, in __init__
+    super().__init__(torch._C.PyTorchFileReader(name_or_buffer))
+RuntimeError: PytorchStreamReader failed reading zip archive: failed finding central directory

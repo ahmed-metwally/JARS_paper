@@ -1,0 +1,657 @@
+2026-08-03 04:48:36,279 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=256 | Channels=3 | Seed: 42
+2026-08-03 04:48:36,283 - INFO - Seed set to 42
+2026-08-03 04:48:36,291 - INFO - Loading dataset paths...
+2026-08-03 04:48:36,310 - INFO - Pairs verified: 360 samples
+2026-08-03 04:48:36,311 - INFO - Pairs verified: 120 samples
+2026-08-03 04:48:36,313 - INFO - Pairs verified: 120 samples
+2026-08-03 04:48:38,454 - INFO - pos_weight = 11.91
+2026-08-03 04:48:38,454 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 8} | Threshold: 0.50 (fixed)
+2026-08-03 04:48:40,256 - INFO - HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-08-03 04:48:40,462 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-03 04:48:40,563 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-03 04:48:40,837 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-03 04:48:41,774 - INFO - GPU [Epoch 1] Alloc:0.65GB Res:0.72GB
+2026-08-03 04:49:43,181 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_000\plots\Train_cm.png
+2026-08-03 04:50:08,775 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_000\plots\Train_roc_pr.png
+2026-08-03 04:50:08,931 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_000\plots\Val_cm.png
+2026-08-03 04:50:19,527 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_000\plots\Val_roc_pr.png
+2026-08-03 04:50:19,531 - INFO - New best F1:0.1100 @ thr=0.5 | IoU:0.0582
+2026-08-03 04:50:22,825 - INFO - Best model saved — F1:0.1100 | Thr:0.50 (fixed)
+2026-08-03 04:50:23,078 - INFO - GPU [Epoch 2] Alloc:1.68GB Res:2.07GB
+2026-08-03 04:51:06,063 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_001\plots\Train_cm.png
+2026-08-03 04:51:31,949 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_001\plots\Train_roc_pr.png
+2026-08-03 04:51:32,124 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_001\plots\Val_cm.png
+2026-08-03 04:51:43,998 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_001\plots\Val_roc_pr.png
+2026-08-03 04:51:44,002 - INFO - New best F1:0.2437 @ thr=0.5 | IoU:0.1388
+2026-08-03 04:51:47,239 - INFO - Best model saved — F1:0.2437 | Thr:0.50 (fixed)
+2026-08-03 04:51:47,490 - INFO - GPU [Epoch 3] Alloc:1.68GB Res:2.07GB
+2026-08-03 04:52:31,932 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_002\plots\Train_cm.png
+2026-08-03 04:53:00,024 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_002\plots\Train_roc_pr.png
+2026-08-03 04:53:00,187 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_002\plots\Val_cm.png
+2026-08-03 04:53:13,451 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_002\plots\Val_roc_pr.png
+2026-08-03 04:53:13,463 - INFO - New best F1:0.4108 @ thr=0.5 | IoU:0.2585
+2026-08-03 04:53:16,779 - INFO - Best model saved — F1:0.4108 | Thr:0.50 (fixed)
+2026-08-03 04:53:16,979 - INFO - GPU [Epoch 4] Alloc:1.68GB Res:2.07GB
+2026-08-03 04:54:02,003 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_003\plots\Train_cm.png
+2026-08-03 04:54:32,714 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_003\plots\Train_roc_pr.png
+2026-08-03 04:54:32,862 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_003\plots\Val_cm.png
+2026-08-03 04:54:43,918 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_003\plots\Val_roc_pr.png
+2026-08-03 04:54:43,918 - INFO - New best F1:0.4850 @ thr=0.5 | IoU:0.3201
+2026-08-03 04:54:47,420 - INFO - Best model saved — F1:0.4850 | Thr:0.50 (fixed)
+2026-08-03 04:54:47,617 - INFO - GPU [Epoch 5] Alloc:1.68GB Res:2.07GB
+2026-08-03 04:55:33,710 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_004\plots\Train_cm.png
+2026-08-03 04:56:00,991 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_004\plots\Train_roc_pr.png
+2026-08-03 04:56:01,162 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_004\plots\Val_cm.png
+2026-08-03 04:56:10,408 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_004\plots\Val_roc_pr.png
+2026-08-03 04:56:10,410 - INFO - New best F1:0.6137 @ thr=0.5 | IoU:0.4427
+2026-08-03 04:56:11,038 - ERROR - Fatal error: [enforce fail at inline_container.cc:626] . unexpected pos 535046976 vs 535046864
+Traceback (most recent call last):
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\serialization.py", line 944, in save
+    _save(
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\serialization.py", line 1216, in _save
+    zip_file.write_record(name, storage, num_bytes)
+RuntimeError: [enforce fail at inline_container.cc:820] . PytorchStreamWriter failed writing file data/198: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_7712\3458118721.py", line 1238, in <module>
+    main()
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_7712\3458118721.py", line 1075, in main
+    save_checkpoint(model, optimizer, scheduler, epoch, v_m, is_best=improved, out_dir=final_dir)
+  File "C:\Users\LAPTOP\AppData\Local\Temp\ipykernel_7712\3458118721.py", line 898, in save_checkpoint
+    torch.save(ckpt, os.path.join(out_dir, f'ckpt_epoch_{epoch:03d}.pth'))
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\serialization.py", line 943, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "C:\Users\LAPTOP\anaconda3\envs\Deep\lib\site-packages\torch\serialization.py", line 784, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:626] . unexpected pos 535046976 vs 535046864
+2026-08-03 05:20:08,838 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=256 | Channels=3 | Seed: 42
+2026-08-03 05:20:08,839 - INFO - Seed set to 42
+2026-08-03 05:20:08,846 - INFO - Loading dataset paths...
+2026-08-03 05:20:08,857 - INFO - Pairs verified: 360 samples
+2026-08-03 05:20:08,859 - INFO - Pairs verified: 120 samples
+2026-08-03 05:20:08,860 - INFO - Pairs verified: 120 samples
+2026-08-03 05:20:09,018 - INFO - pos_weight = 11.91
+2026-08-03 05:20:09,018 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 8} | Threshold: 0.50 (fixed)
+2026-08-03 05:20:10,649 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-03 05:20:10,683 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-03 05:20:10,905 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-03 05:20:11,942 - INFO - GPU [Epoch 1] Alloc:2.35GB Res:2.62GB
+2026-08-03 05:20:57,156 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_000\plots\Train_cm.png
+2026-08-03 05:21:23,111 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_000\plots\Train_roc_pr.png
+2026-08-03 05:21:23,285 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_000\plots\Val_cm.png
+2026-08-03 05:21:34,141 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_000\plots\Val_roc_pr.png
+2026-08-03 05:21:34,141 - INFO - New best F1:0.1117 @ thr=0.5 | IoU:0.0592
+2026-08-03 05:21:37,412 - INFO - Best model saved — F1:0.1117 | Thr:0.50 (fixed)
+2026-08-03 05:21:37,707 - INFO - GPU [Epoch 2] Alloc:3.32GB Res:3.67GB
+2026-08-03 05:22:22,099 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_001\plots\Train_cm.png
+2026-08-03 05:22:47,964 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_001\plots\Train_roc_pr.png
+2026-08-03 05:22:48,159 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_001\plots\Val_cm.png
+2026-08-03 05:23:00,221 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_001\plots\Val_roc_pr.png
+2026-08-03 05:23:00,226 - INFO - New best F1:0.2936 @ thr=0.5 | IoU:0.1720
+2026-08-03 05:23:03,722 - INFO - Best model saved — F1:0.2936 | Thr:0.50 (fixed)
+2026-08-03 05:23:04,009 - INFO - GPU [Epoch 3] Alloc:3.32GB Res:3.67GB
+2026-08-03 05:23:51,069 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_002\plots\Train_cm.png
+2026-08-03 05:24:19,066 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_002\plots\Train_roc_pr.png
+2026-08-03 05:24:19,251 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_002\plots\Val_cm.png
+2026-08-03 05:24:31,806 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_002\plots\Val_roc_pr.png
+2026-08-03 05:24:31,806 - INFO - New best F1:0.4100 @ thr=0.5 | IoU:0.2579
+2026-08-03 05:24:35,123 - INFO - Best model saved — F1:0.4100 | Thr:0.50 (fixed)
+2026-08-03 05:24:35,331 - INFO - GPU [Epoch 4] Alloc:3.32GB Res:3.67GB
+2026-08-03 05:25:20,058 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_003\plots\Train_cm.png
+2026-08-03 05:25:49,980 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_003\plots\Train_roc_pr.png
+2026-08-03 05:25:50,153 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_003\plots\Val_cm.png
+2026-08-03 05:26:00,751 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_003\plots\Val_roc_pr.png
+2026-08-03 05:26:00,751 - INFO - New best F1:0.5295 @ thr=0.5 | IoU:0.3600
+2026-08-03 05:26:04,169 - INFO - Best model saved — F1:0.5295 | Thr:0.50 (fixed)
+2026-08-03 05:26:04,376 - INFO - GPU [Epoch 5] Alloc:3.32GB Res:3.67GB
+2026-08-03 05:26:49,907 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_004\plots\Train_cm.png
+2026-08-03 05:27:17,524 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_004\plots\Train_roc_pr.png
+2026-08-03 05:27:17,703 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_004\plots\Val_cm.png
+2026-08-03 05:27:26,818 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_004\plots\Val_roc_pr.png
+2026-08-03 05:27:26,822 - INFO - New best F1:0.5614 @ thr=0.5 | IoU:0.3902
+2026-08-03 05:27:30,269 - INFO - Best model saved — F1:0.5614 | Thr:0.50 (fixed)
+2026-08-03 05:27:30,460 - INFO - GPU [Epoch 6] Alloc:3.32GB Res:3.67GB
+2026-08-03 05:28:16,195 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_005\plots\Train_cm.png
+2026-08-03 05:28:41,141 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_005\plots\Train_roc_pr.png
+2026-08-03 05:28:41,344 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_005\plots\Val_cm.png
+2026-08-03 05:28:51,356 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_005\plots\Val_roc_pr.png
+2026-08-03 05:28:53,194 - INFO - GPU [Epoch 7] Alloc:3.32GB Res:3.67GB
+2026-08-03 05:29:39,246 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_006\plots\Train_cm.png
+2026-08-03 05:30:02,859 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_006\plots\Train_roc_pr.png
+2026-08-03 05:30:03,032 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_006\plots\Val_cm.png
+2026-08-03 05:30:11,997 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_006\plots\Val_roc_pr.png
+2026-08-03 05:30:12,014 - INFO - New best F1:0.6590 @ thr=0.5 | IoU:0.4915
+2026-08-03 05:30:15,323 - INFO - Best model saved — F1:0.6590 | Thr:0.50 (fixed)
+2026-08-03 05:30:15,513 - INFO - GPU [Epoch 8] Alloc:3.32GB Res:3.67GB
+2026-08-03 05:31:00,829 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_007\plots\Train_cm.png
+2026-08-03 05:31:25,520 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_007\plots\Train_roc_pr.png
+2026-08-03 05:31:25,736 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_007\plots\Val_cm.png
+2026-08-03 05:31:35,784 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_007\plots\Val_roc_pr.png
+2026-08-03 05:31:37,582 - INFO - GPU [Epoch 9] Alloc:3.32GB Res:3.67GB
+2026-08-03 05:32:23,546 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_008\plots\Train_cm.png
+2026-08-03 05:32:46,881 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_008\plots\Train_roc_pr.png
+2026-08-03 05:32:47,083 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_008\plots\Val_cm.png
+2026-08-03 05:32:55,351 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_008\plots\Val_roc_pr.png
+2026-08-03 05:32:57,098 - INFO - GPU [Epoch 10] Alloc:3.32GB Res:3.67GB
+2026-08-03 05:33:42,390 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_009\plots\Train_cm.png
+2026-08-03 05:34:04,730 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_009\plots\Train_roc_pr.png
+2026-08-03 05:34:04,892 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_009\plots\Val_cm.png
+2026-08-03 05:34:13,444 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_009\plots\Val_roc_pr.png
+2026-08-03 05:34:15,287 - INFO - GPU [Epoch 11] Alloc:3.32GB Res:3.67GB
+2026-08-03 05:35:01,964 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_010\plots\Train_cm.png
+2026-08-03 05:35:24,864 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_010\plots\Train_roc_pr.png
+2026-08-03 05:35:25,036 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_010\plots\Val_cm.png
+2026-08-03 05:35:33,757 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_010\plots\Val_roc_pr.png
+2026-08-03 05:35:35,302 - INFO - Epoch 11: Unfreezing ViT encoder...
+2026-08-03 05:35:35,311 - INFO - New CosineAnnealingLR: T_max=39, eta_min=1e-6
+2026-08-03 05:35:35,495 - INFO - GPU [Epoch 12] Alloc:3.32GB Res:3.67GB
+2026-08-03 05:36:23,140 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_011\plots\Train_cm.png
+2026-08-03 05:36:47,096 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_011\plots\Train_roc_pr.png
+2026-08-03 05:36:47,280 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_011\plots\Val_cm.png
+2026-08-03 05:36:56,418 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_011\plots\Val_roc_pr.png
+2026-08-03 05:36:58,570 - INFO - GPU [Epoch 13] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:37:44,162 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_012\plots\Train_cm.png
+2026-08-03 05:38:08,046 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_012\plots\Train_roc_pr.png
+2026-08-03 05:38:08,226 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_012\plots\Val_cm.png
+2026-08-03 05:38:16,472 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_012\plots\Val_roc_pr.png
+2026-08-03 05:38:16,472 - INFO - New best F1:0.6891 @ thr=0.5 | IoU:0.5257
+2026-08-03 05:38:20,331 - INFO - Best model saved — F1:0.6891 | Thr:0.50 (fixed)
+2026-08-03 05:38:20,510 - INFO - GPU [Epoch 14] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:39:08,042 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_013\plots\Train_cm.png
+2026-08-03 05:39:30,743 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_013\plots\Train_roc_pr.png
+2026-08-03 05:39:30,900 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_013\plots\Val_cm.png
+2026-08-03 05:39:38,967 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_013\plots\Val_roc_pr.png
+2026-08-03 05:39:41,198 - INFO - GPU [Epoch 15] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:40:28,210 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_014\plots\Train_cm.png
+2026-08-03 05:40:50,980 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_014\plots\Train_roc_pr.png
+2026-08-03 05:40:51,169 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_014\plots\Val_cm.png
+2026-08-03 05:40:58,947 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_014\plots\Val_roc_pr.png
+2026-08-03 05:41:01,114 - INFO - GPU [Epoch 16] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:41:48,062 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_015\plots\Train_cm.png
+2026-08-03 05:42:10,001 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_015\plots\Train_roc_pr.png
+2026-08-03 05:42:10,196 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_015\plots\Val_cm.png
+2026-08-03 05:42:17,647 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_015\plots\Val_roc_pr.png
+2026-08-03 05:42:17,647 - INFO - New best F1:0.7340 @ thr=0.5 | IoU:0.5797
+2026-08-03 05:42:21,555 - INFO - Best model saved — F1:0.7340 | Thr:0.50 (fixed)
+2026-08-03 05:42:21,747 - INFO - GPU [Epoch 17] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:43:09,303 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_016\plots\Train_cm.png
+2026-08-03 05:43:30,949 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_016\plots\Train_roc_pr.png
+2026-08-03 05:43:31,147 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_016\plots\Val_cm.png
+2026-08-03 05:43:38,866 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_016\plots\Val_roc_pr.png
+2026-08-03 05:43:41,028 - INFO - GPU [Epoch 18] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:44:28,634 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_017\plots\Train_cm.png
+2026-08-03 05:44:49,711 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_017\plots\Train_roc_pr.png
+2026-08-03 05:44:49,877 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_017\plots\Val_cm.png
+2026-08-03 05:44:57,646 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_017\plots\Val_roc_pr.png
+2026-08-03 05:44:59,774 - INFO - GPU [Epoch 19] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:45:46,318 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_018\plots\Train_cm.png
+2026-08-03 05:46:08,046 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_018\plots\Train_roc_pr.png
+2026-08-03 05:46:08,212 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_018\plots\Val_cm.png
+2026-08-03 05:46:15,807 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_018\plots\Val_roc_pr.png
+2026-08-03 05:46:17,864 - INFO - GPU [Epoch 20] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:47:05,540 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_019\plots\Train_cm.png
+2026-08-03 05:47:27,345 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_019\plots\Train_roc_pr.png
+2026-08-03 05:47:27,526 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_019\plots\Val_cm.png
+2026-08-03 05:47:35,072 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_019\plots\Val_roc_pr.png
+2026-08-03 05:47:37,157 - INFO - GPU [Epoch 21] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:48:24,641 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_020\plots\Train_cm.png
+2026-08-03 05:48:45,301 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_020\plots\Train_roc_pr.png
+2026-08-03 05:48:45,478 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_020\plots\Val_cm.png
+2026-08-03 05:48:53,492 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_020\plots\Val_roc_pr.png
+2026-08-03 05:48:55,589 - INFO - GPU [Epoch 22] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:49:42,850 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_021\plots\Train_cm.png
+2026-08-03 05:50:04,113 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_021\plots\Train_roc_pr.png
+2026-08-03 05:50:04,304 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_021\plots\Val_cm.png
+2026-08-03 05:50:11,476 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_021\plots\Val_roc_pr.png
+2026-08-03 05:50:13,576 - INFO - GPU [Epoch 23] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:51:02,513 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_022\plots\Train_cm.png
+2026-08-03 05:51:22,706 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_022\plots\Train_roc_pr.png
+2026-08-03 05:51:22,892 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_022\plots\Val_cm.png
+2026-08-03 05:51:30,233 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_022\plots\Val_roc_pr.png
+2026-08-03 05:51:30,233 - INFO - New best F1:0.7590 @ thr=0.5 | IoU:0.6117
+2026-08-03 05:51:33,952 - INFO - Best model saved — F1:0.7590 | Thr:0.50 (fixed)
+2026-08-03 05:51:34,147 - INFO - GPU [Epoch 24] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:52:22,140 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_023\plots\Train_cm.png
+2026-08-03 05:52:42,457 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_023\plots\Train_roc_pr.png
+2026-08-03 05:52:42,625 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_023\plots\Val_cm.png
+2026-08-03 05:52:49,709 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_023\plots\Val_roc_pr.png
+2026-08-03 05:52:51,843 - INFO - GPU [Epoch 25] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:53:39,301 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_024\plots\Train_cm.png
+2026-08-03 05:53:59,382 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_024\plots\Train_roc_pr.png
+2026-08-03 05:53:59,557 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_024\plots\Val_cm.png
+2026-08-03 05:54:06,626 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_024\plots\Val_roc_pr.png
+2026-08-03 05:54:08,790 - INFO - GPU [Epoch 26] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:54:55,624 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_025\plots\Train_cm.png
+2026-08-03 05:55:15,398 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_025\plots\Train_roc_pr.png
+2026-08-03 05:55:15,595 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_025\plots\Val_cm.png
+2026-08-03 05:55:22,931 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_025\plots\Val_roc_pr.png
+2026-08-03 05:55:22,931 - INFO - New best F1:0.7607 @ thr=0.5 | IoU:0.6139
+2026-08-03 05:55:26,826 - INFO - Best model saved — F1:0.7607 | Thr:0.50 (fixed)
+2026-08-03 05:55:27,067 - INFO - GPU [Epoch 27] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:56:14,600 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_026\plots\Train_cm.png
+2026-08-03 05:56:35,080 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_026\plots\Train_roc_pr.png
+2026-08-03 05:56:35,267 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_026\plots\Val_cm.png
+2026-08-03 05:56:42,593 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_026\plots\Val_roc_pr.png
+2026-08-03 05:56:44,710 - INFO - GPU [Epoch 28] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:57:32,391 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_027\plots\Train_cm.png
+2026-08-03 05:57:52,027 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_027\plots\Train_roc_pr.png
+2026-08-03 05:57:52,176 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_027\plots\Val_cm.png
+2026-08-03 05:57:59,473 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_027\plots\Val_roc_pr.png
+2026-08-03 05:57:59,473 - INFO - New best F1:0.7623 @ thr=0.5 | IoU:0.6160
+2026-08-03 05:58:03,461 - INFO - Best model saved — F1:0.7623 | Thr:0.50 (fixed)
+2026-08-03 05:58:03,645 - INFO - GPU [Epoch 29] Alloc:3.67GB Res:4.11GB
+2026-08-03 05:58:52,921 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_028\plots\Train_cm.png
+2026-08-03 05:59:12,710 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_028\plots\Train_roc_pr.png
+2026-08-03 05:59:12,885 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_028\plots\Val_cm.png
+2026-08-03 05:59:20,122 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_028\plots\Val_roc_pr.png
+2026-08-03 05:59:22,216 - INFO - GPU [Epoch 30] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:00:09,132 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_029\plots\Train_cm.png
+2026-08-03 06:00:29,330 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_029\plots\Train_roc_pr.png
+2026-08-03 06:00:29,487 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_029\plots\Val_cm.png
+2026-08-03 06:00:36,617 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_029\plots\Val_roc_pr.png
+2026-08-03 06:00:38,674 - INFO - GPU [Epoch 31] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:01:26,685 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_030\plots\Train_cm.png
+2026-08-03 06:01:46,449 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_030\plots\Train_roc_pr.png
+2026-08-03 06:01:46,624 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_030\plots\Val_cm.png
+2026-08-03 06:01:53,806 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_030\plots\Val_roc_pr.png
+2026-08-03 06:01:55,911 - INFO - GPU [Epoch 32] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:02:43,442 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_031\plots\Train_cm.png
+2026-08-03 06:03:02,524 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_031\plots\Train_roc_pr.png
+2026-08-03 06:03:02,683 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_031\plots\Val_cm.png
+2026-08-03 06:03:09,508 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_031\plots\Val_roc_pr.png
+2026-08-03 06:03:11,582 - INFO - GPU [Epoch 33] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:03:58,680 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_032\plots\Train_cm.png
+2026-08-03 06:04:17,268 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_032\plots\Train_roc_pr.png
+2026-08-03 06:04:17,458 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_032\plots\Val_cm.png
+2026-08-03 06:04:23,588 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_032\plots\Val_roc_pr.png
+2026-08-03 06:04:25,754 - INFO - GPU [Epoch 34] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:05:13,494 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_033\plots\Train_cm.png
+2026-08-03 06:05:31,183 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_033\plots\Train_roc_pr.png
+2026-08-03 06:05:31,342 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_033\plots\Val_cm.png
+2026-08-03 06:05:37,388 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_033\plots\Val_roc_pr.png
+2026-08-03 06:05:37,388 - INFO - New best F1:0.7674 @ thr=0.5 | IoU:0.6226
+2026-08-03 06:05:41,239 - INFO - Best model saved — F1:0.7674 | Thr:0.50 (fixed)
+2026-08-03 06:05:41,445 - INFO - GPU [Epoch 35] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:06:30,820 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_034\plots\Train_cm.png
+2026-08-03 06:06:48,118 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_034\plots\Train_roc_pr.png
+2026-08-03 06:06:48,308 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_034\plots\Val_cm.png
+2026-08-03 06:06:55,603 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_034\plots\Val_roc_pr.png
+2026-08-03 06:06:55,611 - INFO - New best F1:0.7690 @ thr=0.5 | IoU:0.6247
+2026-08-03 06:06:59,691 - INFO - Best model saved — F1:0.7690 | Thr:0.50 (fixed)
+2026-08-03 06:06:59,933 - INFO - GPU [Epoch 36] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:07:47,772 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_035\plots\Train_cm.png
+2026-08-03 06:08:07,244 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_035\plots\Train_roc_pr.png
+2026-08-03 06:08:07,407 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_035\plots\Val_cm.png
+2026-08-03 06:08:14,444 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_035\plots\Val_roc_pr.png
+2026-08-03 06:08:14,444 - INFO - New best F1:0.7778 @ thr=0.5 | IoU:0.6364
+2026-08-03 06:08:18,482 - INFO - Best model saved — F1:0.7778 | Thr:0.50 (fixed)
+2026-08-03 06:08:18,709 - INFO - GPU [Epoch 37] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:09:08,333 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_036\plots\Train_cm.png
+2026-08-03 06:09:27,866 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_036\plots\Train_roc_pr.png
+2026-08-03 06:09:28,055 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_036\plots\Val_cm.png
+2026-08-03 06:09:34,573 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_036\plots\Val_roc_pr.png
+2026-08-03 06:09:34,573 - INFO - New best F1:0.7911 @ thr=0.5 | IoU:0.6544
+2026-08-03 06:09:38,677 - INFO - Best model saved — F1:0.7911 | Thr:0.50 (fixed)
+2026-08-03 06:09:38,882 - INFO - GPU [Epoch 38] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:10:27,233 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_037\plots\Train_cm.png
+2026-08-03 06:10:46,692 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_037\plots\Train_roc_pr.png
+2026-08-03 06:10:46,890 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_037\plots\Val_cm.png
+2026-08-03 06:10:54,015 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_037\plots\Val_roc_pr.png
+2026-08-03 06:10:56,187 - INFO - GPU [Epoch 39] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:11:45,445 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_038\plots\Train_cm.png
+2026-08-03 06:12:04,439 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_038\plots\Train_roc_pr.png
+2026-08-03 06:12:04,613 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_038\plots\Val_cm.png
+2026-08-03 06:12:11,735 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_038\plots\Val_roc_pr.png
+2026-08-03 06:12:13,937 - INFO - GPU [Epoch 40] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:13:00,202 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_039\plots\Train_cm.png
+2026-08-03 06:13:18,921 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_039\plots\Train_roc_pr.png
+2026-08-03 06:13:19,093 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_039\plots\Val_cm.png
+2026-08-03 06:13:25,836 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_039\plots\Val_roc_pr.png
+2026-08-03 06:13:28,026 - INFO - GPU [Epoch 41] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:14:16,529 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_040\plots\Train_cm.png
+2026-08-03 06:14:35,573 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_040\plots\Train_roc_pr.png
+2026-08-03 06:14:35,752 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_040\plots\Val_cm.png
+2026-08-03 06:14:42,519 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_040\plots\Val_roc_pr.png
+2026-08-03 06:14:44,659 - INFO - GPU [Epoch 42] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:15:32,980 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_041\plots\Train_cm.png
+2026-08-03 06:15:51,643 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_041\plots\Train_roc_pr.png
+2026-08-03 06:15:51,796 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_041\plots\Val_cm.png
+2026-08-03 06:15:58,319 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_041\plots\Val_roc_pr.png
+2026-08-03 06:15:58,319 - INFO - New best F1:0.7921 @ thr=0.5 | IoU:0.6558
+2026-08-03 06:16:02,111 - INFO - Best model saved — F1:0.7921 | Thr:0.50 (fixed)
+2026-08-03 06:16:02,365 - INFO - GPU [Epoch 43] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:16:50,487 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_042\plots\Train_cm.png
+2026-08-03 06:17:09,692 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_042\plots\Train_roc_pr.png
+2026-08-03 06:17:09,856 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_042\plots\Val_cm.png
+2026-08-03 06:17:16,465 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_042\plots\Val_roc_pr.png
+2026-08-03 06:17:18,510 - INFO - GPU [Epoch 44] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:18:07,198 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_043\plots\Train_cm.png
+2026-08-03 06:18:26,646 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_043\plots\Train_roc_pr.png
+2026-08-03 06:18:26,867 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_043\plots\Val_cm.png
+2026-08-03 06:18:33,688 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_043\plots\Val_roc_pr.png
+2026-08-03 06:18:35,722 - INFO - GPU [Epoch 45] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:19:25,366 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_044\plots\Train_cm.png
+2026-08-03 06:19:44,735 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_044\plots\Train_roc_pr.png
+2026-08-03 06:19:44,913 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_044\plots\Val_cm.png
+2026-08-03 06:19:51,746 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_044\plots\Val_roc_pr.png
+2026-08-03 06:19:53,857 - INFO - GPU [Epoch 46] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:20:42,952 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_045\plots\Train_cm.png
+2026-08-03 06:21:02,472 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_045\plots\Train_roc_pr.png
+2026-08-03 06:21:02,662 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_045\plots\Val_cm.png
+2026-08-03 06:21:09,314 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_045\plots\Val_roc_pr.png
+2026-08-03 06:21:11,441 - INFO - GPU [Epoch 47] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:21:59,709 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_046\plots\Train_cm.png
+2026-08-03 06:22:19,145 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_046\plots\Train_roc_pr.png
+2026-08-03 06:22:19,311 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_046\plots\Val_cm.png
+2026-08-03 06:22:26,195 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_046\plots\Val_roc_pr.png
+2026-08-03 06:22:28,370 - INFO - GPU [Epoch 48] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:23:15,910 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_047\plots\Train_cm.png
+2026-08-03 06:23:35,729 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_047\plots\Train_roc_pr.png
+2026-08-03 06:23:35,892 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_047\plots\Val_cm.png
+2026-08-03 06:23:42,484 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_047\plots\Val_roc_pr.png
+2026-08-03 06:23:44,597 - INFO - GPU [Epoch 49] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:24:32,566 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_048\plots\Train_cm.png
+2026-08-03 06:24:51,716 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_048\plots\Train_roc_pr.png
+2026-08-03 06:24:51,887 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_048\plots\Val_cm.png
+2026-08-03 06:24:58,656 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_048\plots\Val_roc_pr.png
+2026-08-03 06:24:58,656 - INFO - New best F1:0.7936 @ thr=0.5 | IoU:0.6578
+2026-08-03 06:25:02,471 - INFO - Best model saved — F1:0.7936 | Thr:0.50 (fixed)
+2026-08-03 06:25:02,677 - INFO - GPU [Epoch 50] Alloc:3.67GB Res:4.11GB
+2026-08-03 06:25:50,762 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_049\plots\Train_cm.png
+2026-08-03 06:26:09,818 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_049\plots\Train_roc_pr.png
+2026-08-03 06:26:09,976 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_049\plots\Val_cm.png
+2026-08-03 06:26:16,701 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_049\plots\Val_roc_pr.png
+2026-08-03 06:26:32,533 - INFO - Training complete | test F1:0.7725 @ thr=0.500 (tuned=False)
+2026-08-03 08:03:01,678 - INFO - Device: cuda | AMP: torch.bfloat16 | Threshold: 0.5 (fixed) | DINOv2 patch=14 | NUM_PATCHES=1369 | Channels=3 | Seed: 42
+2026-08-03 08:03:01,685 - INFO - Seed set to 42
+2026-08-03 08:03:01,692 - INFO - Loading dataset paths...
+2026-08-03 08:03:01,713 - INFO - Pairs verified: 360 samples
+2026-08-03 08:03:01,713 - INFO - Pairs verified: 120 samples
+2026-08-03 08:03:01,713 - INFO - Pairs verified: 120 samples
+2026-08-03 08:03:04,108 - INFO - pos_weight = 11.91
+2026-08-03 08:03:04,114 - INFO - Best params: {'lr': 2.8953252238193574e-05, 'weight_decay': 0.00822526839606462, 'dropout': 0.26943406970601036, 'batch_size': 2} | Threshold: 0.50 (fixed)
+2026-08-03 08:03:06,579 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-03 08:03:06,647 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-base/f9e44c814b77203eaa57a6bdbbd535f21ede1415/config.json "HTTP/1.1 200 OK"
+2026-08-03 08:03:06,916 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/dinov2-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-08-03 08:03:08,326 - INFO - GPU [Epoch 1] Alloc:0.70GB Res:0.77GB
+2026-08-03 08:06:50,494 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_000\plots\Train_cm.png
+2026-08-03 08:08:36,974 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_000\plots\Train_roc_pr.png
+2026-08-03 08:08:37,395 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_000\plots\Val_cm.png
+2026-08-03 08:09:16,694 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_000\plots\Val_roc_pr.png
+2026-08-03 08:09:16,702 - INFO - New best F1:0.1750 @ thr=0.5 | IoU:0.0959
+2026-08-03 08:09:19,956 - INFO - Best model saved — F1:0.1750 | Thr:0.50 (fixed)
+2026-08-03 08:09:20,256 - INFO - GPU [Epoch 2] Alloc:1.73GB Res:2.37GB
+2026-08-03 08:13:13,039 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_001\plots\Train_cm.png
+2026-08-03 08:15:03,066 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_001\plots\Train_roc_pr.png
+2026-08-03 08:15:03,509 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_001\plots\Val_cm.png
+2026-08-03 08:15:56,505 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_001\plots\Val_roc_pr.png
+2026-08-03 08:15:56,520 - WARNING - Overfitting E2 | loss_gap=0.154 f1_gap=0.148
+2026-08-03 08:15:56,520 - INFO - New best F1:0.4089 @ thr=0.5 | IoU:0.2570
+2026-08-03 08:15:59,841 - INFO - Best model saved — F1:0.4089 | Thr:0.50 (fixed)
+2026-08-03 08:16:00,081 - INFO - GPU [Epoch 3] Alloc:1.73GB Res:2.37GB
+2026-08-03 08:19:52,133 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_002\plots\Train_cm.png
+2026-08-03 08:21:51,071 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_002\plots\Train_roc_pr.png
+2026-08-03 08:21:51,476 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_002\plots\Val_cm.png
+2026-08-03 08:22:33,167 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_002\plots\Val_roc_pr.png
+2026-08-03 08:22:33,167 - INFO - New best F1:0.6038 @ thr=0.5 | IoU:0.4324
+2026-08-03 08:22:36,639 - INFO - Best model saved — F1:0.6038 | Thr:0.50 (fixed)
+2026-08-03 08:22:36,858 - INFO - GPU [Epoch 4] Alloc:1.73GB Res:2.37GB
+2026-08-03 08:26:24,862 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_003\plots\Train_cm.png
+2026-08-03 08:28:17,398 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_003\plots\Train_roc_pr.png
+2026-08-03 08:28:17,777 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_003\plots\Val_cm.png
+2026-08-03 08:28:58,421 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_003\plots\Val_roc_pr.png
+2026-08-03 08:29:00,281 - INFO - GPU [Epoch 5] Alloc:1.73GB Res:2.37GB
+2026-08-03 08:32:53,489 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_004\plots\Train_cm.png
+2026-08-03 08:34:44,526 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_004\plots\Train_roc_pr.png
+2026-08-03 08:34:44,923 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_004\plots\Val_cm.png
+2026-08-03 08:35:22,013 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_004\plots\Val_roc_pr.png
+2026-08-03 08:35:22,021 - INFO - New best F1:0.6991 @ thr=0.5 | IoU:0.5374
+2026-08-03 08:35:25,587 - INFO - Best model saved — F1:0.6991 | Thr:0.50 (fixed)
+2026-08-03 08:35:25,791 - INFO - GPU [Epoch 6] Alloc:1.73GB Res:2.37GB
+2026-08-03 08:39:18,146 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_005\plots\Train_cm.png
+2026-08-03 08:41:03,654 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_005\plots\Train_roc_pr.png
+2026-08-03 08:41:04,073 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_005\plots\Val_cm.png
+2026-08-03 08:41:37,448 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_005\plots\Val_roc_pr.png
+2026-08-03 08:41:37,453 - INFO - New best F1:0.7125 @ thr=0.5 | IoU:0.5534
+2026-08-03 08:41:40,778 - INFO - Best model saved — F1:0.7125 | Thr:0.50 (fixed)
+2026-08-03 08:41:40,975 - INFO - GPU [Epoch 7] Alloc:1.73GB Res:2.37GB
+2026-08-03 08:45:39,849 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_006\plots\Train_cm.png
+2026-08-03 08:47:23,989 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_006\plots\Train_roc_pr.png
+2026-08-03 08:47:24,423 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_006\plots\Val_cm.png
+2026-08-03 08:47:57,346 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_006\plots\Val_roc_pr.png
+2026-08-03 08:47:57,356 - INFO - New best F1:0.7437 @ thr=0.5 | IoU:0.5919
+2026-08-03 08:48:00,706 - INFO - Best model saved — F1:0.7437 | Thr:0.50 (fixed)
+2026-08-03 08:48:00,917 - INFO - GPU [Epoch 8] Alloc:1.73GB Res:2.37GB
+2026-08-03 08:51:56,047 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_007\plots\Train_cm.png
+2026-08-03 08:53:35,743 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_007\plots\Train_roc_pr.png
+2026-08-03 08:53:36,184 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_007\plots\Val_cm.png
+2026-08-03 08:54:08,983 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_007\plots\Val_roc_pr.png
+2026-08-03 08:54:10,891 - INFO - GPU [Epoch 9] Alloc:1.73GB Res:2.37GB
+2026-08-03 08:58:06,666 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_008\plots\Train_cm.png
+2026-08-03 08:59:43,957 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_008\plots\Train_roc_pr.png
+2026-08-03 08:59:44,340 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_008\plots\Val_cm.png
+2026-08-03 09:00:17,007 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_008\plots\Val_roc_pr.png
+2026-08-03 09:00:18,911 - INFO - GPU [Epoch 10] Alloc:1.73GB Res:2.37GB
+2026-08-03 09:04:24,799 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_009\plots\Train_cm.png
+2026-08-03 09:06:03,740 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_009\plots\Train_roc_pr.png
+2026-08-03 09:06:04,169 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_009\plots\Val_cm.png
+2026-08-03 09:06:36,927 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_009\plots\Val_roc_pr.png
+2026-08-03 09:06:38,786 - INFO - GPU [Epoch 11] Alloc:1.73GB Res:2.37GB
+2026-08-03 09:10:37,008 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_010\plots\Train_cm.png
+2026-08-03 09:12:16,308 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_010\plots\Train_roc_pr.png
+2026-08-03 09:12:16,703 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_010\plots\Val_cm.png
+2026-08-03 09:12:49,761 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_010\plots\Val_roc_pr.png
+2026-08-03 09:12:51,449 - INFO - Epoch 11: Unfreezing ViT encoder...
+2026-08-03 09:12:51,449 - INFO - New CosineAnnealingLR: T_max=39, eta_min=1e-6
+2026-08-03 09:12:51,665 - INFO - GPU [Epoch 12] Alloc:1.73GB Res:2.37GB
+2026-08-03 09:16:51,749 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_011\plots\Train_cm.png
+2026-08-03 09:18:34,321 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_011\plots\Train_roc_pr.png
+2026-08-03 09:18:34,764 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_011\plots\Val_cm.png
+2026-08-03 09:19:06,392 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_011\plots\Val_roc_pr.png
+2026-08-03 09:19:06,408 - INFO - New best F1:0.7697 @ thr=0.5 | IoU:0.6256
+2026-08-03 09:19:10,365 - INFO - Best model saved — F1:0.7697 | Thr:0.50 (fixed)
+2026-08-03 09:19:10,650 - INFO - GPU [Epoch 13] Alloc:2.07GB Res:3.12GB
+2026-08-03 09:23:12,246 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_012\plots\Train_cm.png
+2026-08-03 09:24:52,336 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_012\plots\Train_roc_pr.png
+2026-08-03 09:24:52,796 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_012\plots\Val_cm.png
+2026-08-03 09:25:27,842 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_012\plots\Val_roc_pr.png
+2026-08-03 09:25:30,073 - INFO - GPU [Epoch 14] Alloc:2.07GB Res:3.12GB
+2026-08-03 09:29:30,394 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_013\plots\Train_cm.png
+2026-08-03 09:31:07,281 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_013\plots\Train_roc_pr.png
+2026-08-03 09:31:07,725 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_013\plots\Val_cm.png
+2026-08-03 09:31:39,466 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_013\plots\Val_roc_pr.png
+2026-08-03 09:31:41,640 - INFO - GPU [Epoch 15] Alloc:2.07GB Res:3.12GB
+2026-08-03 09:35:36,493 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_014\plots\Train_cm.png
+2026-08-03 09:37:13,196 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_014\plots\Train_roc_pr.png
+2026-08-03 09:37:13,641 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_014\plots\Val_cm.png
+2026-08-03 09:37:44,452 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_014\plots\Val_roc_pr.png
+2026-08-03 09:37:46,633 - INFO - GPU [Epoch 16] Alloc:2.07GB Res:3.12GB
+2026-08-03 09:41:53,773 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_015\plots\Train_cm.png
+2026-08-03 09:43:28,935 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_015\plots\Train_roc_pr.png
+2026-08-03 09:43:29,384 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_015\plots\Val_cm.png
+2026-08-03 09:43:59,877 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_015\plots\Val_roc_pr.png
+2026-08-03 09:44:02,075 - INFO - GPU [Epoch 17] Alloc:2.07GB Res:3.12GB
+2026-08-03 09:48:05,263 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_016\plots\Train_cm.png
+2026-08-03 09:49:36,678 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_016\plots\Train_roc_pr.png
+2026-08-03 09:49:37,082 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_016\plots\Val_cm.png
+2026-08-03 09:50:04,966 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_016\plots\Val_roc_pr.png
+2026-08-03 09:50:07,149 - INFO - GPU [Epoch 18] Alloc:2.07GB Res:3.12GB
+2026-08-03 09:54:19,789 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_017\plots\Train_cm.png
+2026-08-03 09:55:54,440 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_017\plots\Train_roc_pr.png
+2026-08-03 09:55:54,850 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_017\plots\Val_cm.png
+2026-08-03 09:56:26,619 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_017\plots\Val_roc_pr.png
+2026-08-03 09:56:28,792 - INFO - GPU [Epoch 19] Alloc:2.07GB Res:3.12GB
+2026-08-03 10:00:14,762 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_018\plots\Train_cm.png
+2026-08-03 10:01:55,473 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_018\plots\Train_roc_pr.png
+2026-08-03 10:01:55,965 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_018\plots\Val_cm.png
+2026-08-03 10:02:29,046 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_018\plots\Val_roc_pr.png
+2026-08-03 10:02:29,049 - INFO - New best F1:0.7798 @ thr=0.5 | IoU:0.6390
+2026-08-03 10:02:32,933 - INFO - Best model saved — F1:0.7798 | Thr:0.50 (fixed)
+2026-08-03 10:02:33,190 - INFO - GPU [Epoch 20] Alloc:2.07GB Res:3.12GB
+2026-08-03 10:06:31,668 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_019\plots\Train_cm.png
+2026-08-03 10:08:01,889 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_019\plots\Train_roc_pr.png
+2026-08-03 10:08:02,371 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_019\plots\Val_cm.png
+2026-08-03 10:08:32,867 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_019\plots\Val_roc_pr.png
+2026-08-03 10:08:35,031 - INFO - GPU [Epoch 21] Alloc:2.07GB Res:3.12GB
+2026-08-03 10:12:33,289 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_020\plots\Train_cm.png
+2026-08-03 10:14:05,246 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_020\plots\Train_roc_pr.png
+2026-08-03 10:14:05,685 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_020\plots\Val_cm.png
+2026-08-03 10:14:36,865 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_020\plots\Val_roc_pr.png
+2026-08-03 10:14:39,043 - INFO - GPU [Epoch 22] Alloc:2.07GB Res:3.12GB
+2026-08-03 10:18:28,369 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_021\plots\Train_cm.png
+2026-08-03 10:19:57,410 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_021\plots\Train_roc_pr.png
+2026-08-03 10:19:57,870 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_021\plots\Val_cm.png
+2026-08-03 10:20:25,472 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_021\plots\Val_roc_pr.png
+2026-08-03 10:20:25,472 - INFO - New best F1:0.8192 @ thr=0.5 | IoU:0.6938
+2026-08-03 10:20:29,577 - INFO - Best model saved — F1:0.8192 | Thr:0.50 (fixed)
+2026-08-03 10:20:29,814 - INFO - GPU [Epoch 23] Alloc:2.07GB Res:3.12GB
+2026-08-03 10:24:16,358 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_022\plots\Train_cm.png
+2026-08-03 10:25:45,167 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_022\plots\Train_roc_pr.png
+2026-08-03 10:25:45,572 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_022\plots\Val_cm.png
+2026-08-03 10:26:15,878 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_022\plots\Val_roc_pr.png
+2026-08-03 10:26:18,096 - INFO - GPU [Epoch 24] Alloc:2.07GB Res:3.12GB
+2026-08-03 10:30:04,705 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_023\plots\Train_cm.png
+2026-08-03 10:31:35,797 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_023\plots\Train_roc_pr.png
+2026-08-03 10:31:36,233 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_023\plots\Val_cm.png
+2026-08-03 10:32:04,928 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_023\plots\Val_roc_pr.png
+2026-08-03 10:32:07,110 - INFO - GPU [Epoch 25] Alloc:2.07GB Res:3.12GB
+2026-08-03 10:35:56,397 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_024\plots\Train_cm.png
+2026-08-03 10:37:23,237 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_024\plots\Train_roc_pr.png
+2026-08-03 10:37:23,635 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_024\plots\Val_cm.png
+2026-08-03 10:37:51,993 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_024\plots\Val_roc_pr.png
+2026-08-03 10:37:54,210 - INFO - GPU [Epoch 26] Alloc:2.07GB Res:3.12GB
+2026-08-03 10:41:51,296 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_025\plots\Train_cm.png
+2026-08-03 10:43:17,080 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_025\plots\Train_roc_pr.png
+2026-08-03 10:43:17,527 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_025\plots\Val_cm.png
+2026-08-03 10:43:45,719 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_025\plots\Val_roc_pr.png
+2026-08-03 10:43:47,797 - INFO - GPU [Epoch 27] Alloc:2.07GB Res:3.12GB
+2026-08-03 10:47:34,810 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_026\plots\Train_cm.png
+2026-08-03 10:49:01,352 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_026\plots\Train_roc_pr.png
+2026-08-03 10:49:01,771 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_026\plots\Val_cm.png
+2026-08-03 10:49:29,394 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_026\plots\Val_roc_pr.png
+2026-08-03 10:49:31,611 - INFO - GPU [Epoch 28] Alloc:2.07GB Res:3.12GB
+2026-08-03 10:53:17,469 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_027\plots\Train_cm.png
+2026-08-03 10:54:42,543 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_027\plots\Train_roc_pr.png
+2026-08-03 10:54:42,935 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_027\plots\Val_cm.png
+2026-08-03 10:55:10,577 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_027\plots\Val_roc_pr.png
+2026-08-03 10:55:12,714 - INFO - GPU [Epoch 29] Alloc:2.07GB Res:3.12GB
+2026-08-03 10:59:06,997 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_028\plots\Train_cm.png
+2026-08-03 11:00:32,608 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_028\plots\Train_roc_pr.png
+2026-08-03 11:00:33,083 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_028\plots\Val_cm.png
+2026-08-03 11:01:01,990 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_028\plots\Val_roc_pr.png
+2026-08-03 11:01:04,083 - INFO - GPU [Epoch 30] Alloc:2.07GB Res:3.12GB
+2026-08-03 11:05:11,389 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_029\plots\Train_cm.png
+2026-08-03 11:06:37,543 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_029\plots\Train_roc_pr.png
+2026-08-03 11:06:37,988 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_029\plots\Val_cm.png
+2026-08-03 11:07:04,075 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_029\plots\Val_roc_pr.png
+2026-08-03 11:07:06,179 - INFO - GPU [Epoch 31] Alloc:2.07GB Res:3.12GB
+2026-08-03 11:10:58,775 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_030\plots\Train_cm.png
+2026-08-03 11:12:20,740 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_030\plots\Train_roc_pr.png
+2026-08-03 11:12:21,183 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_030\plots\Val_cm.png
+2026-08-03 11:12:48,599 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_030\plots\Val_roc_pr.png
+2026-08-03 11:12:50,786 - INFO - GPU [Epoch 32] Alloc:2.07GB Res:3.12GB
+2026-08-03 11:16:45,073 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_031\plots\Train_cm.png
+2026-08-03 11:18:08,672 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_031\plots\Train_roc_pr.png
+2026-08-03 11:18:09,134 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_031\plots\Val_cm.png
+2026-08-03 11:18:36,774 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_031\plots\Val_roc_pr.png
+2026-08-03 11:18:38,975 - INFO - GPU [Epoch 33] Alloc:2.07GB Res:3.12GB
+2026-08-03 11:22:32,194 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_032\plots\Train_cm.png
+2026-08-03 11:23:52,648 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_032\plots\Train_roc_pr.png
+2026-08-03 11:23:53,091 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_032\plots\Val_cm.png
+2026-08-03 11:24:20,459 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_032\plots\Val_roc_pr.png
+2026-08-03 11:24:22,678 - INFO - GPU [Epoch 34] Alloc:2.07GB Res:3.12GB
+2026-08-03 11:28:14,942 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_033\plots\Train_cm.png
+2026-08-03 11:29:38,062 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_033\plots\Train_roc_pr.png
+2026-08-03 11:29:38,459 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_033\plots\Val_cm.png
+2026-08-03 11:30:05,784 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_033\plots\Val_roc_pr.png
+2026-08-03 11:30:07,997 - INFO - GPU [Epoch 35] Alloc:2.07GB Res:3.12GB
+2026-08-03 11:33:59,150 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_034\plots\Train_cm.png
+2026-08-03 11:35:20,785 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_034\plots\Train_roc_pr.png
+2026-08-03 11:35:21,197 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_034\plots\Val_cm.png
+2026-08-03 11:35:48,285 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_034\plots\Val_roc_pr.png
+2026-08-03 11:35:48,298 - INFO - New best F1:0.8204 @ thr=0.5 | IoU:0.6954
+2026-08-03 11:35:52,141 - INFO - Best model saved — F1:0.8204 | Thr:0.50 (fixed)
+2026-08-03 11:35:52,364 - INFO - GPU [Epoch 36] Alloc:2.07GB Res:3.12GB
+2026-08-03 11:39:43,530 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_035\plots\Train_cm.png
+2026-08-03 11:41:04,495 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_035\plots\Train_roc_pr.png
+2026-08-03 11:41:04,920 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_035\plots\Val_cm.png
+2026-08-03 11:41:32,783 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_035\plots\Val_roc_pr.png
+2026-08-03 11:41:34,977 - INFO - GPU [Epoch 37] Alloc:2.07GB Res:3.12GB
+2026-08-03 11:45:20,672 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_036\plots\Train_cm.png
+2026-08-03 11:46:42,129 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_036\plots\Train_roc_pr.png
+2026-08-03 11:46:42,494 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_036\plots\Val_cm.png
+2026-08-03 11:47:09,852 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_036\plots\Val_roc_pr.png
+2026-08-03 11:47:11,923 - INFO - GPU [Epoch 38] Alloc:2.07GB Res:3.12GB
+2026-08-03 11:50:59,869 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_037\plots\Train_cm.png
+2026-08-03 11:52:18,898 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_037\plots\Train_roc_pr.png
+2026-08-03 11:52:19,326 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_037\plots\Val_cm.png
+2026-08-03 11:52:47,085 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_037\plots\Val_roc_pr.png
+2026-08-03 11:52:49,236 - INFO - GPU [Epoch 39] Alloc:2.07GB Res:3.12GB
+2026-08-03 11:56:39,900 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_038\plots\Train_cm.png
+2026-08-03 11:58:01,054 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_038\plots\Train_roc_pr.png
+2026-08-03 11:58:01,452 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_038\plots\Val_cm.png
+2026-08-03 11:58:28,867 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_038\plots\Val_roc_pr.png
+2026-08-03 11:58:31,183 - INFO - GPU [Epoch 40] Alloc:2.07GB Res:3.12GB
+2026-08-03 12:02:22,888 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_039\plots\Train_cm.png
+2026-08-03 12:03:44,021 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_039\plots\Train_roc_pr.png
+2026-08-03 12:03:44,439 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_039\plots\Val_cm.png
+2026-08-03 12:04:11,930 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_039\plots\Val_roc_pr.png
+2026-08-03 12:04:14,145 - INFO - GPU [Epoch 41] Alloc:2.07GB Res:3.12GB
+2026-08-03 12:08:02,787 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_040\plots\Train_cm.png
+2026-08-03 12:09:30,874 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_040\plots\Train_roc_pr.png
+2026-08-03 12:09:31,273 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_040\plots\Val_cm.png
+2026-08-03 12:09:57,182 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_040\plots\Val_roc_pr.png
+2026-08-03 12:09:57,193 - INFO - New best F1:0.8238 @ thr=0.5 | IoU:0.7004
+2026-08-03 12:10:01,007 - INFO - Best model saved — F1:0.8238 | Thr:0.50 (fixed)
+2026-08-03 12:10:01,216 - INFO - GPU [Epoch 42] Alloc:2.07GB Res:3.12GB
+2026-08-03 12:13:52,871 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_041\plots\Train_cm.png
+2026-08-03 12:15:13,086 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_041\plots\Train_roc_pr.png
+2026-08-03 12:15:13,482 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_041\plots\Val_cm.png
+2026-08-03 12:15:39,995 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_041\plots\Val_roc_pr.png
+2026-08-03 12:15:42,166 - INFO - GPU [Epoch 43] Alloc:2.07GB Res:3.12GB
+2026-08-03 12:19:31,286 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_042\plots\Train_cm.png
+2026-08-03 12:20:51,584 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_042\plots\Train_roc_pr.png
+2026-08-03 12:20:52,027 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_042\plots\Val_cm.png
+2026-08-03 12:21:18,893 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_042\plots\Val_roc_pr.png
+2026-08-03 12:21:18,893 - INFO - New best F1:0.8285 @ thr=0.5 | IoU:0.7073
+2026-08-03 12:21:22,878 - INFO - Best model saved — F1:0.8285 | Thr:0.50 (fixed)
+2026-08-03 12:21:23,116 - INFO - GPU [Epoch 44] Alloc:2.07GB Res:3.12GB
+2026-08-03 12:25:16,978 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_043\plots\Train_cm.png
+2026-08-03 12:26:38,398 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_043\plots\Train_roc_pr.png
+2026-08-03 12:26:38,793 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_043\plots\Val_cm.png
+2026-08-03 12:27:05,320 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_043\plots\Val_roc_pr.png
+2026-08-03 12:27:07,622 - INFO - GPU [Epoch 45] Alloc:2.07GB Res:3.12GB
+2026-08-03 12:31:01,727 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_044\plots\Train_cm.png
+2026-08-03 12:32:22,500 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_044\plots\Train_roc_pr.png
+2026-08-03 12:32:22,914 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_044\plots\Val_cm.png
+2026-08-03 12:32:49,604 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_044\plots\Val_roc_pr.png
+2026-08-03 12:32:51,851 - INFO - GPU [Epoch 46] Alloc:2.07GB Res:3.12GB
+2026-08-03 12:36:52,906 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_045\plots\Train_cm.png
+2026-08-03 12:38:13,787 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_045\plots\Train_roc_pr.png
+2026-08-03 12:38:14,267 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_045\plots\Val_cm.png
+2026-08-03 12:38:40,433 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_045\plots\Val_roc_pr.png
+2026-08-03 12:38:40,433 - INFO - New best F1:0.8343 @ thr=0.5 | IoU:0.7157
+2026-08-03 12:38:44,456 - INFO - Best model saved — F1:0.8343 | Thr:0.50 (fixed)
+2026-08-03 12:38:44,631 - INFO - GPU [Epoch 47] Alloc:2.07GB Res:3.12GB
+2026-08-03 12:42:38,933 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_046\plots\Train_cm.png
+2026-08-03 12:44:06,209 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_046\plots\Train_roc_pr.png
+2026-08-03 12:44:06,584 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_046\plots\Val_cm.png
+2026-08-03 12:44:33,607 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_046\plots\Val_roc_pr.png
+2026-08-03 12:44:35,854 - INFO - GPU [Epoch 48] Alloc:2.07GB Res:3.12GB
+2026-08-03 12:48:20,974 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_047\plots\Train_cm.png
+2026-08-03 12:49:42,729 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_047\plots\Train_roc_pr.png
+2026-08-03 12:49:43,126 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_047\plots\Val_cm.png
+2026-08-03 12:50:08,663 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_047\plots\Val_roc_pr.png
+2026-08-03 12:50:10,826 - INFO - GPU [Epoch 49] Alloc:2.07GB Res:3.12GB
+2026-08-03 12:54:03,429 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_048\plots\Train_cm.png
+2026-08-03 12:55:24,657 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_048\plots\Train_roc_pr.png
+2026-08-03 12:55:25,101 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_048\plots\Val_cm.png
+2026-08-03 12:55:51,343 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_048\plots\Val_roc_pr.png
+2026-08-03 12:55:53,591 - INFO - GPU [Epoch 50] Alloc:2.07GB Res:3.12GB
+2026-08-03 12:59:49,748 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_049\plots\Train_cm.png
+2026-08-03 13:01:16,566 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_049\plots\Train_roc_pr.png
+2026-08-03 13:01:16,962 - INFO - CM saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_049\plots\Val_cm.png
+2026-08-03 13:01:42,885 - INFO - ROC+PR saved → D:\Master Thesis Codes\attention\CLCD_BALANCEDCA_seed_42\final\epoch_049\plots\Val_roc_pr.png
+2026-08-03 13:02:31,374 - INFO - Training complete | test F1:0.8133 @ thr=0.500 (tuned=False)
